@@ -31,14 +31,11 @@ h1 {
 
 h2 {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 1.5em;
-	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
-    line-height: 1.4em;
-    color: #333;
+	 font-family: 'Courier New', monospace; color: #333;
 }
 
 p2 {
@@ -76,6 +73,6 @@ ul.posts li {
 }
 
 .screenshot {
-	width: 360px;
+	width: 520px;
 	padding: 10px 10px;
 }
