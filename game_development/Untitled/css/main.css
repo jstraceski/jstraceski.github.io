@@ -31,11 +31,14 @@ h1 {
 
 h2 {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 1.5em;
+    font-size: 3em;
 }
 
 p {
-	 font-family: 'Courier New', monospace; color: #333;
+    font-size: 1.5em;
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    line-height: 1.4em;
+    color: #333;
 }
 
 p2 {
@@ -66,6 +69,16 @@ ul.posts li {
     list-style: none;
 }
 
+/* div { position:fixed; width:50%; height:50% } */
+#NW { background:orange; height: 325px  }
+#NE { background:blue; height: 325px     }
+
+a.border {
+  text-decoration: none;
+  color: #999;
+  padding: 20px 20px;
+  background-color: lightblue;
+}
 
 .robot {
 	width: 100px;
@@ -73,12 +86,16 @@ ul.posts li {
 }
 
 .screenshot {
-	width: 520px;
+	width: 360px;
 	padding: 10px 10px;
 }
 
-
 .screenshot_big {
-	width: 800px;
+	width: 700px;
 	padding: 10px 10px;
+}
+
+.icon {
+	height: 250px;
+  padding: 0px 30px
 }
