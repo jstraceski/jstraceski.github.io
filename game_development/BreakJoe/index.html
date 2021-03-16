@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Joseph Straceski - Game Engine Development</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+
+		<h1 class="center">BreakJoe</h1>
+		<h2 class="center"> <a href="https://youtu.be/iL2QTa0Ctq0" >Demo Video</a></h2>
+		<h2 class="center"> <a href="https://github.com/jstraceski/BreakJoe" >Github (With Binary)</a> </h2>
+		<img class="screenshot" src="./BreakJoe1.png" align="center">
+		<img class="screenshot" src="./BreakJoe2.png" align="center">
+		<img class="screenshot" src="./BreakJoe3.png" align="center">
+		<p> Breakout is a classic game, and in the process of recreating it in c++,
+		I think I have experienced the closest I have ever felt to how I imagine a game jam developer feels.
+		The process of generating this game didn't feel difficult.
+		I have spent a great deal of time thinking about problems that I had to overcome for a project like this.
+		It felt like a long jog or a marathon.
+		The overall process felt like I always had one more thing to do and I knew what it was, I just had to do it.
+		I was slowly constructing a tower from the ground up.
+		That isn't to say there weren't a few snags.
+		<br>
+		<br>
+		While implementing the audio I spent more than what I probably should have, trying to debug example code that was identical from multiple sources.
+		But unlike most times when I am struggling to find a good example,
+		I experienced something kind of novel this time around.
+		For the first time in a while I solved the problem backwards.
+		There was a problem with the sound repeating like a round,
+		a round as in a song sung in a delay that overlaps itself.
+		I spent a long time tweaking the examples,
+		scratching my head,
+		thinking that I must have done something wrong.
+		They way I finally solved it was by taking a step back and thinking about why I might be having this specific problem.
+		I saw that I was writing to a buffer in a callback function,
+		and I had the thought that the only way it could be causing this caucophony,
+		was if the buffer was never cleared.
+		And ironically after few more minutes of testing the theory,
+		it was solved.
+		I often will go into a flow state when debugging tying things in a forward direction testing the cause of an issue by modifying my data or extrapolating some arbitrary values.
+		While sometimes this immediately fixes my problem,
+		it wasn't working in this case.
+		This problem got me to think about solving it in the other direction.
+		How could my code cause this specific error.
+		When you only are manipulating buffers theres not a lot you can try in forward direction to see whats going on,
+		you have to extrapolate and think from the other direction.
+		Think about the underlying mechanics.
+    <br>
+		<br>
+		If I had more time on this project I would likely attempt to implement more modern OpenGL elements into it.
+		The way that OpenGL is tied into shaders and registers is a type of machine focused code that I and many other programmers have strayed away from.
+		Most code nowadays is highly abstracted,
+		and its always a good exercise to understand the actual mechanisms behind the higher lever code.
+		It allows you to think in a much more analytical way about your code,
+		like I mentioned in the first paragraph.
+		Knowing all possible outcomes allows you to think in negative terms much like how some mathematical tautologies are proved by negation.
+		Practicing to recognize problems about code in this way gives me more tools to struggle less and do more.
+		</p>
+		<br>
+
+	</body>
+
+
+</html>
