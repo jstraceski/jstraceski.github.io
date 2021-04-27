@@ -1,0 +1,106 @@
+\hypertarget{structEngine_1_1Joint}{}\doxysection{Engine\+::Joint Struct Reference}
+\label{structEngine_1_1Joint}\index{Engine::Joint@{Engine::Joint}}
+
+
+\mbox{\hyperlink{structEngine_1_1Physics}{Physics}} Component that represents a joint between rigidbodies. Intended to be connected to a \mbox{\hyperlink{classEngine_1_1Entity}{Entity}} and registered in a scene.  
+
+
+
+
+{\ttfamily \#include $<$Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEngine_1_1Joint_a23b40e9df1a29ec957258233398951c5}{Joint}} (\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1RigidBody}{Rigid\+Body}} $>$ \&other\+Rigid\+Body, float max\+Length)
+\begin{DoxyCompactList}\small\item\em Connect two rigid-\/bodies at their respective centers at a given distance apart. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structEngine_1_1Joint_a887d70c61258b2488f1bebb69a32b3fe}{Joint}} (glm\+::vec3 self\+Position, glm\+::vec3 global\+Position)
+\begin{DoxyCompactList}\small\item\em tether local entity position to a global coordinate position \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structEngine_1_1Joint_ab4a33fd6678b8188a0100329a46a2516}{Joint}} (glm\+::vec3 global\+Position, float max\+Length=0)
+\begin{DoxyCompactList}\small\item\em tether entity to a global coordinate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Joint_afba458b0bcb5a123792aa580528cd114}\label{structEngine_1_1Joint_afba458b0bcb5a123792aa580528cd114}} 
+glm\+::vec3 {\bfseries positionA} = \{0,0,0\}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Joint_a9db870e837730ffa80fce926609ea7c6}\label{structEngine_1_1Joint_a9db870e837730ffa80fce926609ea7c6}} 
+glm\+::vec3 {\bfseries positionB} \{\}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Joint_aeab5ceb486a2e72675a73df9c95bc7d3}\label{structEngine_1_1Joint_aeab5ceb486a2e72675a73df9c95bc7d3}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1RigidBody}{Rigid\+Body}} $>$ {\bfseries connected\+Rigid\+Body} = nullptr
+\item 
+\mbox{\Hypertarget{structEngine_1_1Joint_aa0c607c95273cf346d694b3eed349b7e}\label{structEngine_1_1Joint_aa0c607c95273cf346d694b3eed349b7e}} 
+float {\bfseries min\+Length} = 0
+\item 
+\mbox{\Hypertarget{structEngine_1_1Joint_ab0f17e9c71b2bd9163e72ca0311cd363}\label{structEngine_1_1Joint_ab0f17e9c71b2bd9163e72ca0311cd363}} 
+float {\bfseries max\+Length} = 0
+\item 
+\mbox{\Hypertarget{structEngine_1_1Joint_a2766985379a6449731e27465f3817b18}\label{structEngine_1_1Joint_a2766985379a6449731e27465f3817b18}} 
+float {\bfseries spring\+Constant} = 0
+\item 
+\mbox{\Hypertarget{structEngine_1_1Joint_ae9125acbd39e40a1d013a303e8566eb3}\label{structEngine_1_1Joint_ae9125acbd39e40a1d013a303e8566eb3}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1RigidBody}{Rigid\+Body}} $>$ {\bfseries rigid\+Body} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structEngine_1_1Physics}{Physics}} Component that represents a joint between rigidbodies. Intended to be connected to a \mbox{\hyperlink{classEngine_1_1Entity}{Entity}} and registered in a scene. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structEngine_1_1Joint_a23b40e9df1a29ec957258233398951c5}\label{structEngine_1_1Joint_a23b40e9df1a29ec957258233398951c5}} 
+\index{Engine::Joint@{Engine::Joint}!Joint@{Joint}}
+\index{Joint@{Joint}!Engine::Joint@{Engine::Joint}}
+\doxysubsubsection{\texorpdfstring{Joint()}{Joint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Engine\+::\+Joint\+::\+Joint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1RigidBody}{Rigid\+Body}} $>$ \&}]{other\+Rigid\+Body,  }\item[{float}]{max\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Connect two rigid-\/bodies at their respective centers at a given distance apart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Rigid\+Body} & \\
+\hline
+{\em max\+Length} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Joint_a887d70c61258b2488f1bebb69a32b3fe}\label{structEngine_1_1Joint_a887d70c61258b2488f1bebb69a32b3fe}} 
+\index{Engine::Joint@{Engine::Joint}!Joint@{Joint}}
+\index{Joint@{Joint}!Engine::Joint@{Engine::Joint}}
+\doxysubsubsection{\texorpdfstring{Joint()}{Joint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Engine\+::\+Joint\+::\+Joint (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{self\+Position,  }\item[{glm\+::vec3}]{global\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+tether local entity position to a global coordinate position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self\+Position} & \\
+\hline
+{\em global\+Position} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Joint_ab4a33fd6678b8188a0100329a46a2516}\label{structEngine_1_1Joint_ab4a33fd6678b8188a0100329a46a2516}} 
+\index{Engine::Joint@{Engine::Joint}!Joint@{Joint}}
+\index{Joint@{Joint}!Engine::Joint@{Engine::Joint}}
+\doxysubsubsection{\texorpdfstring{Joint()}{Joint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Engine\+::\+Joint\+::\+Joint (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{global\+Position,  }\item[{float}]{max\+Length = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+tether entity to a global coordinate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em global\+Position} & \\
+\hline
+{\em max\+Length} & maximum length of the joint (default 0) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Components.\+hpp\end{DoxyCompactItemize}

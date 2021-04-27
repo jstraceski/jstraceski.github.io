@@ -1,0 +1,86 @@
+\hypertarget{structEngine_1_1Animation}{}\doxysection{Engine\+::Animation Struct Reference}
+\label{structEngine_1_1Animation}\index{Engine::Animation@{Engine::Animation}}
+
+
+Container for texture based animations.  
+
+
+
+
+{\ttfamily \#include $<$Animation.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEngine_1_1Animation_a3698c2e85564159430dd7c3fe2f75603}{Animation}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \&mesh\+Renderer, const std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$$>$ \&texture\+Lookup)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Animation_a53c47a449f394715300d3daaf2a72875}\label{structEngine_1_1Animation_a53c47a449f394715300d3daaf2a72875}} 
+void \mbox{\hyperlink{structEngine_1_1Animation_a53c47a449f394715300d3daaf2a72875}{Update\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Advance frame data if needed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{structEngine_1_1Animation_ac2cc2d2156f7355d9caa08dabf9909b9}{draw\+Frame}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Animation_a97fe6bcd588f71990060cd31767c9df7}{Update}} (const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Animation_a73951baeb3985d93272ed2b39939b8b3}\label{structEngine_1_1Animation_a73951baeb3985d93272ed2b39939b8b3}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \mbox{\hyperlink{structEngine_1_1Animation_a73951baeb3985d93272ed2b39939b8b3}{renderer}} = nullptr
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classEngine_1_1Renderer}{Renderer}} Reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Animation_ad8012f6f2b14b54e3c4da9bcedefd50f}\label{structEngine_1_1Animation_ad8012f6f2b14b54e3c4da9bcedefd50f}} 
+std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1Animation_ad8012f6f2b14b54e3c4da9bcedefd50f}{lookup}} = std\+::vector$<$\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}}$>$$>$()
+\begin{DoxyCompactList}\small\item\em lookup table for animation frame data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Container for texture based animations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structEngine_1_1Animation_a3698c2e85564159430dd7c3fe2f75603}\label{structEngine_1_1Animation_a3698c2e85564159430dd7c3fe2f75603}} 
+\index{Engine::Animation@{Engine::Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Engine::Animation@{Engine::Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}}
+{\footnotesize\ttfamily Engine\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \&}]{mesh\+Renderer,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$$>$ \&}]{texture\+Lookup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct an animation with a mesh renderer link and a list of texture lookups. 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+{\em lookup} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1Animation_ac2cc2d2156f7355d9caa08dabf9909b9}\label{structEngine_1_1Animation_ac2cc2d2156f7355d9caa08dabf9909b9}} 
+\index{Engine::Animation@{Engine::Animation}!drawFrame@{drawFrame}}
+\index{drawFrame@{drawFrame}!Engine::Animation@{Engine::Animation}}
+\doxysubsubsection{\texorpdfstring{drawFrame()}{drawFrame()}}
+{\footnotesize\ttfamily virtual void Engine\+::\+Animation\+::draw\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Draw the current frame of animation to the \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} subclass 
+\begin{DoxyParams}{Parameters}
+{\em shader} & \\
+\hline
+{\em model} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Animation_a97fe6bcd588f71990060cd31767c9df7}\label{structEngine_1_1Animation_a97fe6bcd588f71990060cd31767c9df7}} 
+\index{Engine::Animation@{Engine::Animation}!Update@{Update}}
+\index{Update@{Update}!Engine::Animation@{Engine::Animation}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily static void Engine\+::\+Animation\+::\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Update all animations in the scene 
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Animation.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,116 @@
+\hypertarget{classEngine_1_1Renderer}{}\doxysection{Engine\+::Renderer Class Reference}
+\label{classEngine_1_1Renderer}\index{Engine::Renderer@{Engine::Renderer}}
+
+
+{\ttfamily \#include $<$Renderer.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classEngine_1_1Renderer__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Renderer_a7845caa575ab431f61415340561590cb}\label{classEngine_1_1Renderer_a7845caa575ab431f61415340561590cb}} 
+enum \mbox{\hyperlink{classEngine_1_1Renderer_a7845caa575ab431f61415340561590cb}{A\+PI}} \{ {\bfseries None} = 0, 
+{\bfseries Open\+GL} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Rendering system api enumeration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Renderer_a116af4081a632ca30c350f64cf944337}\label{classEngine_1_1Renderer_a116af4081a632ca30c350f64cf944337}} 
+virtual void \mbox{\hyperlink{classEngine_1_1Renderer_a116af4081a632ca30c350f64cf944337}{Init}} ()=0
+\begin{DoxyCompactList}\small\item\em Initialize the render api. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Renderer_a92b718648e8d2d7af7af8319bd635649}\label{classEngine_1_1Renderer_a92b718648e8d2d7af7af8319bd635649}} 
+virtual void \mbox{\hyperlink{classEngine_1_1Renderer_a92b718648e8d2d7af7af8319bd635649}{Shutdown}} ()=0
+\begin{DoxyCompactList}\small\item\em Shutdown the render api. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEngine_1_1Renderer_a7ae111dbe1d059f5330917e79b51b22c}{Set\+Clear\+Color}} (unsigned int c)=0
+\item 
+\mbox{\Hypertarget{classEngine_1_1Renderer_a98cc0ea75bb92243bbba07814c4a2214}\label{classEngine_1_1Renderer_a98cc0ea75bb92243bbba07814c4a2214}} 
+virtual void \mbox{\hyperlink{classEngine_1_1Renderer_a98cc0ea75bb92243bbba07814c4a2214}{Clear}} ()=0
+\begin{DoxyCompactList}\small\item\em Clear the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEngine_1_1Renderer_a67bc3bfe0f76ff20801ef810face6c53}{Add\+Tag}} (const std\+::string \&name, \mbox{\hyperlink{structEngine_1_1RenderTag}{Render\+Tag}} tag, View\+Projection projection=P\+R\+O\+J\+E\+C\+T\+I\+ON)=0
+\item 
+virtual void \mbox{\hyperlink{classEngine_1_1Renderer_affe32a1b8b963c963c1a47245b44b5e7}{Submit}} (const std\+::string \&tag, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} $>$ \&transform, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \&renderer)=0
+\item 
+\mbox{\Hypertarget{classEngine_1_1Renderer_acf04fcf4abaf695e6d9e01e456700d34}\label{classEngine_1_1Renderer_acf04fcf4abaf695e6d9e01e456700d34}} 
+virtual void \mbox{\hyperlink{classEngine_1_1Renderer_acf04fcf4abaf695e6d9e01e456700d34}{Flush}} ()=0
+\begin{DoxyCompactList}\small\item\em Render all content in the render queue now! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Renderer_adc152ebf0c01709113c639bc06170dc8}\label{classEngine_1_1Renderer_adc152ebf0c01709113c639bc06170dc8}} 
+static \mbox{\hyperlink{classEngine_1_1Renderer_a7845caa575ab431f61415340561590cb}{A\+PI}} \mbox{\hyperlink{classEngine_1_1Renderer_adc152ebf0c01709113c639bc06170dc8}{Get\+A\+PI}} ()
+\begin{DoxyCompactList}\small\item\em Get the current api we are using. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Renderer_ac062d98030f4e6db07b25e6e35c540fd}\label{classEngine_1_1Renderer_ac062d98030f4e6db07b25e6e35c540fd}} 
+static \mbox{\hyperlink{namespaceEngine_ad3a2293a85f5e4cb0ce5d504357ec4f3}{Uni}}$<$ \mbox{\hyperlink{classEngine_1_1Renderer}{Renderer}} $>$ \mbox{\hyperlink{classEngine_1_1Renderer_ac062d98030f4e6db07b25e6e35c540fd}{Create}} ()
+\begin{DoxyCompactList}\small\item\em Create the render A\+PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Renderer_a49106a344fe2698e963cac7061a6533a}\label{classEngine_1_1Renderer_a49106a344fe2698e963cac7061a6533a}} 
+struct {\bfseries Transform}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}} struct definition wrapper for a rendering system 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1Renderer_a67bc3bfe0f76ff20801ef810face6c53}\label{classEngine_1_1Renderer_a67bc3bfe0f76ff20801ef810face6c53}} 
+\index{Engine::Renderer@{Engine::Renderer}!AddTag@{AddTag}}
+\index{AddTag@{AddTag}!Engine::Renderer@{Engine::Renderer}}
+\doxysubsubsection{\texorpdfstring{AddTag()}{AddTag()}}
+{\footnotesize\ttfamily virtual void Engine\+::\+Renderer\+::\+Add\+Tag (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{structEngine_1_1RenderTag}{Render\+Tag}}}]{tag,  }\item[{View\+Projection}]{projection = {\ttfamily PROJECTION} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Add a tag to render with 
+\begin{DoxyParams}{Parameters}
+{\em name} & of this tag \\
+\hline
+{\em tag} & to be added \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEngine_1_1GLRenderer_ac4badddfee7f020afcc2a1e1f974a4ce}{Engine\+::\+G\+L\+Renderer}}.
+
+\mbox{\Hypertarget{classEngine_1_1Renderer_a7ae111dbe1d059f5330917e79b51b22c}\label{classEngine_1_1Renderer_a7ae111dbe1d059f5330917e79b51b22c}} 
+\index{Engine::Renderer@{Engine::Renderer}!SetClearColor@{SetClearColor}}
+\index{SetClearColor@{SetClearColor}!Engine::Renderer@{Engine::Renderer}}
+\doxysubsubsection{\texorpdfstring{SetClearColor()}{SetClearColor()}}
+{\footnotesize\ttfamily virtual void Engine\+::\+Renderer\+::\+Set\+Clear\+Color (\begin{DoxyParamCaption}\item[{unsigned int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the color for the background whenever the color is cleared. 
+\begin{DoxyParams}{Parameters}
+{\em c} & color of the background as hex \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1Renderer_affe32a1b8b963c963c1a47245b44b5e7}\label{classEngine_1_1Renderer_affe32a1b8b963c963c1a47245b44b5e7}} 
+\index{Engine::Renderer@{Engine::Renderer}!Submit@{Submit}}
+\index{Submit@{Submit}!Engine::Renderer@{Engine::Renderer}}
+\doxysubsubsection{\texorpdfstring{Submit()}{Submit()}}
+{\footnotesize\ttfamily virtual void Engine\+::\+Renderer\+::\+Submit (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tag,  }\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} $>$ \&}]{transform,  }\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Submit an object to the render queue 
+\begin{DoxyParams}{Parameters}
+{\em mesh} & to draw \\
+\hline
+{\em transform} & location to draw at \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEngine_1_1GLRenderer_a40b1a4d3924ca2ff57f04f5fc27e5c96}{Engine\+::\+G\+L\+Renderer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Renderer.\+hpp\item 
+src/Renderer.\+cpp\end{DoxyCompactItemize}

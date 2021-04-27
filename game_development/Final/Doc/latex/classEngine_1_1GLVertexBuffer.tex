@@ -1,0 +1,69 @@
+\hypertarget{classEngine_1_1GLVertexBuffer}{}\doxysection{Engine\+::G\+L\+Vertex\+Buffer Class Reference}
+\label{classEngine_1_1GLVertexBuffer}\index{Engine::GLVertexBuffer@{Engine::GLVertexBuffer}}
+
+
+{\ttfamily \#include $<$G\+L\+Buffer.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::G\+L\+Vertex\+Buffer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classEngine_1_1GLVertexBuffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::G\+L\+Vertex\+Buffer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classEngine_1_1GLVertexBuffer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1GLVertexBuffer_a85abeac969a7e422f7bf4c715d45820e}\label{classEngine_1_1GLVertexBuffer_a85abeac969a7e422f7bf4c715d45820e}} 
+{\bfseries G\+L\+Vertex\+Buffer} (std\+::size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{classEngine_1_1GLVertexBuffer_a460a1f890ebf8bba05c1bec44290e499}\label{classEngine_1_1GLVertexBuffer_a460a1f890ebf8bba05c1bec44290e499}} 
+void \mbox{\hyperlink{classEngine_1_1GLVertexBuffer_a460a1f890ebf8bba05c1bec44290e499}{Bind}} () override
+\begin{DoxyCompactList}\small\item\em Binds this vertex buffer for drawing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLVertexBuffer_a23cad4a01b9ef6ed3c8b1b1d85dead57}\label{classEngine_1_1GLVertexBuffer_a23cad4a01b9ef6ed3c8b1b1d85dead57}} 
+void \mbox{\hyperlink{classEngine_1_1GLVertexBuffer_a23cad4a01b9ef6ed3c8b1b1d85dead57}{Unbind}} () override
+\begin{DoxyCompactList}\small\item\em Binds nothing for drawing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_1_1GLVertexBuffer_a6857d618513b9dcee76e0a53ba631286}{Load}} (float verts\mbox{[}$\,$\mbox{]}, std\+::size\+\_\+t size) override
+\item 
+\mbox{\Hypertarget{classEngine_1_1GLVertexBuffer_a589ec6cd05b208a465c305ffb3065f60}\label{classEngine_1_1GLVertexBuffer_a589ec6cd05b208a465c305ffb3065f60}} 
+size\+\_\+t {\bfseries Get\+Size} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Open\+GL version of a \mbox{\hyperlink{classEngine_1_1VertexBuffer}{Vertex\+Buffer}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1GLVertexBuffer_a6857d618513b9dcee76e0a53ba631286}\label{classEngine_1_1GLVertexBuffer_a6857d618513b9dcee76e0a53ba631286}} 
+\index{Engine::GLVertexBuffer@{Engine::GLVertexBuffer}!Load@{Load}}
+\index{Load@{Load}!Engine::GLVertexBuffer@{Engine::GLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void Engine\+::\+G\+L\+Vertex\+Buffer\+::\+Load (\begin{DoxyParamCaption}\item[{float}]{verts\mbox{[}$\,$\mbox{]},  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Loads vertices into this buffer 
+\begin{DoxyParams}{Parameters}
+{\em verts} & the vertices for this buffer \\
+\hline
+{\em size} & the size of the array we are loading \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEngine_1_1VertexBuffer_a14b10bc1a7c89936d8f815ddc4ac3bb6}{Engine\+::\+Vertex\+Buffer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/G\+L\+Buffer.\+hpp\end{DoxyCompactItemize}

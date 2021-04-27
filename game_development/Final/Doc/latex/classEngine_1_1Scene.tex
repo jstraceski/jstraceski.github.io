@@ -1,0 +1,55 @@
+\hypertarget{classEngine_1_1Scene}{}\doxysection{Engine\+::Scene Class Reference}
+\label{classEngine_1_1Scene}\index{Engine::Scene@{Engine::Scene}}
+
+
+A container for entities currently in the \mbox{\hyperlink{classEngine_1_1Scene}{Scene}}.  
+
+
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Scene_a3bd58061cf48c1eb515c7397fec8c95c}\label{classEngine_1_1Scene_a3bd58061cf48c1eb515c7397fec8c95c}} 
+\mbox{\hyperlink{classEngine_1_1Scene_a3bd58061cf48c1eb515c7397fec8c95c}{Scene}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Scene_a876a153365c543baf4233f06ab0e08f8}\label{classEngine_1_1Scene_a876a153365c543baf4233f06ab0e08f8}} 
+\mbox{\hyperlink{classEngine_1_1Scene_a876a153365c543baf4233f06ab0e08f8}{$\sim$\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEngine_1_1Entity}{Entity}} \mbox{\hyperlink{classEngine_1_1Scene_a33aa9e682d81688330c99a5992e4475e}{Create\+Entity}} (bool empty=false, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} $>$ \&tf=nullptr)
+\item 
+\mbox{\Hypertarget{classEngine_1_1Scene_aad8a0888a6cbda76f3c9898b354fc809}\label{classEngine_1_1Scene_aad8a0888a6cbda76f3c9898b354fc809}} 
+void \mbox{\hyperlink{classEngine_1_1Scene_aad8a0888a6cbda76f3c9898b354fc809}{Destroy\+Entity}} (\mbox{\hyperlink{classEngine_1_1Entity}{Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Destroy given entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Scene_a0abe5fae699ec92682507878d7800872}\label{classEngine_1_1Scene_a0abe5fae699ec92682507878d7800872}} 
+\mbox{\hyperlink{classEngine_1_1ECS}{E\+CS}} {\bfseries Get\+E\+CS} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Scene_a614439ccac0344926adc4c0165d64060}\label{classEngine_1_1Scene_a614439ccac0344926adc4c0165d64060}} 
+class {\bfseries Entity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A container for entities currently in the \mbox{\hyperlink{classEngine_1_1Scene}{Scene}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1Scene_a33aa9e682d81688330c99a5992e4475e}\label{classEngine_1_1Scene_a33aa9e682d81688330c99a5992e4475e}} 
+\index{Engine::Scene@{Engine::Scene}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!Engine::Scene@{Engine::Scene}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEngine_1_1Entity}{Entity}} Engine\+::\+Scene\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{bool}]{empty = {\ttfamily false},  }\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} $>$ \&}]{tf = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Creates an entity \begin{DoxyReturn}{Returns}
+a new entity 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Scene.\+hpp\item 
+src/Scene.\+cpp\end{DoxyCompactItemize}

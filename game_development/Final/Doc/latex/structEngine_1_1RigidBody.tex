@@ -1,0 +1,93 @@
+\hypertarget{structEngine_1_1RigidBody}{}\doxysection{Engine\+::Rigid\+Body Struct Reference}
+\label{structEngine_1_1RigidBody}\index{Engine::RigidBody@{Engine::RigidBody}}
+
+
+\mbox{\hyperlink{structEngine_1_1Physics}{Physics}} rigidbody component. Stores the physical parameters of an object. Such as moment of inertia, mass, velocity, angular momentum, air drag, force, torque, etc...  
+
+
+
+
+{\ttfamily \#include $<$Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a59b37af6fcbca51a77a1d270b5a66337}\label{structEngine_1_1RigidBody_a59b37af6fcbca51a77a1d270b5a66337}} 
+{\bfseries Rigid\+Body} (float height, float width, float depth, float m)
+\item 
+void \mbox{\hyperlink{structEngine_1_1RigidBody_a6085af3bfdd6bbc622a20f5c899d66df}{set\+Moment\+Cube}} (float height, float width, float depth, float m)
+\begin{DoxyCompactList}\small\item\em Set the moment of inertia of this rigidbody to that of a solid cube. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a63addb74dd2f7a9ae2d5d7f7a1977261}\label{structEngine_1_1RigidBody_a63addb74dd2f7a9ae2d5d7f7a1977261}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1RigidBody_a63addb74dd2f7a9ae2d5d7f7a1977261}{velocity}} = glm\+::vec3(0, 0, 0)
+\begin{DoxyCompactList}\small\item\em velocity vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_af25c05936e5aa45107ec61f0f1e98f44}\label{structEngine_1_1RigidBody_af25c05936e5aa45107ec61f0f1e98f44}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1RigidBody_af25c05936e5aa45107ec61f0f1e98f44}{force}} = glm\+::vec3(0, 0, 0)
+\begin{DoxyCompactList}\small\item\em force vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a93cafd97849e72857855f5091013e5d4}\label{structEngine_1_1RigidBody_a93cafd97849e72857855f5091013e5d4}} 
+float \mbox{\hyperlink{structEngine_1_1RigidBody_a93cafd97849e72857855f5091013e5d4}{air\+Drag}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em air drag co-\/efficient \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a18dcfad1b12629ceacadc44996f5a965}\label{structEngine_1_1RigidBody_a18dcfad1b12629ceacadc44996f5a965}} 
+float \mbox{\hyperlink{structEngine_1_1RigidBody_a18dcfad1b12629ceacadc44996f5a965}{angular\+Drag}} = 1.f
+\begin{DoxyCompactList}\small\item\em air drag co-\/efficient \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_afe58ef504bff5e236d3a51a1834dcc48}\label{structEngine_1_1RigidBody_afe58ef504bff5e236d3a51a1834dcc48}} 
+bool \mbox{\hyperlink{structEngine_1_1RigidBody_afe58ef504bff5e236d3a51a1834dcc48}{kinematic}} = true
+\begin{DoxyCompactList}\small\item\em is the object affected by physics \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a90f6003ef2cd512d68d22bd88c37dd85}\label{structEngine_1_1RigidBody_a90f6003ef2cd512d68d22bd88c37dd85}} 
+glm\+::mat3 \mbox{\hyperlink{structEngine_1_1RigidBody_a90f6003ef2cd512d68d22bd88c37dd85}{moment}}
+\begin{DoxyCompactList}\small\item\em moment of inertia \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_abb17307b06f1f7fd1c6cf02b63d4909b}\label{structEngine_1_1RigidBody_abb17307b06f1f7fd1c6cf02b63d4909b}} 
+glm\+::mat3 \mbox{\hyperlink{structEngine_1_1RigidBody_abb17307b06f1f7fd1c6cf02b63d4909b}{inv\+Moment}}
+\begin{DoxyCompactList}\small\item\em inverse moment of inertia \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a8ec63ed62ee10b121cf7b69be8149ec2}\label{structEngine_1_1RigidBody_a8ec63ed62ee10b121cf7b69be8149ec2}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1RigidBody_a8ec63ed62ee10b121cf7b69be8149ec2}{w}} = glm\+::vec3(0, 0, 0)
+\begin{DoxyCompactList}\small\item\em Angular velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a902bf7fd93ce7ea310212295031dc8f7}\label{structEngine_1_1RigidBody_a902bf7fd93ce7ea310212295031dc8f7}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1RigidBody_a902bf7fd93ce7ea310212295031dc8f7}{t}} = glm\+::vec3(0, 0.f, 0)
+\begin{DoxyCompactList}\small\item\em Torque. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_ae7452f3342c04175d845f2f3c497729d}\label{structEngine_1_1RigidBody_ae7452f3342c04175d845f2f3c497729d}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \mbox{\hyperlink{structEngine_1_1RigidBody_ae7452f3342c04175d845f2f3c497729d}{physics\+Entity}}
+\begin{DoxyCompactList}\small\item\em Reference to an active physics entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a1c0693658816a7143b024bb97b6813db}\label{structEngine_1_1RigidBody_a1c0693658816a7143b024bb97b6813db}} 
+float \mbox{\hyperlink{structEngine_1_1RigidBody_a1c0693658816a7143b024bb97b6813db}{i\+Mass}} = 1
+\begin{DoxyCompactList}\small\item\em inverse mass \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_ad3f5d8da5b14d79d3a5f0906e92a1680}\label{structEngine_1_1RigidBody_ad3f5d8da5b14d79d3a5f0906e92a1680}} 
+float \mbox{\hyperlink{structEngine_1_1RigidBody_ad3f5d8da5b14d79d3a5f0906e92a1680}{drag}} = 2.\+98f
+\begin{DoxyCompactList}\small\item\em drag co-\/efficient \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a1c41c5dd43626b8a3e0bdbd6d3e910d1}\label{structEngine_1_1RigidBody_a1c41c5dd43626b8a3e0bdbd6d3e910d1}} 
+bool \mbox{\hyperlink{structEngine_1_1RigidBody_a1c41c5dd43626b8a3e0bdbd6d3e910d1}{grounded}} = true
+\begin{DoxyCompactList}\small\item\em grounded flag \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structEngine_1_1Physics}{Physics}} rigidbody component. Stores the physical parameters of an object. Such as moment of inertia, mass, velocity, angular momentum, air drag, force, torque, etc... 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1RigidBody_a6085af3bfdd6bbc622a20f5c899d66df}\label{structEngine_1_1RigidBody_a6085af3bfdd6bbc622a20f5c899d66df}} 
+\index{Engine::RigidBody@{Engine::RigidBody}!setMomentCube@{setMomentCube}}
+\index{setMomentCube@{setMomentCube}!Engine::RigidBody@{Engine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setMomentCube()}{setMomentCube()}}
+{\footnotesize\ttfamily void Engine\+::\+Rigid\+Body\+::set\+Moment\+Cube (\begin{DoxyParamCaption}\item[{float}]{height,  }\item[{float}]{width,  }\item[{float}]{depth,  }\item[{float}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the moment of inertia of this rigidbody to that of a solid cube. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em width} & \\
+\hline
+{\em depth} & \\
+\hline
+{\em m} & mass \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Components.\+hpp\end{DoxyCompactItemize}

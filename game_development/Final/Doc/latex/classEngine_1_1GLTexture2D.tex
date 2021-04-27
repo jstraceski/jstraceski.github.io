@@ -1,0 +1,105 @@
+\hypertarget{classEngine_1_1GLTexture2D}{}\doxysection{Engine\+::G\+L\+Texture2D Class Reference}
+\label{classEngine_1_1GLTexture2D}\index{Engine::GLTexture2D@{Engine::GLTexture2D}}
+
+
+{\ttfamily \#include $<$G\+L\+Texture.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::G\+L\+Texture2D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classEngine_1_1GLTexture2D__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::G\+L\+Texture2D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classEngine_1_1GLTexture2D__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEngine_1_1GLTexture2D_a35e5539bff14c049000f85ac44236fac}{G\+L\+Texture2D}} (const std\+::string \&path)
+\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_aee432ae51f1d2c366f5b2145c77d88e7}\label{classEngine_1_1GLTexture2D_aee432ae51f1d2c366f5b2145c77d88e7}} 
+{\bfseries G\+L\+Texture2D} (stbi\+\_\+uc $\ast$data, const int \&w, const int \&h)
+\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_a8eadb43f6995de90d1b73fec0c6a8548}\label{classEngine_1_1GLTexture2D_a8eadb43f6995de90d1b73fec0c6a8548}} 
+uint32\+\_\+t \mbox{\hyperlink{classEngine_1_1GLTexture2D_a8eadb43f6995de90d1b73fec0c6a8548}{get\+ID}} () const override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} id -\/ an id link to the texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_adbebfe8d7c4181ecda23d1e934aec2be}\label{classEngine_1_1GLTexture2D_adbebfe8d7c4181ecda23d1e934aec2be}} 
+float \mbox{\hyperlink{classEngine_1_1GLTexture2D_adbebfe8d7c4181ecda23d1e934aec2be}{get\+Width}} () const override
+\begin{DoxyCompactList}\small\item\em visual width of the texture in game dimensions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_a0b43bcf6b05f3a581e85b83a9c499945}\label{classEngine_1_1GLTexture2D_a0b43bcf6b05f3a581e85b83a9c499945}} 
+float \mbox{\hyperlink{classEngine_1_1GLTexture2D_a0b43bcf6b05f3a581e85b83a9c499945}{get\+Height}} () const override
+\begin{DoxyCompactList}\small\item\em visual height of the texture in game dimensions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_ac1025b141afbab123b2985a4f7dd4c40}\label{classEngine_1_1GLTexture2D_ac1025b141afbab123b2985a4f7dd4c40}} 
+void \mbox{\hyperlink{classEngine_1_1GLTexture2D_ac1025b141afbab123b2985a4f7dd4c40}{set\+Width}} (float width) override
+\begin{DoxyCompactList}\small\item\em visual width of the texture in game dimensions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_a96df90ab42f4879acf71186971c421b2}\label{classEngine_1_1GLTexture2D_a96df90ab42f4879acf71186971c421b2}} 
+void \mbox{\hyperlink{classEngine_1_1GLTexture2D_a96df90ab42f4879acf71186971c421b2}{set\+Height}} (float height) override
+\begin{DoxyCompactList}\small\item\em visual height of the texture in game dimensions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_ace35da9a3cac972252dd8602241daa8b}\label{classEngine_1_1GLTexture2D_ace35da9a3cac972252dd8602241daa8b}} 
+void \mbox{\hyperlink{classEngine_1_1GLTexture2D_ace35da9a3cac972252dd8602241daa8b}{set\+Size}} (float width, float height) override
+\begin{DoxyCompactList}\small\item\em visual size of the texture in game dimensions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_a30ea4d5c4e7d85ec52093dee764e408e}\label{classEngine_1_1GLTexture2D_a30ea4d5c4e7d85ec52093dee764e408e}} 
+void \mbox{\hyperlink{classEngine_1_1GLTexture2D_a30ea4d5c4e7d85ec52093dee764e408e}{set\+ID}} (uint32\+\_\+t id) override
+\begin{DoxyCompactList}\small\item\em set texture id \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_1_1GLTexture2D_a16178b3dc79b29d115de12b4a9bdc87e}{Bind}} (uint32\+\_\+t slot=0) const override
+\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_a9de220019c5744141ba9b63a05925455}\label{classEngine_1_1GLTexture2D_a9de220019c5744141ba9b63a05925455}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureMap}{Texture\+Map}} $>$ \mbox{\hyperlink{classEngine_1_1GLTexture2D_a9de220019c5744141ba9b63a05925455}{get\+Default\+Mapping}} () const override
+\begin{DoxyCompactList}\small\item\em Get the texture mapping. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_a08870685c9a06e7aa9304c4a193b165a}\label{classEngine_1_1GLTexture2D_a08870685c9a06e7aa9304c4a193b165a}} 
+void {\bfseries load\+Texture\+Data} (stbi\+\_\+uc $\ast$data, int w, int h, uint type=G\+L\+\_\+\+R\+G\+BA) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Open\+Gl wrapper for a 2D texture. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_a35e5539bff14c049000f85ac44236fac}\label{classEngine_1_1GLTexture2D_a35e5539bff14c049000f85ac44236fac}} 
+\index{Engine::GLTexture2D@{Engine::GLTexture2D}!GLTexture2D@{GLTexture2D}}
+\index{GLTexture2D@{GLTexture2D}!Engine::GLTexture2D@{Engine::GLTexture2D}}
+\doxysubsubsection{\texorpdfstring{GLTexture2D()}{GLTexture2D()}}
+{\footnotesize\ttfamily Engine\+::\+G\+L\+Texture2\+D\+::\+G\+L\+Texture2D (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Creates a texture from an image 
+\begin{DoxyParams}{Parameters}
+{\em path} & to the image to use \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1GLTexture2D_a16178b3dc79b29d115de12b4a9bdc87e}\label{classEngine_1_1GLTexture2D_a16178b3dc79b29d115de12b4a9bdc87e}} 
+\index{Engine::GLTexture2D@{Engine::GLTexture2D}!Bind@{Bind}}
+\index{Bind@{Bind}!Engine::GLTexture2D@{Engine::GLTexture2D}}
+\doxysubsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily void Engine\+::\+G\+L\+Texture2\+D\+::\+Bind (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{slot = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Bind texture data using the id and a current slot 
+\begin{DoxyParams}{Parameters}
+{\em slot} & to bind texture to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEngine_1_1Texture_abf6a7cb196effd20951c57de8e78d9dd}{Engine\+::\+Texture}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/G\+L\+Texture.\+hpp\item 
+src/G\+L\+Texture.\+cpp\end{DoxyCompactItemize}

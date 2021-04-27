@@ -1,0 +1,84 @@
+\hypertarget{structEngine_1_1TextMesh}{}\doxysection{Engine\+::Text\+Mesh Struct Reference}
+\label{structEngine_1_1TextMesh}\index{Engine::TextMesh@{Engine::TextMesh}}
+
+
+A mesh with text on it.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Mesh.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Text\+Mesh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{structEngine_1_1TextMesh__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::Text\+Mesh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{structEngine_1_1TextMesh__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structEngine_1_1TextMesh_abc2d71dd71f903bdc85faf1fffe577fb}{Render}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Shader}{Shader}} $>$ \&shader, const glm\+::mat4 model)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1TextMesh_a23a02f5f20eabf51e94413c43f92da0c}\label{structEngine_1_1TextMesh_a23a02f5f20eabf51e94413c43f92da0c}} 
+static \mbox{\hyperlink{structEngine_1_1TextMesh}{Text\+Mesh}} \mbox{\hyperlink{structEngine_1_1TextMesh_a23a02f5f20eabf51e94413c43f92da0c}{Create\+Text\+Mesh}} (const \mbox{\hyperlink{structEngine_1_1Font}{Font}} \&f\+Data, const std\+::string \&t\+Data)
+\begin{DoxyCompactList}\small\item\em generate a \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} \mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}}, requires font data and a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1TextMesh_a4cc8adf0345172738928d7578967aef3}\label{structEngine_1_1TextMesh_a4cc8adf0345172738928d7578967aef3}} 
+\mbox{\hyperlink{structEngine_1_1Font}{Font}} \mbox{\hyperlink{structEngine_1_1TextMesh_a4cc8adf0345172738928d7578967aef3}{font}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structEngine_1_1Font}{Font}} storage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1TextMesh_a1a8e62049b2f15416942c8fbdee8bce6}\label{structEngine_1_1TextMesh_a1a8e62049b2f15416942c8fbdee8bce6}} 
+std\+::string \mbox{\hyperlink{structEngine_1_1TextMesh_a1a8e62049b2f15416942c8fbdee8bce6}{text}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em text to render \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1TextMesh_ab31c41fda65616511a8a392141185433}\label{structEngine_1_1TextMesh_ab31c41fda65616511a8a392141185433}} 
+\mbox{\hyperlink{namespaceEngine_a3c79d98c167124a4019a3a5d7cde34ea}{Text\+Alignment}} \mbox{\hyperlink{structEngine_1_1TextMesh_ab31c41fda65616511a8a392141185433}{alignment}} = C\+E\+N\+T\+ER
+\begin{DoxyCompactList}\small\item\em rendering alignment origin \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A mesh with text on it. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1TextMesh_abc2d71dd71f903bdc85faf1fffe577fb}\label{structEngine_1_1TextMesh_abc2d71dd71f903bdc85faf1fffe577fb}} 
+\index{Engine::TextMesh@{Engine::TextMesh}!Render@{Render}}
+\index{Render@{Render}!Engine::TextMesh@{Engine::TextMesh}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Engine\+::\+Text\+Mesh\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Shader}{Shader}} $>$ \&}]{shader,  }\item[{const glm\+::mat4}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Render text to the screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & link to the shader used to set uniform values \\
+\hline
+{\em model} & matrix representing the transform from the origin to the data to render \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{structEngine_1_1Mesh_a0044133dc81273b3f9f8da31308d043c}{Engine\+::\+Mesh}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Text\+Mesh.\+hpp\item 
+src/Text\+Mesh.\+cpp\end{DoxyCompactItemize}

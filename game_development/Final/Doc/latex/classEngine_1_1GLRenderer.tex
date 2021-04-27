@@ -1,0 +1,134 @@
+\hypertarget{classEngine_1_1GLRenderer}{}\doxysection{Engine\+::G\+L\+Renderer Class Reference}
+\label{classEngine_1_1GLRenderer}\index{Engine::GLRenderer@{Engine::GLRenderer}}
+
+
+{\ttfamily \#include $<$G\+L\+Renderer.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::G\+L\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classEngine_1_1GLRenderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::G\+L\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classEngine_1_1GLRenderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1GLRenderer_aacd6e54b1b23f06057f2a8f7aa746a02}\label{classEngine_1_1GLRenderer_aacd6e54b1b23f06057f2a8f7aa746a02}} 
+\mbox{\hyperlink{classEngine_1_1GLRenderer_aacd6e54b1b23f06057f2a8f7aa746a02}{$\sim$\+G\+L\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLRenderer_a0b8e5eea5fdb49f8a3f42d3f7203a63a}\label{classEngine_1_1GLRenderer_a0b8e5eea5fdb49f8a3f42d3f7203a63a}} 
+void \mbox{\hyperlink{classEngine_1_1GLRenderer_a0b8e5eea5fdb49f8a3f42d3f7203a63a}{Init}} () override
+\begin{DoxyCompactList}\small\item\em sets up the renderer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1GLRenderer_a59c8260c93f026e75869f0e50313efd3}\label{classEngine_1_1GLRenderer_a59c8260c93f026e75869f0e50313efd3}} 
+void \mbox{\hyperlink{classEngine_1_1GLRenderer_a59c8260c93f026e75869f0e50313efd3}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shutdown the render api. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_1_1GLRenderer_ae389731a5273f0824b935cc0f68a55a5}{Set\+Clear\+Color}} (uint32\+\_\+t c) override
+\item 
+\mbox{\Hypertarget{classEngine_1_1GLRenderer_a2a744037c485ef811db70df30a1f7ed3}\label{classEngine_1_1GLRenderer_a2a744037c485ef811db70df30a1f7ed3}} 
+void \mbox{\hyperlink{classEngine_1_1GLRenderer_a2a744037c485ef811db70df30a1f7ed3}{Clear}} () override
+\begin{DoxyCompactList}\small\item\em Clear the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_1_1GLRenderer_a40b1a4d3924ca2ff57f04f5fc27e5c96}{Submit}} (const std\+::string \&tag, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} $>$ \&transform, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \&renderer) override
+\item 
+float \mbox{\hyperlink{classEngine_1_1GLRenderer_aaa148794e268b5c06c09fbe3184aaf29}{Add\+Texture}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&texture)
+\item 
+void \mbox{\hyperlink{classEngine_1_1GLRenderer_ac4badddfee7f020afcc2a1e1f974a4ce}{Add\+Tag}} (const std\+::string \&name, \mbox{\hyperlink{structEngine_1_1RenderTag}{Render\+Tag}} tag, View\+Projection projection=View\+Projection\+::\+P\+R\+O\+J\+E\+C\+T\+I\+ON) override
+\begin{DoxyCompactList}\small\item\em Adds a rendering step to the Flush cycle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_1_1GLRenderer_a0310a3f4890ca47adf4a18bc51bf29a7}{Flush}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Wrapper to facilitate management of Open\+GL rendering data. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1GLRenderer_ac4badddfee7f020afcc2a1e1f974a4ce}\label{classEngine_1_1GLRenderer_ac4badddfee7f020afcc2a1e1f974a4ce}} 
+\index{Engine::GLRenderer@{Engine::GLRenderer}!AddTag@{AddTag}}
+\index{AddTag@{AddTag}!Engine::GLRenderer@{Engine::GLRenderer}}
+\doxysubsubsection{\texorpdfstring{AddTag()}{AddTag()}}
+{\footnotesize\ttfamily void Engine\+::\+G\+L\+Renderer\+::\+Add\+Tag (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{structEngine_1_1RenderTag}{Render\+Tag}}}]{tag,  }\item[{View\+Projection}]{projection = {\ttfamily ViewProjection\+:\+:PROJECTION} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adds a rendering step to the Flush cycle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & key string of the rendering step \\
+\hline
+{\em tag} & shader vertex data \\
+\hline
+{\em projection} & the type of projection to use for the render step \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEngine_1_1Renderer_a67bc3bfe0f76ff20801ef810face6c53}{Engine\+::\+Renderer}}.
+
+\mbox{\Hypertarget{classEngine_1_1GLRenderer_aaa148794e268b5c06c09fbe3184aaf29}\label{classEngine_1_1GLRenderer_aaa148794e268b5c06c09fbe3184aaf29}} 
+\index{Engine::GLRenderer@{Engine::GLRenderer}!AddTexture@{AddTexture}}
+\index{AddTexture@{AddTexture}!Engine::GLRenderer@{Engine::GLRenderer}}
+\doxysubsubsection{\texorpdfstring{AddTexture()}{AddTexture()}}
+{\footnotesize\ttfamily float Engine\+::\+G\+L\+Renderer\+::\+Add\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&}]{texture }\end{DoxyParamCaption})}
+
+Add a texture to the render sampler lookup.
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & texture reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index in the sampler lookup 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1GLRenderer_a0310a3f4890ca47adf4a18bc51bf29a7}\label{classEngine_1_1GLRenderer_a0310a3f4890ca47adf4a18bc51bf29a7}} 
+\index{Engine::GLRenderer@{Engine::GLRenderer}!Flush@{Flush}}
+\index{Flush@{Flush}!Engine::GLRenderer@{Engine::GLRenderer}}
+\doxysubsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily void Engine\+::\+G\+L\+Renderer\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the elements to the screen. T\+O\+DO\+: (assumes each draw is a quad) so for 4 verts / 4 $\ast$ 6 is 6 calls this is to prevent overlapping draws
+
+Implements \mbox{\hyperlink{classEngine_1_1Renderer_acf04fcf4abaf695e6d9e01e456700d34}{Engine\+::\+Renderer}}.
+
+\mbox{\Hypertarget{classEngine_1_1GLRenderer_ae389731a5273f0824b935cc0f68a55a5}\label{classEngine_1_1GLRenderer_ae389731a5273f0824b935cc0f68a55a5}} 
+\index{Engine::GLRenderer@{Engine::GLRenderer}!SetClearColor@{SetClearColor}}
+\index{SetClearColor@{SetClearColor}!Engine::GLRenderer@{Engine::GLRenderer}}
+\doxysubsubsection{\texorpdfstring{SetClearColor()}{SetClearColor()}}
+{\footnotesize\ttfamily void Engine\+::\+G\+L\+Renderer\+::\+Set\+Clear\+Color (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+Set the color for the background whenever the color is cleared. \mbox{\Hypertarget{classEngine_1_1GLRenderer_a40b1a4d3924ca2ff57f04f5fc27e5c96}\label{classEngine_1_1GLRenderer_a40b1a4d3924ca2ff57f04f5fc27e5c96}} 
+\index{Engine::GLRenderer@{Engine::GLRenderer}!Submit@{Submit}}
+\index{Submit@{Submit}!Engine::GLRenderer@{Engine::GLRenderer}}
+\doxysubsubsection{\texorpdfstring{Submit()}{Submit()}}
+{\footnotesize\ttfamily void Engine\+::\+G\+L\+Renderer\+::\+Submit (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tag,  }\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} $>$ \&}]{transform,  }\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Submit an object to the render queue right now it draw it right away 
+\begin{DoxyParams}{Parameters}
+{\em mesh} & to draw \\
+\hline
+{\em transform} & location to draw at \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEngine_1_1Renderer_affe32a1b8b963c963c1a47245b44b5e7}{Engine\+::\+Renderer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/G\+L\+Renderer.\+hpp\item 
+src/G\+L\+Renderer.\+cpp\end{DoxyCompactItemize}

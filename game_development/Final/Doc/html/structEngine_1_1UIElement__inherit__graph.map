@@ -1,0 +1,6 @@
+<map id="Engine::UIElement" name="Engine::UIElement">
+<area shape="rect" id="node1" title=" " alt="" coords="73,80,215,107"/>
+<area shape="rect" id="node3" href="$structEngine_1_1UIButton.html" title=" " alt="" coords="5,155,136,181"/>
+<area shape="rect" id="node4" href="$structEngine_1_1UIText.html" title=" " alt="" coords="160,155,275,181"/>
+<area shape="rect" id="node2" href="$structEngine_1_1MeshRenderer.html" title="Scene Component for passing drawing data to the renderer. Stores vertex data and references to the te..." alt="" coords="60,5,228,32"/>
+</map>

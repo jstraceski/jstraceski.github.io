@@ -1,0 +1,54 @@
+\hypertarget{structEngine_1_1Glyph}{}\doxysection{Engine\+::Glyph Struct Reference}
+\label{structEngine_1_1Glyph}\index{Engine::Glyph@{Engine::Glyph}}
+
+
+{\ttfamily \#include $<$Font.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Glyph\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structEngine_1_1Glyph__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::Glyph\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structEngine_1_1Glyph__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Glyph_a26a1e6da4e599a3ed604855601f58fed}\label{structEngine_1_1Glyph_a26a1e6da4e599a3ed604855601f58fed}} 
+\mbox{\hyperlink{structEngine_1_1Glyph_a26a1e6da4e599a3ed604855601f58fed}{Glyph}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&texture, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureMap}{Texture\+Map}} $>$ \&\mbox{\hyperlink{structEngine_1_1TextureLookup_a56366aa00c2a663892dfe805b32fec06}{map}}, uint cwidth, uint cheight, int32\+\_\+t left\+Shift, int32\+\_\+t top\+Shift, uint32\+\_\+t adv)
+\begin{DoxyCompactList}\small\item\em create a glyph from a texture and character data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Glyph_afccb12f70f2cf451d6cf8719b0c1f160}\label{structEngine_1_1Glyph_afccb12f70f2cf451d6cf8719b0c1f160}} 
+int \mbox{\hyperlink{structEngine_1_1Glyph_afccb12f70f2cf451d6cf8719b0c1f160}{left}}
+\begin{DoxyCompactList}\small\item\em distance from the texture to the end of the last character \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Glyph_a5937bfeb2dc847ba6dd396a1025501de}\label{structEngine_1_1Glyph_a5937bfeb2dc847ba6dd396a1025501de}} 
+int \mbox{\hyperlink{structEngine_1_1Glyph_a5937bfeb2dc847ba6dd396a1025501de}{top}}
+\begin{DoxyCompactList}\small\item\em distance from the texture to the top of the line \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Glyph_a773633dfd1d6e17fb16b910a2dd93210}\label{structEngine_1_1Glyph_a773633dfd1d6e17fb16b910a2dd93210}} 
+uint32\+\_\+t \mbox{\hyperlink{structEngine_1_1Glyph_a773633dfd1d6e17fb16b910a2dd93210}{advance}}
+\begin{DoxyCompactList}\small\item\em total size of the character from the edge of the last character to beginning of the next character \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a character texture.
+
+Stores the graphical and positional data of a character texture in a line of text. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Font.\+hpp\end{DoxyCompactItemize}

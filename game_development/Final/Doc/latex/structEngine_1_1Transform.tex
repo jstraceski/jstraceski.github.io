@@ -1,0 +1,68 @@
+\hypertarget{structEngine_1_1Transform}{}\doxysection{Engine\+::Transform Struct Reference}
+\label{structEngine_1_1Transform}\index{Engine::Transform@{Engine::Transform}}
+
+
+Location, orientation, and scale of an entity.  
+
+
+
+
+{\ttfamily \#include $<$Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEngine_1_1Transform_ae323756072f8a96ed118e310c98df8e6}{Transform}} (glm\+::vec3 p, glm\+::vec3 r, glm\+::vec3 s)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Transform_a2d1be8e531693f58108cdc68c69a4af4}\label{structEngine_1_1Transform_a2d1be8e531693f58108cdc68c69a4af4}} 
+\mbox{\hyperlink{structEngine_1_1Transform_a2d1be8e531693f58108cdc68c69a4af4}{Transform}} (const \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} \&)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structEngine_1_1Transform_a76620736825f178e1277af79e3014841}{Transform}} ()=default
+\item 
+\mbox{\Hypertarget{structEngine_1_1Transform_a58b77a1affc3b8642736a4f14fc61bc5}\label{structEngine_1_1Transform_a58b77a1affc3b8642736a4f14fc61bc5}} 
+glm\+::mat4 \mbox{\hyperlink{structEngine_1_1Transform_a58b77a1affc3b8642736a4f14fc61bc5}{Get\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em extract a matrix from three vectors \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Transform_a1fd2cba9fcbca66eb4eea1e111c780dd}\label{structEngine_1_1Transform_a1fd2cba9fcbca66eb4eea1e111c780dd}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1Transform_a1fd2cba9fcbca66eb4eea1e111c780dd}{position}} = \{0.f, 0.f, 0.f\}
+\begin{DoxyCompactList}\small\item\em Position of entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Transform_a96f5e5b989369978d20528f9bb8dc4ea}\label{structEngine_1_1Transform_a96f5e5b989369978d20528f9bb8dc4ea}} 
+glm\+::qua$<$ float $>$ \mbox{\hyperlink{structEngine_1_1Transform_a96f5e5b989369978d20528f9bb8dc4ea}{rotation}} = \{1.f, 0.f, 0.f, 0.f\}
+\begin{DoxyCompactList}\small\item\em Rotation of entity in degrees. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Transform_abb9c8edbd535e9f3c712d6f15248cf3f}\label{structEngine_1_1Transform_abb9c8edbd535e9f3c712d6f15248cf3f}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1Transform_abb9c8edbd535e9f3c712d6f15248cf3f}{scale}} = \{1.f, 1.f, 1.f\}
+\begin{DoxyCompactList}\small\item\em Scale of enetity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Location, orientation, and scale of an entity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structEngine_1_1Transform_ae323756072f8a96ed118e310c98df8e6}\label{structEngine_1_1Transform_ae323756072f8a96ed118e310c98df8e6}} 
+\index{Engine::Transform@{Engine::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Engine::Transform@{Engine::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Engine\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{p,  }\item[{glm\+::vec3}]{r,  }\item[{glm\+::vec3}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new transform 
+\begin{DoxyParams}{Parameters}
+{\em p} & position vector \\
+\hline
+{\em r} & rotation vector \\
+\hline
+{\em s} & scale vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Transform_a76620736825f178e1277af79e3014841}\label{structEngine_1_1Transform_a76620736825f178e1277af79e3014841}} 
+\index{Engine::Transform@{Engine::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Engine::Transform@{Engine::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Engine\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor Initializes rotation and position to 0 and scale to 1 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Components.\+hpp\end{DoxyCompactItemize}

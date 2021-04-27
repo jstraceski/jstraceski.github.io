@@ -1,0 +1,84 @@
+\hypertarget{structEngine_1_1VertexCollider}{}\doxysection{Engine\+::Vertex\+Collider Struct Reference}
+\label{structEngine_1_1VertexCollider}\index{Engine::VertexCollider@{Engine::VertexCollider}}
+
+
+A \mbox{\hyperlink{structEngine_1_1Collider}{Collider}} represented by a set of (convex) vertices.  
+
+
+
+
+{\ttfamily \#include $<$Components.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Vertex\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{structEngine_1_1VertexCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::Vertex\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{structEngine_1_1VertexCollider__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1VertexCollider_a9b6d1d252414101dbee7780999758a16}\label{structEngine_1_1VertexCollider_a9b6d1d252414101dbee7780999758a16}} 
+{\bfseries Vertex\+Collider} (std\+::vector$<$ glm\+::vec3 $>$ verts)
+\item 
+\mbox{\Hypertarget{structEngine_1_1VertexCollider_a3749e445c3043d76bbf1b97c107696b3}\label{structEngine_1_1VertexCollider_a3749e445c3043d76bbf1b97c107696b3}} 
+glm\+::vec3 {\bfseries furthest\+In\+Dir} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&pe, const glm\+::vec3 \&norm) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1VertexCollider}{Vertex\+Collider}} $>$ \mbox{\hyperlink{structEngine_1_1VertexCollider_aec52c8a168b67fa4dd1e0dcf18cad282}{box\+Collider}} (float width=64, float height=64, float depth=64)
+\begin{DoxyCompactList}\small\item\em Generate a box collider with given dimensions. centered at 0,0,0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1VertexCollider_ae74e3dc8bde8e529daee5f7bf9145534}\label{structEngine_1_1VertexCollider_ae74e3dc8bde8e529daee5f7bf9145534}} 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries verts}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{structEngine_1_1Collider}{Collider}} represented by a set of (convex) vertices. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1VertexCollider_aec52c8a168b67fa4dd1e0dcf18cad282}\label{structEngine_1_1VertexCollider_aec52c8a168b67fa4dd1e0dcf18cad282}} 
+\index{Engine::VertexCollider@{Engine::VertexCollider}!boxCollider@{boxCollider}}
+\index{boxCollider@{boxCollider}!Engine::VertexCollider@{Engine::VertexCollider}}
+\doxysubsubsection{\texorpdfstring{boxCollider()}{boxCollider()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1VertexCollider}{Vertex\+Collider}}$>$ Engine\+::\+Vertex\+Collider\+::box\+Collider (\begin{DoxyParamCaption}\item[{float}]{width = {\ttfamily 64},  }\item[{float}]{height = {\ttfamily 64},  }\item[{float}]{depth = {\ttfamily 64} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Generate a box collider with given dimensions. centered at 0,0,0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em depth} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Components.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{classEngine_1_1Window}{}\doxysection{Engine\+::Window Class Reference}
+\label{classEngine_1_1Window}\index{Engine::Window@{Engine::Window}}
+
+
+Wrapper for the display window.  
+
+
+
+
+{\ttfamily \#include $<$Window.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEngine_1_1Window_aaf4f1614ccafb30ad889b2c28b5894e3}{Window}} (std\+::string title, int width, int height)
+\item 
+\mbox{\Hypertarget{classEngine_1_1Window_ac3f220a3b8863f93cb1689258d147dfb}\label{classEngine_1_1Window_ac3f220a3b8863f93cb1689258d147dfb}} 
+\mbox{\hyperlink{classEngine_1_1Window_ac3f220a3b8863f93cb1689258d147dfb}{$\sim$\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Window_aa9aa8d7ab89d16f6479d4fab74cfd95f}\label{classEngine_1_1Window_aa9aa8d7ab89d16f6479d4fab74cfd95f}} 
+void \mbox{\hyperlink{classEngine_1_1Window_aa9aa8d7ab89d16f6479d4fab74cfd95f}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shutdown the window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEngine_1_1Window_a322dcb73a7ab850e23ae168ca4711f05}{Init}} ()
+\item 
+\mbox{\Hypertarget{classEngine_1_1Window_abb7acac18eb1edff6779c9746cb2baa2}\label{classEngine_1_1Window_abb7acac18eb1edff6779c9746cb2baa2}} 
+void \mbox{\hyperlink{classEngine_1_1Window_abb7acac18eb1edff6779c9746cb2baa2}{Swap\+Buffers}} ()
+\begin{DoxyCompactList}\small\item\em Swap the buffers to render to the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \mbox{\hyperlink{classEngine_1_1Window_afc27f6827572ed5ce49994f95e5980eb}{Get\+Width}} ()
+\item 
+static unsigned int \mbox{\hyperlink{classEngine_1_1Window_a825a80bf329be3cb886a4a4f054aa50b}{Get\+Height}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wrapper for the display window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEngine_1_1Window_aaf4f1614ccafb30ad889b2c28b5894e3}\label{classEngine_1_1Window_aaf4f1614ccafb30ad889b2c28b5894e3}} 
+\index{Engine::Window@{Engine::Window}!Window@{Window}}
+\index{Window@{Window}!Engine::Window@{Engine::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily Engine\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{std\+::string}]{title,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Creates a window 
+\begin{DoxyParams}{Parameters}
+{\em title} & of the window we are creating \\
+\hline
+{\em width} & of the window \\
+\hline
+{\em height} & of the window \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1Window_a825a80bf329be3cb886a4a4f054aa50b}\label{classEngine_1_1Window_a825a80bf329be3cb886a4a4f054aa50b}} 
+\index{Engine::Window@{Engine::Window}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!Engine::Window@{Engine::Window}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily static unsigned int Engine\+::\+Window\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the height of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Window_afc27f6827572ed5ce49994f95e5980eb}\label{classEngine_1_1Window_afc27f6827572ed5ce49994f95e5980eb}} 
+\index{Engine::Window@{Engine::Window}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Engine::Window@{Engine::Window}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily static unsigned int Engine\+::\+Window\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the width of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Window_a322dcb73a7ab850e23ae168ca4711f05}\label{classEngine_1_1Window_a322dcb73a7ab850e23ae168ca4711f05}} 
+\index{Engine::Window@{Engine::Window}!Init@{Init}}
+\index{Init@{Init}!Engine::Window@{Engine::Window}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool Engine\+::\+Window\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize S\+DL and \mbox{\hyperlink{classEngine_1_1Window}{Window}} creation \begin{DoxyReturn}{Returns}
+false if the window could not be initialized 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Window.\+hpp\item 
+src/Window.\+cpp\end{DoxyCompactItemize}

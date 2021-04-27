@@ -1,0 +1,84 @@
+\hypertarget{structEngine_1_1Font}{}\doxysection{Engine\+::Font Struct Reference}
+\label{structEngine_1_1Font}\index{Engine::Font@{Engine::Font}}
+
+
+Data structure for storing font texture data. Doubles as a library for loading fonts into memory.  
+
+
+
+
+{\ttfamily \#include $<$Font.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Font_a3768dd5090f6d04633b80e94a3f247dc}\label{structEngine_1_1Font_a3768dd5090f6d04633b80e94a3f247dc}} 
+\mbox{\hyperlink{structEngine_1_1Font_a3768dd5090f6d04633b80e94a3f247dc}{Font}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Load a font object from a system path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structEngine_1_1Font_aa39dda27fb6059c21f09adcb885a5504}{render\+Text}} (const std\+::string \&text, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \&mesh\+Renderer, \mbox{\hyperlink{namespaceEngine_ae0f92b08830951a30d07caed1535903a}{Allignment}} alignment=C\+E\+N\+T\+ER, float z=0)
+\begin{DoxyCompactList}\small\item\em Renders texture data from a string and applies it to a \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Font_ae61f5820abe1e5529ab33873db704bc0}\label{structEngine_1_1Font_ae61f5820abe1e5529ab33873db704bc0}} 
+void {\bfseries render\+Text} (const std\+::string \&text, \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $\ast$mesh\+Renderer, \mbox{\hyperlink{namespaceEngine_ae0f92b08830951a30d07caed1535903a}{Allignment}} alignment=C\+E\+N\+T\+ER, float z=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Font_aa12a391e2b3f123815c371d950fbeac2}\label{structEngine_1_1Font_aa12a391e2b3f123815c371d950fbeac2}} 
+static void \mbox{\hyperlink{structEngine_1_1Font_aa12a391e2b3f123815c371d950fbeac2}{Init\+Font}} ()
+\begin{DoxyCompactList}\small\item\em Initialize global font data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Font_a2efc0162660e441f6b6bd36a7072f47a}\label{structEngine_1_1Font_a2efc0162660e441f6b6bd36a7072f47a}} 
+static void \mbox{\hyperlink{structEngine_1_1Font_a2efc0162660e441f6b6bd36a7072f47a}{Finalize\+Fonts}} ()
+\begin{DoxyCompactList}\small\item\em Delete any font loader data, not font texture data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Font_a17f72c2d715fec9e7d515639c8eba53e}\label{structEngine_1_1Font_a17f72c2d715fec9e7d515639c8eba53e}} 
+std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Glyph}{Glyph}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1Font_a17f72c2d715fec9e7d515639c8eba53e}{glyphs}}
+\begin{DoxyCompactList}\small\item\em lookup table from a ascii character code to graphical data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Font_a539173282f54f3b345e4f62b9bc282fc}\label{structEngine_1_1Font_a539173282f54f3b345e4f62b9bc282fc}} 
+bool \mbox{\hyperlink{structEngine_1_1Font_a539173282f54f3b345e4f62b9bc282fc}{single\+Tex}} = true
+\begin{DoxyCompactList}\small\item\em is there one texture for all of the characters? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Font_a56861c23965891d1e2ab7d9d2cccb683}\label{structEngine_1_1Font_a56861c23965891d1e2ab7d9d2cccb683}} 
+static uint \mbox{\hyperlink{structEngine_1_1Font_a56861c23965891d1e2ab7d9d2cccb683}{G\+L\+Y\+P\+H\+\_\+\+C\+O\+U\+NT}} = 256
+\begin{DoxyCompactList}\small\item\em Number of required glyphs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Font_a2f257a612a4c541b1f69610c1e9f80cd}\label{structEngine_1_1Font_a2f257a612a4c541b1f69610c1e9f80cd}} 
+static F\+T\+\_\+\+Library \mbox{\hyperlink{structEngine_1_1Font_a2f257a612a4c541b1f69610c1e9f80cd}{FT}} = nullptr
+\begin{DoxyCompactList}\small\item\em link to the Freetype font library \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Data structure for storing font texture data. Doubles as a library for loading fonts into memory. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1Font_aa39dda27fb6059c21f09adcb885a5504}\label{structEngine_1_1Font_aa39dda27fb6059c21f09adcb885a5504}} 
+\index{Engine::Font@{Engine::Font}!renderText@{renderText}}
+\index{renderText@{renderText}!Engine::Font@{Engine::Font}}
+\doxysubsubsection{\texorpdfstring{renderText()}{renderText()}}
+{\footnotesize\ttfamily void Engine\+::\+Font\+::render\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} $>$ \&}]{mesh\+Renderer,  }\item[{\mbox{\hyperlink{namespaceEngine_ae0f92b08830951a30d07caed1535903a}{Allignment}}}]{alignment = {\ttfamily CENTER},  }\item[{float}]{z = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Renders texture data from a string and applies it to a \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text to render \\
+\hline
+{\em mesh\+Renderer} & renderer reference \\
+\hline
+{\em alignment} & Text alignment (experimental) \\
+\hline
+{\em z} & z layer for the text (helpful for rendering text on top of other UI elements at z layer 0) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Font.\+hpp\item 
+src/Font.\+cpp\end{DoxyCompactItemize}

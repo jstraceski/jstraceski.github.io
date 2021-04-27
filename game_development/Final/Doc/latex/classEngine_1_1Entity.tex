@@ -1,0 +1,41 @@
+\hypertarget{classEngine_1_1Entity}{}\doxysection{Engine\+::Entity Class Reference}
+\label{classEngine_1_1Entity}\index{Engine::Entity@{Engine::Entity}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Entity_a5ba433d14a898e3e9a9721425e2e76f9}\label{classEngine_1_1Entity_a5ba433d14a898e3e9a9721425e2e76f9}} 
+{\bfseries Entity} (Entity\+ID id, \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} $\ast$scene)
+\item 
+\mbox{\Hypertarget{classEngine_1_1Entity_af09a37f34dcfa129f0ae5d2ba22acbb5}\label{classEngine_1_1Entity_af09a37f34dcfa129f0ae5d2ba22acbb5}} 
+{\bfseries Entity} (const \mbox{\hyperlink{classEngine_1_1Entity}{Entity}} \&other)=default
+\item 
+{\footnotesize template$<$class C , typename... Args$>$ }\\\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$ \mbox{\hyperlink{classEngine_1_1Entity_acfc61668665ca65ad8369c11dcd98cc9}{Add\+Component}} (Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classEngine_1_1Entity_a4680d77f455f0a8d45f3c57c3b834615}\label{classEngine_1_1Entity_a4680d77f455f0a8d45f3c57c3b834615}} 
+{\footnotesize template$<$class C , class G $>$ }\\\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$ \mbox{\hyperlink{classEngine_1_1Entity_a4680d77f455f0a8d45f3c57c3b834615}{Add\+Component}} (G c)
+\begin{DoxyCompactList}\small\item\em Adds a component of type C to an entity without args can take in any arbitrary type and attempts a dynamic cast. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Entity_a85c4b6a7eade83020a4c97aad643a9ad}\label{classEngine_1_1Entity_a85c4b6a7eade83020a4c97aad643a9ad}} 
+{\footnotesize template$<$class C $>$ }\\\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$ \mbox{\hyperlink{classEngine_1_1Entity_a85c4b6a7eade83020a4c97aad643a9ad}{Add\+Component}} (C \&\&c)
+\begin{DoxyCompactList}\small\item\em Adds a component of type C to an entity without args. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Entity_a4d32001cdfc204c4359b3faedfc0a84a}\label{classEngine_1_1Entity_a4d32001cdfc204c4359b3faedfc0a84a}} 
+{\footnotesize template$<$class C $>$ }\\\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$ \mbox{\hyperlink{classEngine_1_1Entity_a4d32001cdfc204c4359b3faedfc0a84a}{Get\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Adds a component of type C to an entity without args. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Entity_aac8adb45827c49d082ec28ec711d1638}\label{classEngine_1_1Entity_aac8adb45827c49d082ec28ec711d1638}} 
+Entity\+ID {\bfseries Get\+ID} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1Entity_acfc61668665ca65ad8369c11dcd98cc9}\label{classEngine_1_1Entity_acfc61668665ca65ad8369c11dcd98cc9}} 
+\index{Engine::Entity@{Engine::Entity}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!Engine::Entity@{Engine::Entity}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily template$<$class C , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$C$>$ Engine\+::\+Entity\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a component of type C to an entity with args specified. Allows us to construct the component on the fly. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Entity.\+hpp\item 
+src/Entity.\+cpp\end{DoxyCompactItemize}

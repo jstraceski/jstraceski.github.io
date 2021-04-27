@@ -1,0 +1,365 @@
+\hypertarget{structEngine_1_1Physics}{}\doxysection{Engine\+::Physics Struct Reference}
+\label{structEngine_1_1Physics}\index{Engine::Physics@{Engine::Physics}}
+
+
+{\ttfamily \#include $<$Physics.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}{Collision\+Type}} \{ {\bfseries D2}, 
+{\bfseries D3}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} $>$ \mbox{\hyperlink{structEngine_1_1Physics_aee95e2ccb3238562818b91db168c588e}{Raycast}} (const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene, glm\+::vec3 pos, glm\+::vec3 dir, float max\+Distance=F\+L\+T\+\_\+\+M\+AX)
+\item 
+static \mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} \mbox{\hyperlink{structEngine_1_1Physics_a360a2cb0497bbf597878ef97fdda2a66}{Raycast\+Closest}} (const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene, glm\+::vec3 pos, glm\+::vec3 dir, float max\+Distance=F\+L\+T\+\_\+\+M\+AX)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Physics_a6581b848e6831f2e26fc270505bee40f}\label{structEngine_1_1Physics_a6581b848e6831f2e26fc270505bee40f}} 
+static \mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} \mbox{\hyperlink{structEngine_1_1Physics_a6581b848e6831f2e26fc270505bee40f}{G\+J\+K\+\_\+\+E\+PA}} (const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&colliderA, const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&colliderB, \mbox{\hyperlink{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}{Collision\+Type}} type=D3)
+\begin{DoxyCompactList}\small\item\em Combination Gilbert-\/\+Johnson-\/\+Keerthi Expanding-\/\+Polytope-\/\+Algorithm T\+O\+DO\+: (not fully memory optimized) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} \mbox{\hyperlink{structEngine_1_1Physics_a1d257e7c01c51d10ffd41fb4759389b1}{E\+P\+A2}} (\mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \&simplex, const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&shapeA, const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&shapeB)
+\begin{DoxyCompactList}\small\item\em Expanding Polytope Algorithm Implementation Calculates the separation normal from a colliding G\+JK simplex. Assumes that the input simplex contains a collision. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{structEngine_1_1Physics_a6fa83175d5d9a8d23f92287ade3e2d62}{G\+JK}} (const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&colliderA, const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&colliderB, \mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \&simplex, \mbox{\hyperlink{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}{Collision\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Gilbert-\/\+Johnson-\/\+Keerthi collision detection algorithm \href{https://blog.winter.dev/2020/gjk-algorithm/}{\texttt{ https\+://blog.\+winter.\+dev/2020/gjk-\/algorithm/}} improved from. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Physics_a91735e7efc3e688af6a108b15c63ffcf}\label{structEngine_1_1Physics_a91735e7efc3e688af6a108b15c63ffcf}} 
+static bool {\bfseries Next\+Simplex} (\mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \&simplex, glm\+::vec3 \&direction, \mbox{\hyperlink{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}{Collision\+Type}} type)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Physics_a86b1418008eb263fedf805e2b5df79be}\label{structEngine_1_1Physics_a86b1418008eb263fedf805e2b5df79be}} 
+static bool {\bfseries Line} (\mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \&simplex, glm\+::vec3 \&direction)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Physics_a56459502eaa80206d620a305f872fa12}\label{structEngine_1_1Physics_a56459502eaa80206d620a305f872fa12}} 
+static bool {\bfseries Triangle} (\mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \&simplex, glm\+::vec3 \&direction)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Physics_aa48b4fdb11fca0ab9c0aaf768a67470a}\label{structEngine_1_1Physics_aa48b4fdb11fca0ab9c0aaf768a67470a}} 
+static bool {\bfseries Tetrahedron} (\mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \&simplex, glm\+::vec3 \&direction)
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Physics_a25d196b2f46de2be180f7ae9b5ff6535}{Update}} (\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene)
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Physics_a19805ae2d1135d6b28c31c862906f08f}{simulate\+System}} (\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene, float dt)
+\begin{DoxyCompactList}\small\item\em Simulate the scene elements by a delta t Partially Implements Extended Position Based Dynamics. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} \mbox{\hyperlink{structEngine_1_1Physics_a841f5eccaba4b2dc8c34cc0edec0f9d0}{process\+Joint}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Joint}{Joint}} $>$ \&joint, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&pe1, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&pe2)
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Physics_a02c5b40d071975e4fd3603505333eeba}{process\+Joints}} (const std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Joint}{Joint}} $>$$>$ \&joints, float h)
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Physics_a0b505f6e8097c3c1b4a76fa9234028fa}{process\+Collisions}} (std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$$>$ \&elements, float h, \mbox{\hyperlink{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}{Collision\+Type}} type=D3)
+\begin{DoxyCompactList}\small\item\em Generate collision data and solve it. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{structEngine_1_1Physics_a84ec18277a99262d1ad2342f61ae1fd8}{apply\+Manifold}} (\mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} cp, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&e1, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&e2, float h)
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Joint}{Joint}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1Physics_a1af2c4d1198dab8a0522ee3fd1f33bd2}{Collect\+Joints}} (const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene)
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1Physics_a91b05ae5eb91481460128ec54108d814}{Collect\+Bodies\+And\+Particles}} (\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene)
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1Physics_a992dcd063d690b02e0721b4807c5052d}{Collect2\+D\+Elements}} (\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene)
+\item 
+static \mbox{\hyperlink{structEngine_1_1Support}{Support}} \mbox{\hyperlink{structEngine_1_1Physics_a820b3a72a708c20e2069e98b1636195f}{furthest\+Diff}} (const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&shapeA, const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&shapeB, const glm\+::vec3 \&norm, \mbox{\hyperlink{structEngine_1_1Support}{Support}} \&support)
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Physics_a0f61eaa8849a81b1655db1bbfd110bd9}{Barycentric}} (const glm\+::vec3 \&p, const glm\+::vec3 \&a, const glm\+::vec3 \&b, const glm\+::vec3 \&c, float \&u, float \&v, float \&w)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+X\+P\+BD G\+JK E\+PA style physics engine (enjoy \+:) ). 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}\label{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}} 
+\index{Engine::Physics@{Engine::Physics}!CollisionType@{CollisionType}}
+\index{CollisionType@{CollisionType}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{CollisionType}{CollisionType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}{Engine\+::\+Physics\+::\+Collision\+Type}}}
+
+Enumeration for indexing 3D or 2D physics interactions. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1Physics_a84ec18277a99262d1ad2342f61ae1fd8}\label{structEngine_1_1Physics_a84ec18277a99262d1ad2342f61ae1fd8}} 
+\index{Engine::Physics@{Engine::Physics}!applyManifold@{applyManifold}}
+\index{applyManifold@{applyManifold}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{applyManifold()}{applyManifold()}}
+{\footnotesize\ttfamily static void Engine\+::\+Physics\+::apply\+Manifold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}}}]{cp,  }\item[{\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&}]{e1,  }\item[{\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&}]{e2,  }\item[{float}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Process delta x and delta q data from joints or collisions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & delta data \\
+\hline
+{\em e1} & physics entity 1 \\
+\hline
+{\em e2} & physics entitiy 2 \\
+\hline
+{\em h} & delta t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Physics_a0f61eaa8849a81b1655db1bbfd110bd9}\label{structEngine_1_1Physics_a0f61eaa8849a81b1655db1bbfd110bd9}} 
+\index{Engine::Physics@{Engine::Physics}!Barycentric@{Barycentric}}
+\index{Barycentric@{Barycentric}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{Barycentric()}{Barycentric()}}
+{\footnotesize\ttfamily static void Engine\+::\+Physics\+::\+Barycentric (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{p,  }\item[{const glm\+::vec3 \&}]{a,  }\item[{const glm\+::vec3 \&}]{b,  }\item[{const glm\+::vec3 \&}]{c,  }\item[{float \&}]{u,  }\item[{float \&}]{v,  }\item[{float \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Calculate barycentric coordinates.
+
+lovingly adapted from \href{https://gamedev.stackexchange.com/questions/23743/whats-the-most-efficient-way-to-find-barycentric-coordinates}{\texttt{ https\+://gamedev.\+stackexchange.\+com/questions/23743/whats-\/the-\/most-\/efficient-\/way-\/to-\/find-\/barycentric-\/coordinates}}
+
+Inputs are the collision point the face vertexes and the outputs are the triangle coordinates (u, v, w).
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em c} & \\
+\hline
+{\em u} & \\
+\hline
+{\em v} & \\
+\hline
+{\em w} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Physics_a992dcd063d690b02e0721b4807c5052d}\label{structEngine_1_1Physics_a992dcd063d690b02e0721b4807c5052d}} 
+\index{Engine::Physics@{Engine::Physics}!Collect2DElements@{Collect2DElements}}
+\index{Collect2DElements@{Collect2DElements}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{Collect2DElements()}{Collect2DElements()}}
+{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}}$>$ $>$ Engine\+::\+Physics\+::\+Collect2\+D\+Elements (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Generate a list of 2D \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} from the scene. 
+\begin{DoxyParams}{Parameters}
+{\em scene} & reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a91b05ae5eb91481460128ec54108d814}\label{structEngine_1_1Physics_a91b05ae5eb91481460128ec54108d814}} 
+\index{Engine::Physics@{Engine::Physics}!CollectBodiesAndParticles@{CollectBodiesAndParticles}}
+\index{CollectBodiesAndParticles@{CollectBodiesAndParticles}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{CollectBodiesAndParticles()}{CollectBodiesAndParticles()}}
+{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}}$>$ $>$ Engine\+::\+Physics\+::\+Collect\+Bodies\+And\+Particles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Generate a list of \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} from the scene.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a1af2c4d1198dab8a0522ee3fd1f33bd2}\label{structEngine_1_1Physics_a1af2c4d1198dab8a0522ee3fd1f33bd2}} 
+\index{Engine::Physics@{Engine::Physics}!CollectJoints@{CollectJoints}}
+\index{CollectJoints@{CollectJoints}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{CollectJoints()}{CollectJoints()}}
+{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1Joint}{Joint}}$>$ $>$ Engine\+::\+Physics\+::\+Collect\+Joints (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Collect joint Components from the \mbox{\hyperlink{classEngine_1_1Scene}{Scene}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & scene reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of Joints 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a1d257e7c01c51d10ffd41fb4759389b1}\label{structEngine_1_1Physics_a1d257e7c01c51d10ffd41fb4759389b1}} 
+\index{Engine::Physics@{Engine::Physics}!EPA2@{EPA2}}
+\index{EPA2@{EPA2}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{EPA2()}{EPA2()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} Engine\+::\+Physics\+::\+E\+P\+A2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \&}]{simplex,  }\item[{const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&}]{shapeA,  }\item[{const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&}]{shapeB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Expanding Polytope Algorithm Implementation Calculates the separation normal from a colliding G\+JK simplex. Assumes that the input simplex contains a collision. 
+
+lovingly adapted from \href{https://github.com/kevinmoran/GJK/blob/master/GJK.h}{\texttt{ https\+://github.\+com/kevinmoran/\+G\+J\+K/blob/master/\+G\+J\+K.\+h}} 
+\begin{DoxyParams}{Parameters}
+{\em simplex} & output from running G\+JK \\
+\hline
+{\em shapeA} & shape definition for object A \\
+\hline
+{\em shapeB} & shape definition for object B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct containing collision data (always returns a collision normal) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a820b3a72a708c20e2069e98b1636195f}\label{structEngine_1_1Physics_a820b3a72a708c20e2069e98b1636195f}} 
+\index{Engine::Physics@{Engine::Physics}!furthestDiff@{furthestDiff}}
+\index{furthestDiff@{furthestDiff}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{furthestDiff()}{furthestDiff()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structEngine_1_1Support}{Support}} Engine\+::\+Physics\+::furthest\+Diff (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&}]{shapeA,  }\item[{const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&}]{shapeB,  }\item[{const glm\+::vec3 \&}]{norm,  }\item[{\mbox{\hyperlink{structEngine_1_1Support}{Support}} \&}]{support }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Find the difference vector between the two furthest vertex points in the two shapes along the normal. 
+\begin{DoxyParams}{Parameters}
+{\em shapeA} & \\
+\hline
+{\em shapeB} & \\
+\hline
+{\em norm} & \\
+\hline
+{\em support} & storage for the support points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the support point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a6fa83175d5d9a8d23f92287ade3e2d62}\label{structEngine_1_1Physics_a6fa83175d5d9a8d23f92287ade3e2d62}} 
+\index{Engine::Physics@{Engine::Physics}!GJK@{GJK}}
+\index{GJK@{GJK}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{GJK()}{GJK()}}
+{\footnotesize\ttfamily static bool Engine\+::\+Physics\+::\+G\+JK (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&}]{colliderA,  }\item[{const \mbox{\hyperlink{structEngine_1_1Shape}{Shape}} \&}]{colliderB,  }\item[{\mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \&}]{simplex,  }\item[{\mbox{\hyperlink{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}{Collision\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gilbert-\/\+Johnson-\/\+Keerthi collision detection algorithm \href{https://blog.winter.dev/2020/gjk-algorithm/}{\texttt{ https\+://blog.\+winter.\+dev/2020/gjk-\/algorithm/}} improved from. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colliderA} & shape definition for object A \\
+\hline
+{\em colliderB} & shape definition for object B \\
+\hline
+{\em simplex} & storage for simplex data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a there is a collision, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a0b505f6e8097c3c1b4a76fa9234028fa}\label{structEngine_1_1Physics_a0b505f6e8097c3c1b4a76fa9234028fa}} 
+\index{Engine::Physics@{Engine::Physics}!processCollisions@{processCollisions}}
+\index{processCollisions@{processCollisions}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{processCollisions()}{processCollisions()}}
+{\footnotesize\ttfamily static void Engine\+::\+Physics\+::process\+Collisions (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$$>$ \&}]{elements,  }\item[{float}]{h,  }\item[{\mbox{\hyperlink{structEngine_1_1Physics_a9f9c06130404b164d3533e0ad416d2e7}{Collision\+Type}}}]{type = {\ttfamily D3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Generate collision data and solve it. 
+
+Using G\+KJ and E\+PA produce collision normals and then solve them using X\+P\+BD.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elements} & list of physics elements \\
+\hline
+{\em h} & delta t \\
+\hline
+{\em type} & type of collisions to produce (for 2D the physics are not calculated) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Physics_a841f5eccaba4b2dc8c34cc0edec0f9d0}\label{structEngine_1_1Physics_a841f5eccaba4b2dc8c34cc0edec0f9d0}} 
+\index{Engine::Physics@{Engine::Physics}!processJoint@{processJoint}}
+\index{processJoint@{processJoint}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{processJoint()}{processJoint()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} Engine\+::\+Physics\+::process\+Joint (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Joint}{Joint}} $>$ \&}]{joint,  }\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&}]{pe1,  }\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&}]{pe2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Process a \mbox{\hyperlink{structEngine_1_1Joint}{Joint}} structure using physics entity data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint} & \\
+\hline
+{\em pe1} & \\
+\hline
+{\em pe2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A collision point representing any deltas to solve. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a02c5b40d071975e4fd3603505333eeba}\label{structEngine_1_1Physics_a02c5b40d071975e4fd3603505333eeba}} 
+\index{Engine::Physics@{Engine::Physics}!processJoints@{processJoints}}
+\index{processJoints@{processJoints}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{processJoints()}{processJoints()}}
+{\footnotesize\ttfamily static void Engine\+::\+Physics\+::process\+Joints (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Joint}{Joint}} $>$$>$ \&}]{joints,  }\item[{float}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Generate \mbox{\hyperlink{structEngine_1_1Joint}{Joint}} collision interactions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joints} & list of joints \\
+\hline
+{\em h} & delta t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Physics_aee95e2ccb3238562818b91db168c588e}\label{structEngine_1_1Physics_aee95e2ccb3238562818b91db168c588e}} 
+\index{Engine::Physics@{Engine::Physics}!Raycast@{Raycast}}
+\index{Raycast@{Raycast}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{Raycast()}{Raycast()}}
+{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}}$>$ Engine\+::\+Physics\+::\+Raycast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{scene,  }\item[{glm\+::vec3}]{pos,  }\item[{glm\+::vec3}]{dir,  }\item[{float}]{max\+Distance = {\ttfamily FLT\+\_\+MAX} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Unimplemented raycasting function. T\+O\+DO\+: Implement and test 
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em dir} & \\
+\hline
+{\em max\+Distance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a360a2cb0497bbf597878ef97fdda2a66}\label{structEngine_1_1Physics_a360a2cb0497bbf597878ef97fdda2a66}} 
+\index{Engine::Physics@{Engine::Physics}!RaycastClosest@{RaycastClosest}}
+\index{RaycastClosest@{RaycastClosest}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{RaycastClosest()}{RaycastClosest()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structEngine_1_1CollisionPoint}{Collision\+Point}} Engine\+::\+Physics\+::\+Raycast\+Closest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{scene,  }\item[{glm\+::vec3}]{pos,  }\item[{glm\+::vec3}]{dir,  }\item[{float}]{max\+Distance = {\ttfamily FLT\+\_\+MAX} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Another unimplemented Raycasting function. T\+O\+DO\+: Implement and test 
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em dir} & \\
+\hline
+{\em max\+Distance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Physics_a19805ae2d1135d6b28c31c862906f08f}\label{structEngine_1_1Physics_a19805ae2d1135d6b28c31c862906f08f}} 
+\index{Engine::Physics@{Engine::Physics}!simulateSystem@{simulateSystem}}
+\index{simulateSystem@{simulateSystem}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{simulateSystem()}{simulateSystem()}}
+{\footnotesize\ttfamily static void Engine\+::\+Physics\+::simulate\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{scene,  }\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Simulate the scene elements by a delta t Partially Implements Extended Position Based Dynamics. 
+
+Collects Physics\+Entities from the scene. Calculates their interactions. Produces delta values. And updates the corresponding scene components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & scene reference \\
+\hline
+{\em dt} & time delta \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Physics_a25d196b2f46de2be180f7ae9b5ff6535}\label{structEngine_1_1Physics_a25d196b2f46de2be180f7ae9b5ff6535}} 
+\index{Engine::Physics@{Engine::Physics}!Update@{Update}}
+\index{Update@{Update}!Engine::Physics@{Engine::Physics}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily static void Engine\+::\+Physics\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Update the physics parameters of the scene. 
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Physics.\+hpp\end{DoxyCompactItemize}

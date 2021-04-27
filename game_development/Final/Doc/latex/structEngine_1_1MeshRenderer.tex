@@ -1,0 +1,110 @@
+\hypertarget{structEngine_1_1MeshRenderer}{}\doxysection{Engine\+::Mesh\+Renderer Struct Reference}
+\label{structEngine_1_1MeshRenderer}\index{Engine::MeshRenderer@{Engine::MeshRenderer}}
+
+
+\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} Component for passing drawing data to the renderer. Stores vertex data and references to the texture maps which they belong to.  
+
+
+
+
+{\ttfamily \#include $<$Mesh\+Renderer.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Mesh\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{structEngine_1_1MeshRenderer__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structEngine_1_1MeshRenderer_a3968bb2caba933e3c20891e48421254d}{Set\+Mesh}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}} $>$ \&render\+Mesh)
+\item 
+void \mbox{\hyperlink{structEngine_1_1MeshRenderer_af317037eee3304d89374da7e2155ab72}{Set\+Map}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&tex)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1ColorMap}{Color\+Map}} $>$ \mbox{\hyperlink{structEngine_1_1MeshRenderer_af59dc8d9317680057265605f25e41853}{color\+Map}} = nullptr
+\item 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureMap}{Texture\+Map}} $>$ \mbox{\hyperlink{structEngine_1_1MeshRenderer_ad9b8ce2b89b1e8c72b408a38dd24fb32}{map}} = nullptr
+\item 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \mbox{\hyperlink{structEngine_1_1MeshRenderer_a88f2d78cf83b0c519e675e3538f529cc}{texture}} = nullptr
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1MeshRenderer_af7d282c83d538878db7b20686352a8b0}{vertex\+Textures}} = std\+::vector$<$\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{classEngine_1_1Texture}{Texture}}$>$$>$()
+\item 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}} $>$ \mbox{\hyperlink{structEngine_1_1MeshRenderer_a269f2ae362335e231b969bbca78158d8}{mesh}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEngine_1_1Scene}{Scene}} Component for passing drawing data to the renderer. Stores vertex data and references to the texture maps which they belong to. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1MeshRenderer_af317037eee3304d89374da7e2155ab72}\label{structEngine_1_1MeshRenderer_af317037eee3304d89374da7e2155ab72}} 
+\index{Engine::MeshRenderer@{Engine::MeshRenderer}!SetMap@{SetMap}}
+\index{SetMap@{SetMap}!Engine::MeshRenderer@{Engine::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{SetMap()}{SetMap()}}
+{\footnotesize\ttfamily void Engine\+::\+Mesh\+Renderer\+::\+Set\+Map (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the texture mapping of the renderer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & the texture mapping \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1MeshRenderer_a3968bb2caba933e3c20891e48421254d}\label{structEngine_1_1MeshRenderer_a3968bb2caba933e3c20891e48421254d}} 
+\index{Engine::MeshRenderer@{Engine::MeshRenderer}!SetMesh@{SetMesh}}
+\index{SetMesh@{SetMesh}!Engine::MeshRenderer@{Engine::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{SetMesh()}{SetMesh()}}
+{\footnotesize\ttfamily void Engine\+::\+Mesh\+Renderer\+::\+Set\+Mesh (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}} $>$ \&}]{render\+Mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the mesh of the renderer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em render\+Mesh} & linked render mesh \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structEngine_1_1MeshRenderer_af59dc8d9317680057265605f25e41853}\label{structEngine_1_1MeshRenderer_af59dc8d9317680057265605f25e41853}} 
+\index{Engine::MeshRenderer@{Engine::MeshRenderer}!colorMap@{colorMap}}
+\index{colorMap@{colorMap}!Engine::MeshRenderer@{Engine::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{colorMap}{colorMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1ColorMap}{Color\+Map}}$>$ Engine\+::\+Mesh\+Renderer\+::color\+Map = nullptr}
+
+Mapping data for color mixing. \mbox{\Hypertarget{structEngine_1_1MeshRenderer_ad9b8ce2b89b1e8c72b408a38dd24fb32}\label{structEngine_1_1MeshRenderer_ad9b8ce2b89b1e8c72b408a38dd24fb32}} 
+\index{Engine::MeshRenderer@{Engine::MeshRenderer}!map@{map}}
+\index{map@{map}!Engine::MeshRenderer@{Engine::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1TextureMap}{Texture\+Map}}$>$ Engine\+::\+Mesh\+Renderer\+::map = nullptr}
+
+\mbox{\hyperlink{classEngine_1_1Texture}{Texture}} coordinate mapping data indexed by mesh values. \mbox{\Hypertarget{structEngine_1_1MeshRenderer_a269f2ae362335e231b969bbca78158d8}\label{structEngine_1_1MeshRenderer_a269f2ae362335e231b969bbca78158d8}} 
+\index{Engine::MeshRenderer@{Engine::MeshRenderer}!mesh@{mesh}}
+\index{mesh@{mesh}!Engine::MeshRenderer@{Engine::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}}$>$ Engine\+::\+Mesh\+Renderer\+::mesh = nullptr}
+
+\mbox{\hyperlink{structEngine_1_1Vertex}{Vertex}} data storage. Can be the only thing passed to the renderer, as it is where the data ends up overwriting. \mbox{\Hypertarget{structEngine_1_1MeshRenderer_a88f2d78cf83b0c519e675e3538f529cc}\label{structEngine_1_1MeshRenderer_a88f2d78cf83b0c519e675e3538f529cc}} 
+\index{Engine::MeshRenderer@{Engine::MeshRenderer}!texture@{texture}}
+\index{texture@{texture}!Engine::MeshRenderer@{Engine::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{classEngine_1_1Texture}{Texture}}$>$ Engine\+::\+Mesh\+Renderer\+::texture = nullptr}
+
+Single texture reference for simple vertex rendering \mbox{\Hypertarget{structEngine_1_1MeshRenderer_af7d282c83d538878db7b20686352a8b0}\label{structEngine_1_1MeshRenderer_af7d282c83d538878db7b20686352a8b0}} 
+\index{Engine::MeshRenderer@{Engine::MeshRenderer}!vertexTextures@{vertexTextures}}
+\index{vertexTextures@{vertexTextures}!Engine::MeshRenderer@{Engine::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{vertexTextures}{vertexTextures}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{classEngine_1_1Texture}{Texture}}$>$ $>$ Engine\+::\+Mesh\+Renderer\+::vertex\+Textures = std\+::vector$<$\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{classEngine_1_1Texture}{Texture}}$>$$>$()}
+
+Mapped texture references index by mesh values. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Mesh\+Renderer.\+hpp\end{DoxyCompactItemize}

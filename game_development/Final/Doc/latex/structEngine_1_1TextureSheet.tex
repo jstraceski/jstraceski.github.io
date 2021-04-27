@@ -1,0 +1,37 @@
+\hypertarget{structEngine_1_1TextureSheet}{}\doxysection{Engine\+::Texture\+Sheet Struct Reference}
+\label{structEngine_1_1TextureSheet}\index{Engine::TextureSheet@{Engine::TextureSheet}}
+
+
+{\ttfamily \#include $<$Texture\+Sheet.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1TextureSheet_aa91c23c8d2f262c42869824ad0331442}{load\+Sheet}} (const std\+::string \&path, int input\+Width, int input\+Height)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Library for loading a sheet of images into memory 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1TextureSheet_aa91c23c8d2f262c42869824ad0331442}\label{structEngine_1_1TextureSheet_aa91c23c8d2f262c42869824ad0331442}} 
+\index{Engine::TextureSheet@{Engine::TextureSheet}!loadSheet@{loadSheet}}
+\index{loadSheet@{loadSheet}!Engine::TextureSheet@{Engine::TextureSheet}}
+\doxysubsubsection{\texorpdfstring{loadSheet()}{loadSheet()}}
+{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}}$>$ $>$ Engine\+::\+Texture\+Sheet\+::load\+Sheet (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{int}]{input\+Width,  }\item[{int}]{input\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+From a system path and a standard width and size generate a list of \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} references and texture coordinates. 
+\begin{DoxyParams}{Parameters}
+{\em path} & system path \\
+\hline
+{\em input\+Width} & width of an individual sub-\/image \\
+\hline
+{\em input\+Height} & height of an individual sub-\/image @retrun a list of \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Texture\+Sheet.\+hpp\end{DoxyCompactItemize}

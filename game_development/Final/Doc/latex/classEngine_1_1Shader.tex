@@ -1,0 +1,59 @@
+\hypertarget{classEngine_1_1Shader}{}\doxysection{Engine\+::Shader Class Reference}
+\label{classEngine_1_1Shader}\index{Engine::Shader@{Engine::Shader}}
+
+
+Container for a shader.  
+
+
+
+
+{\ttfamily \#include $<$Shader.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_a7dd52b1e51939d22d6b2c943ba886ff3}\label{classEngine_1_1Shader_a7dd52b1e51939d22d6b2c943ba886ff3}} 
+\mbox{\hyperlink{classEngine_1_1Shader_a7dd52b1e51939d22d6b2c943ba886ff3}{Shader}} (const std\+::string \&vert, const std\+::string \&frag)
+\begin{DoxyCompactList}\small\item\em constructor, requires a vertex shader and a fragment shader in text form \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_a30c7746dcb6f0921f00e3a7ad5908654}\label{classEngine_1_1Shader_a30c7746dcb6f0921f00e3a7ad5908654}} 
+\mbox{\hyperlink{classEngine_1_1Shader_a30c7746dcb6f0921f00e3a7ad5908654}{Shader}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em constructor, requires a path to a shader file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_a0c2229c824bb6e61552a90516d5ddd58}\label{classEngine_1_1Shader_a0c2229c824bb6e61552a90516d5ddd58}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_a0c2229c824bb6e61552a90516d5ddd58}{Bind}} ()
+\begin{DoxyCompactList}\small\item\em bind the shader to drawspace \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_a74499227223967c94eb3db2307009da7}\label{classEngine_1_1Shader_a74499227223967c94eb3db2307009da7}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_a74499227223967c94eb3db2307009da7}{Unbind}} ()
+\begin{DoxyCompactList}\small\item\em unbind the the shader from the drawing register \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_ab414397baab451b037c6123fa4512e75}\label{classEngine_1_1Shader_ab414397baab451b037c6123fa4512e75}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_ab414397baab451b037c6123fa4512e75}{Set\+Uniform\+Int1}} (const std\+::string \&name, int i)
+\begin{DoxyCompactList}\small\item\em set a uniform int \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_a6bca6935cf7498c0c60e06ad3cd31902}\label{classEngine_1_1Shader_a6bca6935cf7498c0c60e06ad3cd31902}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_a6bca6935cf7498c0c60e06ad3cd31902}{Set\+Uniform\+IntN}} (const std\+::string \&name, int $\ast$values, const uint32\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em set n uniform ints \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_ae306752b80e93aff80947e4baac33f55}\label{classEngine_1_1Shader_ae306752b80e93aff80947e4baac33f55}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_ae306752b80e93aff80947e4baac33f55}{Set\+Uniform\+Float1}} (const std\+::string \&name, float v0)
+\begin{DoxyCompactList}\small\item\em set a uniform float \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_acaa36add384747e86a5d000ae164c1f8}\label{classEngine_1_1Shader_acaa36add384747e86a5d000ae164c1f8}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_acaa36add384747e86a5d000ae164c1f8}{Set\+Uniform\+Float2}} (const std\+::string \&name, float v0, float v1)
+\begin{DoxyCompactList}\small\item\em set a uniform float pair \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_a5c20eab9a7c26780ad5a6c222218221c}\label{classEngine_1_1Shader_a5c20eab9a7c26780ad5a6c222218221c}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_a5c20eab9a7c26780ad5a6c222218221c}{Set\+Uniform\+Float3}} (const std\+::string \&name, float v0, float v1, float v2)
+\begin{DoxyCompactList}\small\item\em set a uniform float triplet \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_a35cff257c7a2158318146271af1365a6}\label{classEngine_1_1Shader_a35cff257c7a2158318146271af1365a6}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_a35cff257c7a2158318146271af1365a6}{Set\+Uniform\+Float4}} (const std\+::string \&name, float v0, float v1, float v2, float v3)
+\begin{DoxyCompactList}\small\item\em set a uniform float quad \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_a5debfd591a63d624fdf716bdf3f299f3}\label{classEngine_1_1Shader_a5debfd591a63d624fdf716bdf3f299f3}} 
+void \mbox{\hyperlink{classEngine_1_1Shader_a5debfd591a63d624fdf716bdf3f299f3}{Set\+Uniform\+Mat4}} (const std\+::string \&name, const glm\+::mat4)
+\begin{DoxyCompactList}\small\item\em set a uniform float 4x4 matrix \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Shader_ad7411fd15d022469cd33b003c444c475}\label{classEngine_1_1Shader_ad7411fd15d022469cd33b003c444c475}} 
+unsigned int \mbox{\hyperlink{classEngine_1_1Shader_ad7411fd15d022469cd33b003c444c475}{Create\+Shader}} (const std\+::string \&vert, const std\+::string \&frag)
+\begin{DoxyCompactList}\small\item\em create a shader from vertex string and a fragment string returns a system id \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Container for a shader. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Shader.\+hpp\item 
+src/Shader.\+cpp\end{DoxyCompactItemize}

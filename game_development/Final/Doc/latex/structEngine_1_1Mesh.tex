@@ -1,0 +1,56 @@
+\hypertarget{structEngine_1_1Mesh}{}\doxysection{Engine\+::Mesh Struct Reference}
+\label{structEngine_1_1Mesh}\index{Engine::Mesh@{Engine::Mesh}}
+
+
+A set of vertices used for drawing.  
+
+
+
+
+{\ttfamily \#include $<$Mesh.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Mesh_a7c0c93022fd7cedfef725f26b80d46b9}\label{structEngine_1_1Mesh_a7c0c93022fd7cedfef725f26b80d46b9}} 
+{\bfseries Mesh} (std\+::vector$<$ \mbox{\hyperlink{structEngine_1_1Vertex}{Vertex}} $>$ \mbox{\hyperlink{structEngine_1_1Mesh_a16d551bae406d2672f054d412dbb4708}{verts}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Mesh_a6caf860295991ef123f7a307f290fb0e}\label{structEngine_1_1Mesh_a6caf860295991ef123f7a307f290fb0e}} 
+static \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}} $>$ {\bfseries get\+Primative} (Primative p)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Mesh_aca3dc63d787676678eff48c68a60993d}\label{structEngine_1_1Mesh_aca3dc63d787676678eff48c68a60993d}} 
+static std\+::vector$<$ glm\+::vec3 $>$ {\bfseries quad\+Verts} (glm\+::mat4 tf)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Mesh_a67c28843f016e91adad3666124186b7f}\label{structEngine_1_1Mesh_a67c28843f016e91adad3666124186b7f}} 
+static std\+::vector$<$ \mbox{\hyperlink{structEngine_1_1Vertex}{Vertex}} $>$ {\bfseries quad} (glm\+::mat4 tf)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Mesh_a5f5e03e4381f7db231823a7e138bb0f5}\label{structEngine_1_1Mesh_a5f5e03e4381f7db231823a7e138bb0f5}} 
+static \mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}} {\bfseries Quad} ()
+\item 
+\mbox{\Hypertarget{structEngine_1_1Mesh_ad7716c3208729c101436cf8b2144bb50}\label{structEngine_1_1Mesh_ad7716c3208729c101436cf8b2144bb50}} 
+static \mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}} {\bfseries Cube} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Mesh_a16d551bae406d2672f054d412dbb4708}\label{structEngine_1_1Mesh_a16d551bae406d2672f054d412dbb4708}} 
+std\+::vector$<$ \mbox{\hyperlink{structEngine_1_1Vertex}{Vertex}} $>$ \mbox{\hyperlink{structEngine_1_1Mesh_a16d551bae406d2672f054d412dbb4708}{verts}}
+\begin{DoxyCompactList}\small\item\em Vertices for this mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Mesh_af8626e919ae83652c5d6e2c7e553829b}\label{structEngine_1_1Mesh_af8626e919ae83652c5d6e2c7e553829b}} 
+static std\+::unordered\+\_\+map$<$ Primative, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}} $>$ $>$ {\bfseries primatives} = std\+::unordered\+\_\+map$<$Primative, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1Mesh}{Mesh}}$>$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A set of vertices used for drawing. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Mesh.\+hpp\item 
+src/Mesh.\+cpp\end{DoxyCompactItemize}

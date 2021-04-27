@@ -72,6 +72,7 @@ ul.posts li {
 /* div { position:fixed; width:50%; height:50% } */
 #NW { background:orange; height: 325px  }
 #NE { background:blue; height: 325px     }
+#NS { background:cyan; height: 325px     }
 
 a.border {
   text-decoration: none;

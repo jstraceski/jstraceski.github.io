@@ -1,0 +1,79 @@
+\hypertarget{classEngine_1_1Component}{}\doxysection{Engine\+::Component$<$ C $>$ Class Template Reference}
+\label{classEngine_1_1Component}\index{Engine::Component$<$ C $>$@{Engine::Component$<$ C $>$}}
+
+
+{\ttfamily \#include $<$Component.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Component$<$ C $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classEngine_1_1Component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::Component$<$ C $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classEngine_1_1Component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEngine_1_1Component_aa8ea9499ac4ba7406cd5329567d8c637}{Destroy\+Data}} (unsigned char $\ast$data) const override
+\item 
+\mbox{\Hypertarget{classEngine_1_1Component_a2b9f023fd5ee0829baa354fba79d2f65}\label{classEngine_1_1Component_a2b9f023fd5ee0829baa354fba79d2f65}} 
+virtual void \mbox{\hyperlink{classEngine_1_1Component_a2b9f023fd5ee0829baa354fba79d2f65}{Move\+Data}} (unsigned char $\ast$src, unsigned char $\ast$dest) const override
+\begin{DoxyCompactList}\small\item\em Moves data from src to dest! \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Component_aea27114aac1498fdb50ac1f829599cbe}\label{classEngine_1_1Component_aea27114aac1498fdb50ac1f829599cbe}} 
+virtual void \mbox{\hyperlink{classEngine_1_1Component_aea27114aac1498fdb50ac1f829599cbe}{Construct\+Data}} (unsigned char $\ast$data) const override
+\begin{DoxyCompactList}\small\item\em Puts a new component of type C into the location pointed to by data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Component_aa055dad78575633004c1a9444302bd7c}\label{classEngine_1_1Component_aa055dad78575633004c1a9444302bd7c}} 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{classEngine_1_1Component_aa055dad78575633004c1a9444302bd7c}{Get\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the size of C using sizeof. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Component\+Type\+ID \mbox{\hyperlink{classEngine_1_1Component_a7c29d64d50c6fbaf9cf1db306dc9d461}{Get\+Type\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Gets the id of this component type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class C$>$\newline
+class Engine\+::\+Component$<$ C $>$}
+
+Template class that we can use to store the struct that is each type of component we want to store. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1Component_aa8ea9499ac4ba7406cd5329567d8c637}\label{classEngine_1_1Component_aa8ea9499ac4ba7406cd5329567d8c637}} 
+\index{Engine::Component$<$ C $>$@{Engine::Component$<$ C $>$}!DestroyData@{DestroyData}}
+\index{DestroyData@{DestroyData}!Engine::Component$<$ C $>$@{Engine::Component$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{DestroyData()}{DestroyData()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classEngine_1_1Component}{Engine\+::\+Component}}$<$ C $>$\+::Destroy\+Data (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+takes a char array of our datatype and reintreprets it as a pointer to the actual type we are using, then deletes 
+
+Implements \mbox{\hyperlink{classEngine_1_1ComponentBase}{Engine\+::\+Component\+Base}}.
+
+\mbox{\Hypertarget{classEngine_1_1Component_a7c29d64d50c6fbaf9cf1db306dc9d461}\label{classEngine_1_1Component_a7c29d64d50c6fbaf9cf1db306dc9d461}} 
+\index{Engine::Component$<$ C $>$@{Engine::Component$<$ C $>$}!GetTypeID@{GetTypeID}}
+\index{GetTypeID@{GetTypeID}!Engine::Component$<$ C $>$@{Engine::Component$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{GetTypeID()}{GetTypeID()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+Component\+Type\+ID \mbox{\hyperlink{classEngine_1_1Component}{Engine\+::\+Component}}$<$ C $>$\+::Get\+Type\+ID\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the id of this component type. 
+
+Wraps our id generator to either create a new id for this component type or return an already created id number for that type. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Component.\+hpp\end{DoxyCompactItemize}

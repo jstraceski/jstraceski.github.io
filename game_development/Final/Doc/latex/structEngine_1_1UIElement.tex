@@ -1,0 +1,142 @@
+\hypertarget{structEngine_1_1UIElement}{}\doxysection{Engine\+::U\+I\+Element Struct Reference}
+\label{structEngine_1_1UIElement}\index{Engine::UIElement@{Engine::UIElement}}
+
+
+{\ttfamily \#include $<$U\+I.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::U\+I\+Element\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{structEngine_1_1UIElement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::U\+I\+Element\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structEngine_1_1UIElement__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEngine_1_1UIElement_a26380fcec228d4fff6d59e44584bc03f}{U\+I\+Element}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&tex)
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIElement_ac8eca33b112f7b3ceea8b52ae5c883a3}{set\+Image}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&tex)
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIElement_a2a1298955b923c06dbcc5df52d118314}{set\+Image}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$ \&lookup)
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIElement_a3eaa1905550cb81e28e34743b23ea0ff}{set\+Size}} (float width, float height)
+\item 
+virtual void \mbox{\hyperlink{structEngine_1_1UIElement_adca3079e223a5b0570b8a39c29264dd9}{update}} ()
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIElement_a9c6f56573669dc478a3cf24b33c8594c}{queue\+Visual\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{structEngine_1_1UIElement_aef195e110c14e77705bdf3b4615f4191}{update\+Visual}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1UIElement_a7a3a69b996fe0c9d4324f92249f8f7dc}\label{structEngine_1_1UIElement_a7a3a69b996fe0c9d4324f92249f8f7dc}} 
+static void {\bfseries Update} (const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&scene)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1UIElement_aae2f7100381295f5d951aafcd39fd7f5}\label{structEngine_1_1UIElement_aae2f7100381295f5d951aafcd39fd7f5}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1VertexCollider2D}{Vertex\+Collider2D}} $>$ {\bfseries collider} = nullptr
+\item 
+\mbox{\Hypertarget{structEngine_1_1UIElement_aba0503c6238242a42b1bf599ac481764}\label{structEngine_1_1UIElement_aba0503c6238242a42b1bf599ac481764}} 
+\mbox{\hyperlink{namespaceEngine_ae0f92b08830951a30d07caed1535903a}{Allignment}} \mbox{\hyperlink{structEngine_1_1UIElement_aba0503c6238242a42b1bf599ac481764}{origin}} = C\+E\+N\+T\+ER
+\begin{DoxyCompactList}\small\item\em collider reference (generated when setting a picture) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wrapper for a 2D \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}}. Tells the rendering engine to draw the \mbox{\hyperlink{structEngine_1_1MeshRenderer}{Mesh\+Renderer}} with an orthographic projection. T\+O\+DO\+: extrapolate all sub classes into this one. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structEngine_1_1UIElement_a26380fcec228d4fff6d59e44584bc03f}\label{structEngine_1_1UIElement_a26380fcec228d4fff6d59e44584bc03f}} 
+\index{Engine::UIElement@{Engine::UIElement}!UIElement@{UIElement}}
+\index{UIElement@{UIElement}!Engine::UIElement@{Engine::UIElement}}
+\doxysubsubsection{\texorpdfstring{UIElement()}{UIElement()}}
+{\footnotesize\ttfamily Engine\+::\+U\+I\+Element\+::\+U\+I\+Element (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Generate a ui element from a \mbox{\hyperlink{classEngine_1_1Texture}{Texture}}. 
+\begin{DoxyParams}{Parameters}
+{\em tex} & reference \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1UIElement_a9c6f56573669dc478a3cf24b33c8594c}\label{structEngine_1_1UIElement_a9c6f56573669dc478a3cf24b33c8594c}} 
+\index{Engine::UIElement@{Engine::UIElement}!queueVisualUpdate@{queueVisualUpdate}}
+\index{queueVisualUpdate@{queueVisualUpdate}!Engine::UIElement@{Engine::UIElement}}
+\doxysubsubsection{\texorpdfstring{queueVisualUpdate()}{queueVisualUpdate()}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Element\+::queue\+Visual\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Flip the update\+Visual flag. \mbox{\Hypertarget{structEngine_1_1UIElement_ac8eca33b112f7b3ceea8b52ae5c883a3}\label{structEngine_1_1UIElement_ac8eca33b112f7b3ceea8b52ae5c883a3}} 
+\index{Engine::UIElement@{Engine::UIElement}!setImage@{setImage}}
+\index{setImage@{setImage}!Engine::UIElement@{Engine::UIElement}}
+\doxysubsubsection{\texorpdfstring{setImage()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Element\+::set\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \&}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the image of the \mbox{\hyperlink{structEngine_1_1UIElement}{U\+I\+Element}} 
+\begin{DoxyParams}{Parameters}
+{\em tex} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1UIElement_a2a1298955b923c06dbcc5df52d118314}\label{structEngine_1_1UIElement_a2a1298955b923c06dbcc5df52d118314}} 
+\index{Engine::UIElement@{Engine::UIElement}!setImage@{setImage}}
+\index{setImage@{setImage}!Engine::UIElement@{Engine::UIElement}}
+\doxysubsubsection{\texorpdfstring{setImage()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Element\+::set\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$ \&}]{lookup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the image and mapping data of the UI element. 
+\begin{DoxyParams}{Parameters}
+{\em lookup} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1UIElement_a3eaa1905550cb81e28e34743b23ea0ff}\label{structEngine_1_1UIElement_a3eaa1905550cb81e28e34743b23ea0ff}} 
+\index{Engine::UIElement@{Engine::UIElement}!setSize@{setSize}}
+\index{setSize@{setSize}!Engine::UIElement@{Engine::UIElement}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Element\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the size of the element (useful for alignment and collider calculations) 
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1UIElement_adca3079e223a5b0570b8a39c29264dd9}\label{structEngine_1_1UIElement_adca3079e223a5b0570b8a39c29264dd9}} 
+\index{Engine::UIElement@{Engine::UIElement}!update@{update}}
+\index{update@{update}!Engine::UIElement@{Engine::UIElement}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Engine\+::\+U\+I\+Element\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Syncing function called every game tick 
+
+Reimplemented in \mbox{\hyperlink{structEngine_1_1UIButton_a99d4a9a9de5e3103d9842cf562b6d536}{Engine\+::\+U\+I\+Button}}.
+
+\mbox{\Hypertarget{structEngine_1_1UIElement_aef195e110c14e77705bdf3b4615f4191}\label{structEngine_1_1UIElement_aef195e110c14e77705bdf3b4615f4191}} 
+\index{Engine::UIElement@{Engine::UIElement}!updateVisual@{updateVisual}}
+\index{updateVisual@{updateVisual}!Engine::UIElement@{Engine::UIElement}}
+\doxysubsubsection{\texorpdfstring{updateVisual()}{updateVisual()}}
+{\footnotesize\ttfamily virtual void Engine\+::\+U\+I\+Element\+::update\+Visual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Update the UI element with new visual data 
+
+Reimplemented in \mbox{\hyperlink{structEngine_1_1UIButton_a8a291110e32f7467e468901d0d4043f0}{Engine\+::\+U\+I\+Button}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/U\+I.\+hpp\end{DoxyCompactItemize}

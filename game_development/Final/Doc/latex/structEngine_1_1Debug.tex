@@ -1,0 +1,69 @@
+\hypertarget{structEngine_1_1Debug}{}\doxysection{Engine\+::Debug Struct Reference}
+\label{structEngine_1_1Debug}\index{Engine::Debug@{Engine::Debug}}
+
+
+{\ttfamily \#include $<$Debug.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Debug_a862a80236a4999e74032c2e341dd004d}{set\+Debug}} (const std\+::string \&key, float var)
+\item 
+static float \& \mbox{\hyperlink{structEngine_1_1Debug_afab08933a0ca1500cb23ae099b51ce08}{get\+Debug}} (const std\+::string \&key)
+\item 
+static glm\+::mat4 \mbox{\hyperlink{structEngine_1_1Debug_af038c23ae1385dcbb9ed8cf2a331a62a}{offset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Debug_a031c96b55625d611774a14643b653768}\label{structEngine_1_1Debug_a031c96b55625d611774a14643b653768}} 
+static std\+::map$<$ std\+::string, float $>$ {\bfseries var\+Lookup} = std\+::map$<$std\+::string, float$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Debugging wrapper. Contains a global variable lookup. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1Debug_afab08933a0ca1500cb23ae099b51ce08}\label{structEngine_1_1Debug_afab08933a0ca1500cb23ae099b51ce08}} 
+\index{Engine::Debug@{Engine::Debug}!getDebug@{getDebug}}
+\index{getDebug@{getDebug}!Engine::Debug@{Engine::Debug}}
+\doxysubsubsection{\texorpdfstring{getDebug()}{getDebug()}}
+{\footnotesize\ttfamily float \& Engine\+::\+Debug\+::get\+Debug (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a debug value by reference 
+\begin{DoxyParams}{Parameters}
+{\em key} & string id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value reference 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Debug_af038c23ae1385dcbb9ed8cf2a331a62a}\label{structEngine_1_1Debug_af038c23ae1385dcbb9ed8cf2a331a62a}} 
+\index{Engine::Debug@{Engine::Debug}!offset@{offset}}
+\index{offset@{offset}!Engine::Debug@{Engine::Debug}}
+\doxysubsubsection{\texorpdfstring{offset()}{offset()}}
+{\footnotesize\ttfamily static glm\+::mat4 Engine\+::\+Debug\+::offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Generate an offset form the main camera using debug values. \begin{DoxyReturn}{Returns}
+a transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1Debug_a862a80236a4999e74032c2e341dd004d}\label{structEngine_1_1Debug_a862a80236a4999e74032c2e341dd004d}} 
+\index{Engine::Debug@{Engine::Debug}!setDebug@{setDebug}}
+\index{setDebug@{setDebug}!Engine::Debug@{Engine::Debug}}
+\doxysubsubsection{\texorpdfstring{setDebug()}{setDebug()}}
+{\footnotesize\ttfamily void Engine\+::\+Debug\+::set\+Debug (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{float}]{var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set a debug value by a given reference. 
+\begin{DoxyParams}{Parameters}
+{\em key} & reference \\
+\hline
+{\em var} & value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Debug.\+hpp\item 
+src/Debug.\+cpp\end{DoxyCompactItemize}

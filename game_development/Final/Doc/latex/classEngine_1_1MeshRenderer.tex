@@ -1,0 +1,76 @@
+\hypertarget{classEngine_1_1MeshRenderer}{}\doxysection{Engine\+::Mesh\+Renderer Class Reference}
+\label{classEngine_1_1MeshRenderer}\index{Engine::MeshRenderer@{Engine::MeshRenderer}}
+
+
+\mbox{\hyperlink{classEngine_1_1System}{System}} for rendering a mesh.  
+
+
+
+
+{\ttfamily \#include $<$Mesh\+Renderer.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Mesh\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classEngine_1_1MeshRenderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::Mesh\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classEngine_1_1MeshRenderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1MeshRenderer_ae5409f0a460bd2a25968abd327befb95}\label{classEngine_1_1MeshRenderer_ae5409f0a460bd2a25968abd327befb95}} 
+\mbox{\hyperlink{classEngine_1_1MeshRenderer_ae5409f0a460bd2a25968abd327befb95}{Mesh\+Renderer}} (\mbox{\hyperlink{namespaceEngine_ad3a2293a85f5e4cb0ce5d504357ec4f3}{Uni}}$<$ \mbox{\hyperlink{classEngine_1_1Renderer}{Renderer}} $>$ \&ren, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Shader}{Shader}} $>$ \&s)
+\begin{DoxyCompactList}\small\item\em takes in a renderer container and a shader reference \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1MeshRenderer_ac9cda00ca6b5f9bd1c9169b0eefbd75e}\label{classEngine_1_1MeshRenderer_ac9cda00ca6b5f9bd1c9169b0eefbd75e}} 
+void \mbox{\hyperlink{classEngine_1_1MeshRenderer_ac9cda00ca6b5f9bd1c9169b0eefbd75e}{Render\+Init}} (const \mbox{\hyperlink{namespaceEngine_ad3a2293a85f5e4cb0ce5d504357ec4f3}{Uni}}$<$ \mbox{\hyperlink{classEngine_1_1Renderer}{Renderer}} $>$ \&renderer)
+\begin{DoxyCompactList}\small\item\em Initialize a draw to the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_1_1MeshRenderer_a1c6275327381db32b52dec3042ae7161}{Run}} (Entity\+ID id) override
+\item 
+\mbox{\Hypertarget{classEngine_1_1MeshRenderer_a9e989e668d561e6b31f7b682f14f78ff}\label{classEngine_1_1MeshRenderer_a9e989e668d561e6b31f7b682f14f78ff}} 
+void \mbox{\hyperlink{classEngine_1_1MeshRenderer_a9e989e668d561e6b31f7b682f14f78ff}{Render\+End}} (const \mbox{\hyperlink{namespaceEngine_ad3a2293a85f5e4cb0ce5d504357ec4f3}{Uni}}$<$ \mbox{\hyperlink{classEngine_1_1Renderer}{Renderer}} $>$ \&renderer)
+\begin{DoxyCompactList}\small\item\em End the rendering phase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1MeshRenderer_abebf9737ff728071e9492315f8e406dc}\label{classEngine_1_1MeshRenderer_abebf9737ff728071e9492315f8e406dc}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Shader}{Shader}} $>$ \mbox{\hyperlink{classEngine_1_1MeshRenderer_abebf9737ff728071e9492315f8e406dc}{shader}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classEngine_1_1Shader}{Shader}} to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEngine_1_1System}{System}} for rendering a mesh. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1MeshRenderer_a1c6275327381db32b52dec3042ae7161}\label{classEngine_1_1MeshRenderer_a1c6275327381db32b52dec3042ae7161}} 
+\index{Engine::MeshRenderer@{Engine::MeshRenderer}!Run@{Run}}
+\index{Run@{Run}!Engine::MeshRenderer@{Engine::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Engine\+::\+Mesh\+Renderer\+::\+Run (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Run this system 
+\begin{DoxyParams}{Parameters}
+{\em id} & the entity to run this system on \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEngine_1_1System_ae7b52e89a3045f47d2a77e0e879720e0}{Engine\+::\+System$<$ Mesh, Transform $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Mesh\+Renderer.\+hpp\end{DoxyCompactItemize}

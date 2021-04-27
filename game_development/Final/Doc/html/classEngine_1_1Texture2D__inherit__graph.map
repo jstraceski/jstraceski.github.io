@@ -1,0 +1,5 @@
+<map id="Engine::Texture2D" name="Engine::Texture2D">
+<area shape="rect" id="node1" title="Representation of a 2D texture." alt="" coords="13,80,153,107"/>
+<area shape="rect" id="node3" href="$classEngine_1_1GLTexture2D.html" title=" " alt="" coords="5,155,161,181"/>
+<area shape="rect" id="node2" href="$classEngine_1_1Texture.html" title="Container for texture data." alt="" coords="22,5,145,32"/>
+</map>

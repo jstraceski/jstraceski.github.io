@@ -1,0 +1,166 @@
+\hypertarget{classEngine_1_1Input}{}\doxysection{Engine\+::Input Class Reference}
+\label{classEngine_1_1Input}\index{Engine::Input@{Engine::Input}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classEngine_1_1Input_a080c7496e742591c53a6f5d9112d8a74}{Is\+Key\+Pressed}} (Key\+Code key)
+\item 
+static bool \mbox{\hyperlink{classEngine_1_1Input_abc22777a8046d9906f0d9aadba69637f}{Is\+Mouse\+Pressed}} (Mouse\+Code button)
+\item 
+static glm\+::vec2 \mbox{\hyperlink{classEngine_1_1Input_a27f1559336a3e5175fd128b82b068bc2}{Get\+Mouse\+Pos}} ()
+\item 
+static float \mbox{\hyperlink{classEngine_1_1Input_ae77d7623809a7aeab139c84d6aa8168c}{Get\+MouseX}} ()
+\item 
+static float \mbox{\hyperlink{classEngine_1_1Input_a241198c6cd85a66cab1d3273cb163369}{Get\+MouseY}} ()
+\item 
+\mbox{\Hypertarget{classEngine_1_1Input_ac4e6dea7917c62ef1cdf46b8ae18bd02}\label{classEngine_1_1Input_ac4e6dea7917c62ef1cdf46b8ae18bd02}} 
+static \mbox{\hyperlink{classEngine_1_1Input}{Input}} \& \mbox{\hyperlink{classEngine_1_1Input_ac4e6dea7917c62ef1cdf46b8ae18bd02}{Get}} ()
+\begin{DoxyCompactList}\small\item\em get the static input instance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Input_a613339b92ff61249cce1d1d1b9c4901c}\label{classEngine_1_1Input_a613339b92ff61249cce1d1d1b9c4901c}} 
+static void \mbox{\hyperlink{classEngine_1_1Input_a613339b92ff61249cce1d1d1b9c4901c}{Update\+Key}} (Key\+Code key, bool state)
+\begin{DoxyCompactList}\small\item\em update the key at the given keycode with the new state \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Input_a781580bfa1f899f88f1d83ed5daaf08e}\label{classEngine_1_1Input_a781580bfa1f899f88f1d83ed5daaf08e}} 
+static void \mbox{\hyperlink{classEngine_1_1Input_a781580bfa1f899f88f1d83ed5daaf08e}{Update\+Mouse}} (Mouse\+Code button, bool state)
+\begin{DoxyCompactList}\small\item\em update the mouse button at the given index with the new state \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classEngine_1_1Input_af4404454793e2af3e79ae663985e2e60}{Update\+Mouse\+Pos}} (float x, float y)
+\item 
+static void \mbox{\hyperlink{classEngine_1_1Input_a59ab0d7dbcd921af924a63ec5a321356}{Update\+Rel\+Mouse\+Pos}} (float x, float y)
+\item 
+static glm\+::vec2 \mbox{\hyperlink{classEngine_1_1Input_ae108d0d43628a735a735badfac8cd904}{Get\+Mouse\+Delta}} ()
+\item 
+static void \mbox{\hyperlink{classEngine_1_1Input_a60fa49efe097a4eca40e4faa166e90ef}{Update}} (const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&s)
+\item 
+static void \mbox{\hyperlink{classEngine_1_1Input_ac02a2cb40022cdfec3a811349521d45c}{Set\+Mouse\+Lock}} (bool lock)
+\item 
+static bool \mbox{\hyperlink{classEngine_1_1Input_a19ffa645241321780bb1b5e86b333442}{Is\+Mouse\+Locked}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1Input_ae108d0d43628a735a735badfac8cd904}\label{classEngine_1_1Input_ae108d0d43628a735a735badfac8cd904}} 
+\index{Engine::Input@{Engine::Input}!GetMouseDelta@{GetMouseDelta}}
+\index{GetMouseDelta@{GetMouseDelta}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseDelta()}{GetMouseDelta()}}
+{\footnotesize\ttfamily glm\+::vec2 Engine\+::\+Input\+::\+Get\+Mouse\+Delta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Capture and reset the last total mouse delta movement. \begin{DoxyReturn}{Returns}
+the mouse movement delta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Input_a27f1559336a3e5175fd128b82b068bc2}\label{classEngine_1_1Input_a27f1559336a3e5175fd128b82b068bc2}} 
+\index{Engine::Input@{Engine::Input}!GetMousePos@{GetMousePos}}
+\index{GetMousePos@{GetMousePos}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{GetMousePos()}{GetMousePos()}}
+{\footnotesize\ttfamily glm\+::vec2 Engine\+::\+Input\+::\+Get\+Mouse\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the mouse position \begin{DoxyReturn}{Returns}
+the mouse position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Input_ae77d7623809a7aeab139c84d6aa8168c}\label{classEngine_1_1Input_ae77d7623809a7aeab139c84d6aa8168c}} 
+\index{Engine::Input@{Engine::Input}!GetMouseX@{GetMouseX}}
+\index{GetMouseX@{GetMouseX}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseX()}{GetMouseX()}}
+{\footnotesize\ttfamily float Engine\+::\+Input\+::\+Get\+MouseX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the mouse x position \begin{DoxyReturn}{Returns}
+the mouse x position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Input_a241198c6cd85a66cab1d3273cb163369}\label{classEngine_1_1Input_a241198c6cd85a66cab1d3273cb163369}} 
+\index{Engine::Input@{Engine::Input}!GetMouseY@{GetMouseY}}
+\index{GetMouseY@{GetMouseY}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseY()}{GetMouseY()}}
+{\footnotesize\ttfamily float Engine\+::\+Input\+::\+Get\+MouseY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the mouse y position \begin{DoxyReturn}{Returns}
+the mouse y position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Input_a080c7496e742591c53a6f5d9112d8a74}\label{classEngine_1_1Input_a080c7496e742591c53a6f5d9112d8a74}} 
+\index{Engine::Input@{Engine::Input}!IsKeyPressed@{IsKeyPressed}}
+\index{IsKeyPressed@{IsKeyPressed}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{IsKeyPressed()}{IsKeyPressed()}}
+{\footnotesize\ttfamily bool Engine\+::\+Input\+::\+Is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{Key\+Code}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Query if a key is pressed 
+\begin{DoxyParams}{Parameters}
+{\em key} & the keycode of the pressed key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the key is pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Input_a19ffa645241321780bb1b5e86b333442}\label{classEngine_1_1Input_a19ffa645241321780bb1b5e86b333442}} 
+\index{Engine::Input@{Engine::Input}!IsMouseLocked@{IsMouseLocked}}
+\index{IsMouseLocked@{IsMouseLocked}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{IsMouseLocked()}{IsMouseLocked()}}
+{\footnotesize\ttfamily bool Engine\+::\+Input\+::\+Is\+Mouse\+Locked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieve the current mouse lock state. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Input_abc22777a8046d9906f0d9aadba69637f}\label{classEngine_1_1Input_abc22777a8046d9906f0d9aadba69637f}} 
+\index{Engine::Input@{Engine::Input}!IsMousePressed@{IsMousePressed}}
+\index{IsMousePressed@{IsMousePressed}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{IsMousePressed()}{IsMousePressed()}}
+{\footnotesize\ttfamily bool Engine\+::\+Input\+::\+Is\+Mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Code}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Query if a mouse button is pressed 
+\begin{DoxyParams}{Parameters}
+{\em button} & the buttoncode of the pressed button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the button is pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Input_ac02a2cb40022cdfec3a811349521d45c}\label{classEngine_1_1Input_ac02a2cb40022cdfec3a811349521d45c}} 
+\index{Engine::Input@{Engine::Input}!SetMouseLock@{SetMouseLock}}
+\index{SetMouseLock@{SetMouseLock}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{SetMouseLock()}{SetMouseLock()}}
+{\footnotesize\ttfamily void Engine\+::\+Input\+::\+Set\+Mouse\+Lock (\begin{DoxyParamCaption}\item[{bool}]{lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set the mouse lock state. 
+\begin{DoxyParams}{Parameters}
+{\em lock} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1Input_a60fa49efe097a4eca40e4faa166e90ef}\label{classEngine_1_1Input_a60fa49efe097a4eca40e4faa166e90ef}} 
+\index{Engine::Input@{Engine::Input}!Update@{Update}}
+\index{Update@{Update}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine\+::\+Input\+::\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Update \mbox{\hyperlink{classEngine_1_1Input}{Input}} related scene Components. 
+\begin{DoxyParams}{Parameters}
+{\em s} & scene reference \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1Input_af4404454793e2af3e79ae663985e2e60}\label{classEngine_1_1Input_af4404454793e2af3e79ae663985e2e60}} 
+\index{Engine::Input@{Engine::Input}!UpdateMousePos@{UpdateMousePos}}
+\index{UpdateMousePos@{UpdateMousePos}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{UpdateMousePos()}{UpdateMousePos()}}
+{\footnotesize\ttfamily void Engine\+::\+Input\+::\+Update\+Mouse\+Pos (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Update the mouse\textquotesingle{}s position on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1Input_a59ab0d7dbcd921af924a63ec5a321356}\label{classEngine_1_1Input_a59ab0d7dbcd921af924a63ec5a321356}} 
+\index{Engine::Input@{Engine::Input}!UpdateRelMousePos@{UpdateRelMousePos}}
+\index{UpdateRelMousePos@{UpdateRelMousePos}!Engine::Input@{Engine::Input}}
+\doxysubsubsection{\texorpdfstring{UpdateRelMousePos()}{UpdateRelMousePos()}}
+{\footnotesize\ttfamily void Engine\+::\+Input\+::\+Update\+Rel\+Mouse\+Pos (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Update the relative mouse motion on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em x} & delta x \\
+\hline
+{\em y} & delta y \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Input.\+hpp\item 
+src/Sdl\+Input.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{structEngine_1_1Simplex}{}\doxysection{Engine\+::Simplex Struct Reference}
+\label{structEngine_1_1Simplex}\index{Engine::Simplex@{Engine::Simplex}}
+
+
+Storage wrapper for support points.  
+
+
+
+
+{\ttfamily \#include $<$Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_a19de47fd92d3b5aad3972fff3a2c8844}\label{structEngine_1_1Simplex_a19de47fd92d3b5aad3972fff3a2c8844}} 
+\mbox{\hyperlink{structEngine_1_1Simplex}{Simplex}} \& {\bfseries operator=} (std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structEngine_1_1Support}{Support}} $>$ ilist)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_a151b02d78cdde7a748715b4718e7b1f0}\label{structEngine_1_1Simplex_a151b02d78cdde7a748715b4718e7b1f0}} 
+\mbox{\hyperlink{structEngine_1_1Support}{Support}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const int \&i)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_a29892b52144d43770259c36be9a5c317}\label{structEngine_1_1Simplex_a29892b52144d43770259c36be9a5c317}} 
+void {\bfseries operator+=} (const \mbox{\hyperlink{structEngine_1_1Support}{Support}} \&support)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_adc04fa2149b568d9db996eac269570ce}\label{structEngine_1_1Simplex_adc04fa2149b568d9db996eac269570ce}} 
+void {\bfseries add} (glm\+::vec3 p, glm\+::vec3 a, glm\+::vec3 b)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_a6fd58d95322be5198ab6b2a37bb449b3}\label{structEngine_1_1Simplex_a6fd58d95322be5198ab6b2a37bb449b3}} 
+void {\bfseries set} (int i, glm\+::vec3 p, glm\+::vec3 a, glm\+::vec3 b)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_a7170daede6ead895f1bc19df984c6a72}\label{structEngine_1_1Simplex_a7170daede6ead895f1bc19df984c6a72}} 
+void {\bfseries push} (\mbox{\hyperlink{structEngine_1_1Support}{Support}} p)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_ab10eb39699b3e7597a2ce688260fb100}\label{structEngine_1_1Simplex_ab10eb39699b3e7597a2ce688260fb100}} 
+void {\bfseries push} (glm\+::vec3 p, glm\+::vec3 a, glm\+::vec3 b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_a8d76983aa5a4bcb14cb8a9cc2c863f04}\label{structEngine_1_1Simplex_a8d76983aa5a4bcb14cb8a9cc2c863f04}} 
+std\+::vector$<$ \mbox{\hyperlink{structEngine_1_1Support}{Support}} $>$ {\bfseries supports} = std\+::vector$<$\mbox{\hyperlink{structEngine_1_1Support}{Support}}$>$(S\+I\+M\+P\+L\+E\+X\+\_\+\+C\+O\+U\+NT)
+\item 
+\mbox{\Hypertarget{structEngine_1_1Simplex_ab350aa0f935f26a643639a670f73fe5c}\label{structEngine_1_1Simplex_ab350aa0f935f26a643639a670f73fe5c}} 
+size\+\_\+t \mbox{\hyperlink{structEngine_1_1Simplex_ab350aa0f935f26a643639a670f73fe5c}{index}} = 0
+\begin{DoxyCompactList}\small\item\em support point list (max 4) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Storage wrapper for support points. 
+
+A simplex is a point/ line/ triangle or tetrahedron defined by support points. Basically a vector wrapper. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Components.\+hpp\end{DoxyCompactItemize}

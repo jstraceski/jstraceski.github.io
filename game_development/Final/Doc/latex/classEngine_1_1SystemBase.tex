@@ -1,0 +1,82 @@
+\hypertarget{classEngine_1_1SystemBase}{}\doxysection{Engine\+::System\+Base Class Reference}
+\label{classEngine_1_1SystemBase}\index{Engine::SystemBase@{Engine::SystemBase}}
+
+
+Inheritance diagram for Engine\+::System\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classEngine_1_1SystemBase__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1SystemBase_add4e0ec19eddc89b31d9cad79fd65442}\label{classEngine_1_1SystemBase_add4e0ec19eddc89b31d9cad79fd65442}} 
+virtual \mbox{\hyperlink{classEngine_1_1SystemBase_add4e0ec19eddc89b31d9cad79fd65442}{$\sim$\+System\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual Archetype \mbox{\hyperlink{classEngine_1_1SystemBase_aedfbbbf03120885c05a05e2fc887f416}{Get\+Arch}} () const
+\item 
+virtual System\+ID \mbox{\hyperlink{classEngine_1_1SystemBase_a749d40ed9aeff4784ae8b7fb72a8f4c2}{Get\+ID}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEngine_1_1SystemBase_a2cd5578f612ec2dae1c5c4746b3b235d}{Run}} (Entity\+ID id)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1SystemBase_ae45c2113ba58202437039a1baa8a2d5e}\label{classEngine_1_1SystemBase_ae45c2113ba58202437039a1baa8a2d5e}} 
+System\+ID \mbox{\hyperlink{classEngine_1_1SystemBase_ae45c2113ba58202437039a1baa8a2d5e}{m\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em Id to the lookup table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1SystemBase_a74b9931d762aa70f3cf4c4aa16e0eebe}\label{classEngine_1_1SystemBase_a74b9931d762aa70f3cf4c4aa16e0eebe}} 
+Archetype \mbox{\hyperlink{classEngine_1_1SystemBase_a74b9931d762aa70f3cf4c4aa16e0eebe}{m\+\_\+arch}}
+\begin{DoxyCompactList}\small\item\em archetype storage \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1SystemBase_abed2e42fe630d246114c0d3d30516fab}\label{classEngine_1_1SystemBase_abed2e42fe630d246114c0d3d30516fab}} 
+class {\bfseries E\+CS}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1SystemBase_aedfbbbf03120885c05a05e2fc887f416}\label{classEngine_1_1SystemBase_aedfbbbf03120885c05a05e2fc887f416}} 
+\index{Engine::SystemBase@{Engine::SystemBase}!GetArch@{GetArch}}
+\index{GetArch@{GetArch}!Engine::SystemBase@{Engine::SystemBase}}
+\doxysubsubsection{\texorpdfstring{GetArch()}{GetArch()}}
+{\footnotesize\ttfamily virtual Archetype Engine\+::\+System\+Base\+::\+Get\+Arch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+archetype of this system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1SystemBase_a749d40ed9aeff4784ae8b7fb72a8f4c2}\label{classEngine_1_1SystemBase_a749d40ed9aeff4784ae8b7fb72a8f4c2}} 
+\index{Engine::SystemBase@{Engine::SystemBase}!GetID@{GetID}}
+\index{GetID@{GetID}!Engine::SystemBase@{Engine::SystemBase}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily virtual System\+ID Engine\+::\+System\+Base\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+the id of this system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1SystemBase_a2cd5578f612ec2dae1c5c4746b3b235d}\label{classEngine_1_1SystemBase_a2cd5578f612ec2dae1c5c4746b3b235d}} 
+\index{Engine::SystemBase@{Engine::SystemBase}!Run@{Run}}
+\index{Run@{Run}!Engine::SystemBase@{Engine::SystemBase}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily virtual void Engine\+::\+System\+Base\+::\+Run (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Run this system 
+\begin{DoxyParams}{Parameters}
+{\em id} & the entity to run this system on \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEngine_1_1System_ae7b52e89a3045f47d2a77e0e879720e0}{Engine\+::\+System$<$ Cs $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/System\+Base.\+hpp\end{DoxyCompactItemize}

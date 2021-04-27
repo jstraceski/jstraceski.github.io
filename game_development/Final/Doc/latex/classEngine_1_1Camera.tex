@@ -1,0 +1,118 @@
+\hypertarget{classEngine_1_1Camera}{}\doxysection{Engine\+::Camera Class Reference}
+\label{classEngine_1_1Camera}\index{Engine::Camera@{Engine::Camera}}
+
+
+Singleton, the current view!  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+hpp$>$}
+
+
+
+Collaboration diagram for Engine\+::Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classEngine_1_1Camera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Camera_ae3fd02a7af0ab3fb2b46332ea176ea30}\label{classEngine_1_1Camera_ae3fd02a7af0ab3fb2b46332ea176ea30}} 
+\mbox{\hyperlink{classEngine_1_1Camera_ae3fd02a7af0ab3fb2b46332ea176ea30}{Camera}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new camera. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classEngine_1_1Camera_a613fdab01591db13220d8a6800305152}{Get\+View}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Camera}{Camera}} $>$ \mbox{\hyperlink{classEngine_1_1Camera_a3016cc030beb8a1835e25767ae993fd8}{Main}} ()
+\item 
+static void \mbox{\hyperlink{classEngine_1_1Camera_ab0476e44c55e0041cc80901943fb08dc}{Update}} (const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&s)
+\item 
+static void \mbox{\hyperlink{classEngine_1_1Camera_a8bde27db9cf155cf7e041f08c9c71c55}{Update\+Cameras}} (\mbox{\hyperlink{classEngine_1_1ECS}{E\+CS}} \&ecs, const Entity\+ID \&e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Camera_ae66cb05ac9f3a1f0472fa21697a3044a}\label{classEngine_1_1Camera_ae66cb05ac9f3a1f0472fa21697a3044a}} 
+\mbox{\hyperlink{structEngine_1_1Transform}{Transform}} \mbox{\hyperlink{classEngine_1_1Camera_ae66cb05ac9f3a1f0472fa21697a3044a}{transform}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} of this camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Camera_a3d3922eb65634a0df8f4887b8bb3ddc0}\label{classEngine_1_1Camera_a3d3922eb65634a0df8f4887b8bb3ddc0}} 
+\mbox{\hyperlink{structEngine_1_1Transform}{Transform}} \mbox{\hyperlink{classEngine_1_1Camera_a3d3922eb65634a0df8f4887b8bb3ddc0}{offset}}
+\begin{DoxyCompactList}\small\item\em offset to the subject of this camera \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Camera_aea4db5966e51f6d25e96a2d35cbff9cf}\label{classEngine_1_1Camera_aea4db5966e51f6d25e96a2d35cbff9cf}} 
+float \mbox{\hyperlink{classEngine_1_1Camera_aea4db5966e51f6d25e96a2d35cbff9cf}{w}}
+\begin{DoxyCompactList}\small\item\em Bounding box of this camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Camera_aec7b6dad185921e92b6eff20e7207ca4}\label{classEngine_1_1Camera_aec7b6dad185921e92b6eff20e7207ca4}} 
+float {\bfseries h}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Camera_a6c0bdccf1d5b31c19d7fe89f00a6f8a4}\label{classEngine_1_1Camera_a6c0bdccf1d5b31c19d7fe89f00a6f8a4}} 
+float {\bfseries snap\+\_\+delay\+\_\+factor} = 2.\+0f
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Camera_a41e3b6751394ffd77b210dcccd3b07c4}\label{classEngine_1_1Camera_a41e3b6751394ffd77b210dcccd3b07c4}} 
+static \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Camera}{Camera}} $>$ {\bfseries main} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton, the current view! 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1Camera_a613fdab01591db13220d8a6800305152}\label{classEngine_1_1Camera_a613fdab01591db13220d8a6800305152}} 
+\index{Engine::Camera@{Engine::Camera}!GetView@{GetView}}
+\index{GetView@{GetView}!Engine::Camera@{Engine::Camera}}
+\doxysubsubsection{\texorpdfstring{GetView()}{GetView()}}
+{\footnotesize\ttfamily glm\+::mat4 Engine\+::\+Camera\+::\+Get\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the inverted matrix of the camera\textquotesingle{}s view 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Camera_a3016cc030beb8a1835e25767ae993fd8}\label{classEngine_1_1Camera_a3016cc030beb8a1835e25767ae993fd8}} 
+\index{Engine::Camera@{Engine::Camera}!Main@{Main}}
+\index{Main@{Main}!Engine::Camera@{Engine::Camera}}
+\doxysubsubsection{\texorpdfstring{Main()}{Main()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{classEngine_1_1Camera}{Camera}}$>$ Engine\+::\+Camera\+::\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+a reference to the currently rendering camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1Camera_ab0476e44c55e0041cc80901943fb08dc}\label{classEngine_1_1Camera_ab0476e44c55e0041cc80901943fb08dc}} 
+\index{Engine::Camera@{Engine::Camera}!Update@{Update}}
+\index{Update@{Update}!Engine::Camera@{Engine::Camera}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily static void Engine\+::\+Camera\+::\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEngine_1_1Scene}{Scene}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Update all cameras present in the scene. 
+\begin{DoxyParams}{Parameters}
+{\em s} & scene reference \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1Camera_a8bde27db9cf155cf7e041f08c9c71c55}\label{classEngine_1_1Camera_a8bde27db9cf155cf7e041f08c9c71c55}} 
+\index{Engine::Camera@{Engine::Camera}!UpdateCameras@{UpdateCameras}}
+\index{UpdateCameras@{UpdateCameras}!Engine::Camera@{Engine::Camera}}
+\doxysubsubsection{\texorpdfstring{UpdateCameras()}{UpdateCameras()}}
+{\footnotesize\ttfamily static void Engine\+::\+Camera\+::\+Update\+Cameras (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEngine_1_1ECS}{E\+CS}} \&}]{ecs,  }\item[{const Entity\+ID \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Given that an entity with id\+: e has a camera and a transform. Move the camera so that it is behind the player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ecs} & entity lookup \\
+\hline
+{\em e} & entity id \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Camera.\+hpp\item 
+src/Camera.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{structEngine_1_1BufferElement}{}\doxysection{Engine\+::Buffer\+Element Struct Reference}
+\label{structEngine_1_1BufferElement}\index{Engine::BufferElement@{Engine::BufferElement}}
+
+
+{\ttfamily \#include $<$Buffer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEngine_1_1BufferElement_a5fc8600ae134305b0ea51d79d30afa03}{Buffer\+Element}} (\mbox{\hyperlink{namespaceEngine_acec34c3daaf78fc14cb6b99879913672}{Shader\+Data\+Type}} \mbox{\hyperlink{structEngine_1_1BufferElement_a9e2e138fcf213597526bf262d9bdcfde}{type}}, const std\+::string \&\mbox{\hyperlink{structEngine_1_1BufferElement_a331734f7e72b47718bc42b848b696258}{name}}, bool norm=false)
+\item 
+\mbox{\Hypertarget{structEngine_1_1BufferElement_ad8b8a6b8b9e4ca1a07a3b08f12d22eb7}\label{structEngine_1_1BufferElement_ad8b8a6b8b9e4ca1a07a3b08f12d22eb7}} 
+uint32\+\_\+t \mbox{\hyperlink{structEngine_1_1BufferElement_ad8b8a6b8b9e4ca1a07a3b08f12d22eb7}{Get\+Component\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of elements in this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1BufferElement_a331734f7e72b47718bc42b848b696258}\label{structEngine_1_1BufferElement_a331734f7e72b47718bc42b848b696258}} 
+std\+::string \mbox{\hyperlink{structEngine_1_1BufferElement_a331734f7e72b47718bc42b848b696258}{name}}
+\begin{DoxyCompactList}\small\item\em Name of this element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceEngine_acec34c3daaf78fc14cb6b99879913672}{Shader\+Data\+Type}} \mbox{\hyperlink{structEngine_1_1BufferElement_a9e2e138fcf213597526bf262d9bdcfde}{type}}
+\item 
+\mbox{\Hypertarget{structEngine_1_1BufferElement_aada782dc4c82315fe3725273bbaa6fb8}\label{structEngine_1_1BufferElement_aada782dc4c82315fe3725273bbaa6fb8}} 
+uint32\+\_\+t \mbox{\hyperlink{structEngine_1_1BufferElement_aada782dc4c82315fe3725273bbaa6fb8}{offset}}
+\begin{DoxyCompactList}\small\item\em Offset of component in the vertex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1BufferElement_ac9cbc889d6b8eab98f114446848f8aa5}\label{structEngine_1_1BufferElement_ac9cbc889d6b8eab98f114446848f8aa5}} 
+uint32\+\_\+t \mbox{\hyperlink{structEngine_1_1BufferElement_ac9cbc889d6b8eab98f114446848f8aa5}{size}}
+\begin{DoxyCompactList}\small\item\em Size of the datatype element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1BufferElement_ae826b369e7b4fa79578c68271710a48a}\label{structEngine_1_1BufferElement_ae826b369e7b4fa79578c68271710a48a}} 
+bool {\bfseries normalized}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An element in a \mbox{\hyperlink{classEngine_1_1VertexBuffer}{Vertex\+Buffer}}\textquotesingle{}s layout \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classEngine_1_1VertexBuffer}{Vertex\+Buffer}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structEngine_1_1BufferElement_a5fc8600ae134305b0ea51d79d30afa03}\label{structEngine_1_1BufferElement_a5fc8600ae134305b0ea51d79d30afa03}} 
+\index{Engine::BufferElement@{Engine::BufferElement}!BufferElement@{BufferElement}}
+\index{BufferElement@{BufferElement}!Engine::BufferElement@{Engine::BufferElement}}
+\doxysubsubsection{\texorpdfstring{BufferElement()}{BufferElement()}}
+{\footnotesize\ttfamily Engine\+::\+Buffer\+Element\+::\+Buffer\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceEngine_acec34c3daaf78fc14cb6b99879913672}{Shader\+Data\+Type}}}]{type,  }\item[{const std\+::string \&}]{name,  }\item[{bool}]{norm = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new buffer element 
+\begin{DoxyParams}{Parameters}
+{\em type} & the type of element \\
+\hline
+{\em name} & name of the element \\
+\hline
+{\em norm} & if this data is normalized \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structEngine_1_1BufferElement_a9e2e138fcf213597526bf262d9bdcfde}\label{structEngine_1_1BufferElement_a9e2e138fcf213597526bf262d9bdcfde}} 
+\index{Engine::BufferElement@{Engine::BufferElement}!type@{type}}
+\index{type@{type}!Engine::BufferElement@{Engine::BufferElement}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceEngine_acec34c3daaf78fc14cb6b99879913672}{Shader\+Data\+Type}} Engine\+::\+Buffer\+Element\+::type}
+
+Type of this element \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespaceEngine_acec34c3daaf78fc14cb6b99879913672}{Shader\+Data\+Type}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Buffer.\+hpp\end{DoxyCompactItemize}

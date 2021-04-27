@@ -1,0 +1,5 @@
+<map id="Engine::Collider2D" name="Engine::Collider2D">
+<area shape="rect" id="node1" title="Wrapper for 2D collisions. Tells the physics system that you want to process a 2D collision and not a..." alt="" coords="26,80,169,107"/>
+<area shape="rect" id="node3" href="$structEngine_1_1VertexCollider2D.html" title="VertexCollider but in 2D. by default, all 2D colliders are non&#45;kinematic triggers." alt="" coords="5,155,189,181"/>
+<area shape="rect" id="node2" href="$structEngine_1_1Collider.html" title="Generic type storage for a GJK enabled collider." alt="" coords="35,5,159,32"/>
+</map>

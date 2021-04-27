@@ -1,0 +1,63 @@
+\hypertarget{classEngine_1_1JobSystem}{}\doxysection{Engine\+::Job\+System Class Reference}
+\label{classEngine_1_1JobSystem}\index{Engine::JobSystem@{Engine::JobSystem}}
+
+
+A glorified thread pool.  
+
+
+
+
+{\ttfamily \#include $<$Jobs.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1JobSystem_aac279bbea4dfecf879253447ed576ced}\label{classEngine_1_1JobSystem_aac279bbea4dfecf879253447ed576ced}} 
+\mbox{\hyperlink{classEngine_1_1JobSystem_aac279bbea4dfecf879253447ed576ced}{Job\+System}} ()=delete
+\begin{DoxyCompactList}\small\item\em delete default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEngine_1_1JobSystem_a72ac72312d6a12761634ee247ecdf9e3}{Job\+System}} (size\+\_\+t num\+\_\+threads)
+\item 
+\mbox{\Hypertarget{classEngine_1_1JobSystem_aee980491dcf70ebdc09e781a117a0594}\label{classEngine_1_1JobSystem_aee980491dcf70ebdc09e781a117a0594}} 
+void \mbox{\hyperlink{classEngine_1_1JobSystem_aee980491dcf70ebdc09e781a117a0594}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop the running threads after they finish their current job. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_1_1JobSystem_a1e8f695f6f08f0ec119ede956df5a0c9}{Add\+Job}} (\mbox{\hyperlink{namespaceEngine_afae31e7796f3d1c1b5135b0e3a1530a9}{func}} job)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A glorified thread pool. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEngine_1_1JobSystem_a72ac72312d6a12761634ee247ecdf9e3}\label{classEngine_1_1JobSystem_a72ac72312d6a12761634ee247ecdf9e3}} 
+\index{Engine::JobSystem@{Engine::JobSystem}!JobSystem@{JobSystem}}
+\index{JobSystem@{JobSystem}!Engine::JobSystem@{Engine::JobSystem}}
+\doxysubsubsection{\texorpdfstring{JobSystem()}{JobSystem()}}
+{\footnotesize\ttfamily Engine\+::\+Job\+System\+::\+Job\+System (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{num\+\_\+threads }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+threads} & the number of worker threads to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespaceEngine_af5cfb569624b8e9807d59332140b6c82}{M\+A\+X\+\_\+\+J\+O\+B\+\_\+\+T\+H\+R\+E\+A\+DS}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1JobSystem_a1e8f695f6f08f0ec119ede956df5a0c9}\label{classEngine_1_1JobSystem_a1e8f695f6f08f0ec119ede956df5a0c9}} 
+\index{Engine::JobSystem@{Engine::JobSystem}!AddJob@{AddJob}}
+\index{AddJob@{AddJob}!Engine::JobSystem@{Engine::JobSystem}}
+\doxysubsubsection{\texorpdfstring{AddJob()}{AddJob()}}
+{\footnotesize\ttfamily void Engine\+::\+Job\+System\+::\+Add\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceEngine_afae31e7796f3d1c1b5135b0e3a1530a9}{func}}}]{job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a job to the queue 
+\begin{DoxyParams}{Parameters}
+{\em job} & to add to the queue \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Jobs.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="Engine::Collider2D" name="Engine::Collider2D">
+<area shape="rect" id="node1" title="Wrapper for 2D collisions. Tells the physics system that you want to process a 2D collision and not a..." alt="" coords="5,80,148,107"/>
+<area shape="rect" id="node2" href="$structEngine_1_1Collider.html" title="Generic type storage for a GJK enabled collider." alt="" coords="15,5,139,32"/>
+</map>

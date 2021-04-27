@@ -1,0 +1,76 @@
+\hypertarget{classEngine_1_1Engine}{}\doxysection{Engine\+::Engine Class Reference}
+\label{classEngine_1_1Engine}\index{Engine::Engine@{Engine::Engine}}
+
+
+This class sets up the main game engine.  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1Engine_a9d187b3ab1642eade0ef3d3216df1a18}\label{classEngine_1_1Engine_a9d187b3ab1642eade0ef3d3216df1a18}} 
+\mbox{\hyperlink{classEngine_1_1Engine_a9d187b3ab1642eade0ef3d3216df1a18}{Engine}} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{classEngine_1_1Engine}{Engine}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Engine_a018bea4e2f6a7838645aea62defe27c0}\label{classEngine_1_1Engine_a018bea4e2f6a7838645aea62defe27c0}} 
+\mbox{\hyperlink{classEngine_1_1Engine_a018bea4e2f6a7838645aea62defe27c0}{$\sim$\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Engine_a9e28690069663cab0dcaaf9b013bccec}\label{classEngine_1_1Engine_a9e28690069663cab0dcaaf9b013bccec}} 
+void \mbox{\hyperlink{classEngine_1_1Engine_a9e28690069663cab0dcaaf9b013bccec}{Process\+Input}} (bool $\ast$quit)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classEngine_1_1Input}{Input}} engine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Engine_afd7d91be7df26f862130abc67a9c5c12}\label{classEngine_1_1Engine_afd7d91be7df26f862130abc67a9c5c12}} 
+void \mbox{\hyperlink{classEngine_1_1Engine_afd7d91be7df26f862130abc67a9c5c12}{Update}} (double dt)
+\begin{DoxyCompactList}\small\item\em Per frame update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Engine_a696bb3c517d572a9eeec47032d2396fa}\label{classEngine_1_1Engine_a696bb3c517d572a9eeec47032d2396fa}} 
+void \mbox{\hyperlink{classEngine_1_1Engine_a696bb3c517d572a9eeec47032d2396fa}{Render}} ()
+\begin{DoxyCompactList}\small\item\em Per frame render. Renders everything. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1Engine_a57543667961154ab40683fd07f38e24c}\label{classEngine_1_1Engine_a57543667961154ab40683fd07f38e24c}} 
+void \mbox{\hyperlink{classEngine_1_1Engine_a57543667961154ab40683fd07f38e24c}{Main\+Game\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Main Game Loop that runs forever. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_1_1Engine_a83b9d8be3f52441ccd65f4782df34531}{Start}} ()
+\item 
+void \mbox{\hyperlink{classEngine_1_1Engine_a3bc1b5afcc58ec97f626c383fed03f1e}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{classEngine_1_1Engine_aab3b29cf6339e92f07b1ae1b230fbc07}{Initialize\+Graphics\+Sub\+System}} ()
+\begin{DoxyCompactList}\small\item\em Request to startup the Graphics Subsystem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class sets up the main game engine. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1Engine_aab3b29cf6339e92f07b1ae1b230fbc07}\label{classEngine_1_1Engine_aab3b29cf6339e92f07b1ae1b230fbc07}} 
+\index{Engine::Engine@{Engine::Engine}!InitializeGraphicsSubSystem@{InitializeGraphicsSubSystem}}
+\index{InitializeGraphicsSubSystem@{InitializeGraphicsSubSystem}!Engine::Engine@{Engine::Engine}}
+\doxysubsubsection{\texorpdfstring{InitializeGraphicsSubSystem()}{InitializeGraphicsSubSystem()}}
+{\footnotesize\ttfamily void Engine\+::\+Engine\+::\+Initialize\+Graphics\+Sub\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Request to startup the Graphics Subsystem. 
+
+Generate a window and graphics objects \mbox{\Hypertarget{classEngine_1_1Engine_a3bc1b5afcc58ec97f626c383fed03f1e}\label{classEngine_1_1Engine_a3bc1b5afcc58ec97f626c383fed03f1e}} 
+\index{Engine::Engine@{Engine::Engine}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!Engine::Engine@{Engine::Engine}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Engine\+::\+Engine\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialization and shutdown pattern Explicitly call \textquotesingle{}Shutdown\textquotesingle{} to terminate the engine
+
+Safely delete and close down all connected objects. \mbox{\Hypertarget{classEngine_1_1Engine_a83b9d8be3f52441ccd65f4782df34531}\label{classEngine_1_1Engine_a83b9d8be3f52441ccd65f4782df34531}} 
+\index{Engine::Engine@{Engine::Engine}!Start@{Start}}
+\index{Start@{Start}!Engine::Engine@{Engine::Engine}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Engine\+::\+Engine\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialization and shutdown pattern Explicitly call \textquotesingle{}Start\textquotesingle{} to launch the engine
+
+Initialize and load Game Objects and game data. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Engine.\+hpp\item 
+src/Engine.\+cpp\end{DoxyCompactItemize}

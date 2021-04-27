@@ -1,0 +1,118 @@
+\hypertarget{structEngine_1_1PhysicsEntity}{}\doxysection{Engine\+::Physics\+Entity Struct Reference}
+\label{structEngine_1_1PhysicsEntity}\index{Engine::PhysicsEntity@{Engine::PhysicsEntity}}
+
+
+Links all the data necessary to compute physics calculations.  
+
+
+
+
+{\ttfamily \#include $<$Components.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a50f0b9edb7ba9cd3c0e28ea4c3e3ecdd}\label{structEngine_1_1PhysicsEntity_a50f0b9edb7ba9cd3c0e28ea4c3e3ecdd}} 
+{\bfseries Physics\+Entity} (\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Entity}{Entity}} $>$ \&e, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} $>$ \&transform, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Collider}{Collider}} $>$ \&collider, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1RigidBody}{Rigid\+Body}} $>$ \&rigid\+Body)
+\item 
+glm\+::mat4 \mbox{\hyperlink{structEngine_1_1PhysicsEntity_aaeabb153e765050d4002782b5ccfa827}{get\+Mat}} ()
+\begin{DoxyCompactList}\small\item\em Get the matrix transformation made up of q and x. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a95710c5bdc646d05d25025654a69e980}{get\+I\+Mat}} ()
+\begin{DoxyCompactList}\small\item\em Get the inverse matrix transformation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a343ab5f05d61091453e94d598438ef2b}\label{structEngine_1_1PhysicsEntity_a343ab5f05d61091453e94d598438ef2b}} 
+void \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a343ab5f05d61091453e94d598438ef2b}{clear\+Mat}} ()
+\begin{DoxyCompactList}\small\item\em Clear the matrix flags when the position or rotation is updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a5fe681a058be9bf68c4d31929f12a79f}\label{structEngine_1_1PhysicsEntity_a5fe681a058be9bf68c4d31929f12a79f}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Entity}{Entity}} $>$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a5fe681a058be9bf68c4d31929f12a79f}{entity}}
+\begin{DoxyCompactList}\small\item\em Entitiy reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a640363f706d74d610975ea8c82eb8694}\label{structEngine_1_1PhysicsEntity_a640363f706d74d610975ea8c82eb8694}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Transform}{Transform}} $>$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a640363f706d74d610975ea8c82eb8694}{tf}} = nullptr
+\begin{DoxyCompactList}\small\item\em transform reference \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a408a81ab23584aed75e1b72f677d1634}\label{structEngine_1_1PhysicsEntity_a408a81ab23584aed75e1b72f677d1634}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Collider}{Collider}} $>$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a408a81ab23584aed75e1b72f677d1634}{c}} = nullptr
+\begin{DoxyCompactList}\small\item\em collider reference \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_ac964c4a7b753790952714abe7b55271e}\label{structEngine_1_1PhysicsEntity_ac964c4a7b753790952714abe7b55271e}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Collider}{Collider}} $>$ {\bfseries cuse} = nullptr
+\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a9e352ce442b0812cf48085adf6929cfd}\label{structEngine_1_1PhysicsEntity_a9e352ce442b0812cf48085adf6929cfd}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1RigidBody}{Rigid\+Body}} $>$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a9e352ce442b0812cf48085adf6929cfd}{rb}} = nullptr
+\begin{DoxyCompactList}\small\item\em rigidbody reference \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a4454ef48467a4245ba62b505ae8d331e}\label{structEngine_1_1PhysicsEntity_a4454ef48467a4245ba62b505ae8d331e}} 
+glm\+::vec3 {\bfseries v} \{0\}
+\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a391b94c9462c775ef234be7ff879e4ec}\label{structEngine_1_1PhysicsEntity_a391b94c9462c775ef234be7ff879e4ec}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a391b94c9462c775ef234be7ff879e4ec}{w}} \{0\}
+\begin{DoxyCompactList}\small\item\em velocity \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_ad22dad0a9da6d622ba6dca569413de87}\label{structEngine_1_1PhysicsEntity_ad22dad0a9da6d622ba6dca569413de87}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1PhysicsEntity_ad22dad0a9da6d622ba6dca569413de87}{x}} \{0\}
+\begin{DoxyCompactList}\small\item\em angular momentum \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a264ba0ebedc755b4126f032f0fb20a63}\label{structEngine_1_1PhysicsEntity_a264ba0ebedc755b4126f032f0fb20a63}} 
+glm\+::vec3 \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a264ba0ebedc755b4126f032f0fb20a63}{x\+Prev}} \{0\}
+\begin{DoxyCompactList}\small\item\em position \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a42290a98f57e7ca7f9b3406864d50fa5}\label{structEngine_1_1PhysicsEntity_a42290a98f57e7ca7f9b3406864d50fa5}} 
+glm\+::qua$<$ float $>$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a42290a98f57e7ca7f9b3406864d50fa5}{q}} \{\}
+\begin{DoxyCompactList}\small\item\em previous position (needed for X\+P\+BD) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_ae80f532a1a8e4e44854245c4e231fd0b}\label{structEngine_1_1PhysicsEntity_ae80f532a1a8e4e44854245c4e231fd0b}} 
+glm\+::qua$<$ float $>$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity_ae80f532a1a8e4e44854245c4e231fd0b}{q\+Prev}} \{\}
+\begin{DoxyCompactList}\small\item\em rotation quat \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_addcd3996ba00ce7cab95b8278baad4de}\label{structEngine_1_1PhysicsEntity_addcd3996ba00ce7cab95b8278baad4de}} 
+glm\+::qua$<$ float $>$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity_addcd3996ba00ce7cab95b8278baad4de}{dQ}} \{\}
+\begin{DoxyCompactList}\small\item\em previous quat \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structEngine_1_1PhysicsEntity_a77453bea8c7e130b93b1cf797ceafa65}{mat\+Updated}} = true
+\begin{DoxyCompactList}\small\item\em storage for a delta quat \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_ac0a0e201ea0e9c536f00a1b8be727911}\label{structEngine_1_1PhysicsEntity_ac0a0e201ea0e9c536f00a1b8be727911}} 
+bool {\bfseries itmat\+Updated} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Links all the data necessary to compute physics calculations. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a95710c5bdc646d05d25025654a69e980}\label{structEngine_1_1PhysicsEntity_a95710c5bdc646d05d25025654a69e980}} 
+\index{Engine::PhysicsEntity@{Engine::PhysicsEntity}!getIMat@{getIMat}}
+\index{getIMat@{getIMat}!Engine::PhysicsEntity@{Engine::PhysicsEntity}}
+\doxysubsubsection{\texorpdfstring{getIMat()}{getIMat()}}
+{\footnotesize\ttfamily glm\+::mat4 Engine\+::\+Physics\+Entity\+::get\+I\+Mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the inverse matrix transformation. 
+
+\begin{DoxyReturn}{Returns}
+inverse matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_aaeabb153e765050d4002782b5ccfa827}\label{structEngine_1_1PhysicsEntity_aaeabb153e765050d4002782b5ccfa827}} 
+\index{Engine::PhysicsEntity@{Engine::PhysicsEntity}!getMat@{getMat}}
+\index{getMat@{getMat}!Engine::PhysicsEntity@{Engine::PhysicsEntity}}
+\doxysubsubsection{\texorpdfstring{getMat()}{getMat()}}
+{\footnotesize\ttfamily glm\+::mat4 Engine\+::\+Physics\+Entity\+::get\+Mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the matrix transformation made up of q and x. 
+
+\begin{DoxyReturn}{Returns}
+matrix 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structEngine_1_1PhysicsEntity_a77453bea8c7e130b93b1cf797ceafa65}\label{structEngine_1_1PhysicsEntity_a77453bea8c7e130b93b1cf797ceafa65}} 
+\index{Engine::PhysicsEntity@{Engine::PhysicsEntity}!matUpdated@{matUpdated}}
+\index{matUpdated@{matUpdated}!Engine::PhysicsEntity@{Engine::PhysicsEntity}}
+\doxysubsubsection{\texorpdfstring{matUpdated}{matUpdated}}
+{\footnotesize\ttfamily bool Engine\+::\+Physics\+Entity\+::mat\+Updated = true}
+
+
+
+storage for a delta quat 
+
+flags for storing matrix transformations (to avoid calculating them multiple times) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Components.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{classEngine_1_1ComponentDataArray}{}\doxysection{Engine\+::Component\+Data\+Array$<$ T $>$ Class Template Reference}
+\label{classEngine_1_1ComponentDataArray}\index{Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}}
+
+
+An array of components of type T.  
+
+
+
+
+{\ttfamily \#include $<$Component\+Array.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Component\+Data\+Array$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classEngine_1_1ComponentDataArray__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::Component\+Data\+Array$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classEngine_1_1ComponentDataArray__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1ComponentDataArray_a975bf05e19ee70c2556aa48c6743ed8a}\label{classEngine_1_1ComponentDataArray_a975bf05e19ee70c2556aa48c6743ed8a}} 
+\mbox{\hyperlink{classEngine_1_1ComponentDataArray_a975bf05e19ee70c2556aa48c6743ed8a}{Component\+Data\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ T $>$ \mbox{\hyperlink{classEngine_1_1ComponentDataArray_adf176da91bb1ef1cff428e07675706e0}{Insert}} (Entity\+ID id, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ T $>$ c)
+\item 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ T $>$ \mbox{\hyperlink{classEngine_1_1ComponentDataArray_a000982b4e4ec84ee1c509e9ba776511e}{Insert}} (Entity\+ID id, T c)
+\item 
+void \mbox{\hyperlink{classEngine_1_1ComponentDataArray_a4456292abe57836df46b4c5e5c24fcd7}{Remove}} (Entity\+ID id)
+\item 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ T $>$ \mbox{\hyperlink{classEngine_1_1ComponentDataArray_a7d27a9be5cad1b30ad4097c36f235e66}{Get\+Comp}} (Entity\+ID id)
+\item 
+void \mbox{\hyperlink{classEngine_1_1ComponentDataArray_a1e162f0aee3991b61aecb04c2a798626}{Entity\+Destroyed}} (Entity\+ID id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Engine\+::\+Component\+Data\+Array$<$ T $>$}
+
+An array of components of type T. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1ComponentDataArray_a1e162f0aee3991b61aecb04c2a798626}\label{classEngine_1_1ComponentDataArray_a1e162f0aee3991b61aecb04c2a798626}} 
+\index{Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}!EntityDestroyed@{EntityDestroyed}}
+\index{EntityDestroyed@{EntityDestroyed}!Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EntityDestroyed()}{EntityDestroyed()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEngine_1_1ComponentDataArray}{Engine\+::\+Component\+Data\+Array}}$<$ T $>$\+::Entity\+Destroyed (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get rid of stuff when the entity is destroyed 
+\begin{DoxyParams}{Parameters}
+{\em id} & the entity that was destroyed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{structEngine_1_1IComponentDataArray_a6d109ab262acd882f0ad51f110c5d799}{Engine\+::\+I\+Component\+Data\+Array}}.
+
+\mbox{\Hypertarget{classEngine_1_1ComponentDataArray_a7d27a9be5cad1b30ad4097c36f235e66}\label{classEngine_1_1ComponentDataArray_a7d27a9be5cad1b30ad4097c36f235e66}} 
+\index{Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}!GetComp@{GetComp}}
+\index{GetComp@{GetComp}!Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetComp()}{GetComp()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$T$>$ \mbox{\hyperlink{classEngine_1_1ComponentDataArray}{Engine\+::\+Component\+Data\+Array}}$<$ T $>$\+::Get\+Comp (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gives you a reference to a component on an entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the entity we want this component from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1ComponentDataArray_adf176da91bb1ef1cff428e07675706e0}\label{classEngine_1_1ComponentDataArray_adf176da91bb1ef1cff428e07675706e0}} 
+\index{Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$T$>$ \mbox{\hyperlink{classEngine_1_1ComponentDataArray}{Engine\+::\+Component\+Data\+Array}}$<$ T $>$\+::Insert (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id,  }\item[{\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ T $>$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a component to an entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the entity we want to attatch to \\
+\hline
+{\em c} & the component we want to attatch \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ComponentDataArray_a000982b4e4ec84ee1c509e9ba776511e}\label{classEngine_1_1ComponentDataArray_a000982b4e4ec84ee1c509e9ba776511e}} 
+\index{Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$T$>$ \mbox{\hyperlink{classEngine_1_1ComponentDataArray}{Engine\+::\+Component\+Data\+Array}}$<$ T $>$\+::Insert (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id,  }\item[{T}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a component to an entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the entity we want to attatch to \\
+\hline
+{\em c} & the component we want to attatch \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ComponentDataArray_a4456292abe57836df46b4c5e5c24fcd7}\label{classEngine_1_1ComponentDataArray_a4456292abe57836df46b4c5e5c24fcd7}} 
+\index{Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!Engine::ComponentDataArray$<$ T $>$@{Engine::ComponentDataArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEngine_1_1ComponentDataArray}{Engine\+::\+Component\+Data\+Array}}$<$ T $>$\+::Remove (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes a component from an entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the entity we want to remove a component from \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Component\+Array.\+hpp\end{DoxyCompactItemize}

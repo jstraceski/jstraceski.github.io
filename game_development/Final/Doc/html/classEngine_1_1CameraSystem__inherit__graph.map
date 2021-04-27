@@ -1,0 +1,5 @@
+<map id="Engine::CameraSystem" name="Engine::CameraSystem">
+<area shape="rect" id="node1" title="This system ensures the camera follows a player, aka an entity with a controller." alt="" coords="21,169,196,196"/>
+<area shape="rect" id="node2" href="$classEngine_1_1System.html" title=" " alt="" coords="5,80,212,121"/>
+<area shape="rect" id="node3" href="$classEngine_1_1SystemBase.html" title=" " alt="" coords="31,5,186,32"/>
+</map>

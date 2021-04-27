@@ -1,0 +1,64 @@
+\hypertarget{classEngine_1_1BufferLayout}{}\doxysection{Engine\+::Buffer\+Layout Class Reference}
+\label{classEngine_1_1BufferLayout}\index{Engine::BufferLayout@{Engine::BufferLayout}}
+
+
+Constructs the layout of a vertex buffer.  
+
+
+
+
+{\ttfamily \#include $<$Buffer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{structEngine_1_1BufferElement}{Buffer\+Element}} $>$ \& \mbox{\hyperlink{classEngine_1_1BufferLayout_a8d2e3e3bdceddaefd168e6bb8c163cc4}{Get\+Elements}} () const
+\item 
+\mbox{\Hypertarget{classEngine_1_1BufferLayout_a03ec97435bf006502eddd62a5e40408e}\label{classEngine_1_1BufferLayout_a03ec97435bf006502eddd62a5e40408e}} 
+const uint32\+\_\+t \mbox{\hyperlink{classEngine_1_1BufferLayout_a03ec97435bf006502eddd62a5e40408e}{Get\+Stride}} () const
+\begin{DoxyCompactList}\small\item\em @retuns the stride of the elements of this buffer \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEngine_1_1BufferLayout_aa8ae4512581ae7c9fb82abc2d80f798d}{Buffer\+Layout}} (const std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structEngine_1_1BufferElement}{Buffer\+Element}} $>$ \&elements)
+\item 
+\mbox{\Hypertarget{classEngine_1_1BufferLayout_a423edc89d8a014f5a6f57b118751f571}\label{classEngine_1_1BufferLayout_a423edc89d8a014f5a6f57b118751f571}} 
+\mbox{\hyperlink{classEngine_1_1BufferLayout_a423edc89d8a014f5a6f57b118751f571}{Buffer\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty buffer layout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1BufferLayout_a0a410bbd1e038b7ce9a57997bc98f726}\label{classEngine_1_1BufferLayout_a0a410bbd1e038b7ce9a57997bc98f726}} 
+std\+::vector$<$ \mbox{\hyperlink{structEngine_1_1BufferElement}{Buffer\+Element}} $>$\+::iterator \mbox{\hyperlink{classEngine_1_1BufferLayout_a0a410bbd1e038b7ce9a57997bc98f726}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Wrapper around the elements vectory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1BufferLayout_a618d692a08b60b53c9bffda34343ee05}\label{classEngine_1_1BufferLayout_a618d692a08b60b53c9bffda34343ee05}} 
+std\+::vector$<$ \mbox{\hyperlink{structEngine_1_1BufferElement}{Buffer\+Element}} $>$\+::iterator \mbox{\hyperlink{classEngine_1_1BufferLayout_a618d692a08b60b53c9bffda34343ee05}{end}} ()
+\begin{DoxyCompactList}\small\item\em Wrapper around the elements vectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constructs the layout of a vertex buffer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEngine_1_1BufferLayout_aa8ae4512581ae7c9fb82abc2d80f798d}\label{classEngine_1_1BufferLayout_aa8ae4512581ae7c9fb82abc2d80f798d}} 
+\index{Engine::BufferLayout@{Engine::BufferLayout}!BufferLayout@{BufferLayout}}
+\index{BufferLayout@{BufferLayout}!Engine::BufferLayout@{Engine::BufferLayout}}
+\doxysubsubsection{\texorpdfstring{BufferLayout()}{BufferLayout()}}
+{\footnotesize\ttfamily Engine\+::\+Buffer\+Layout\+::\+Buffer\+Layout (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structEngine_1_1BufferElement}{Buffer\+Element}} $>$ \&}]{elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em elements} & an initializer list of buffer element to create this \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1BufferLayout_a8d2e3e3bdceddaefd168e6bb8c163cc4}\label{classEngine_1_1BufferLayout_a8d2e3e3bdceddaefd168e6bb8c163cc4}} 
+\index{Engine::BufferLayout@{Engine::BufferLayout}!GetElements@{GetElements}}
+\index{GetElements@{GetElements}!Engine::BufferLayout@{Engine::BufferLayout}}
+\doxysubsubsection{\texorpdfstring{GetElements()}{GetElements()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{structEngine_1_1BufferElement}{Buffer\+Element}}$>$\& Engine\+::\+Buffer\+Layout\+::\+Get\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+a reference to the element vector of this buffer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Buffer.\+hpp\end{DoxyCompactItemize}

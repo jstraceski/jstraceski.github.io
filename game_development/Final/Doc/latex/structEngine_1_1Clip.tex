@@ -1,0 +1,165 @@
+\hypertarget{structEngine_1_1Clip}{}\doxysection{Engine\+::Clip Struct Reference}
+\label{structEngine_1_1Clip}\index{Engine::Clip@{Engine::Clip}}
+
+
+Struct to hold music data.  
+
+
+
+
+{\ttfamily \#include $<$Clip.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Clip_ac3c1368e6c78ad3f8366a1a15f5c8c42}\label{structEngine_1_1Clip_ac3c1368e6c78ad3f8366a1a15f5c8c42}} 
+void \mbox{\hyperlink{structEngine_1_1Clip_ac3c1368e6c78ad3f8366a1a15f5c8c42}{play\+Clip}} ()
+\begin{DoxyCompactList}\small\item\em play the referenced \mbox{\hyperlink{structEngine_1_1Clip}{Clip}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Clip_acac1797da7c94988f4137895259b84ab}\label{structEngine_1_1Clip_acac1797da7c94988f4137895259b84ab}} 
+void \mbox{\hyperlink{structEngine_1_1Clip_acac1797da7c94988f4137895259b84ab}{loop\+Clip}} ()
+\begin{DoxyCompactList}\small\item\em play the referenced \mbox{\hyperlink{structEngine_1_1Clip}{Clip}} and loop it \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Clip_a09ae587081db18f7f569f9dc9743fac7}\label{structEngine_1_1Clip_a09ae587081db18f7f569f9dc9743fac7}} 
+void \mbox{\hyperlink{structEngine_1_1Clip_a09ae587081db18f7f569f9dc9743fac7}{end\+Clip}} ()
+\begin{DoxyCompactList}\small\item\em end the referenced \mbox{\hyperlink{structEngine_1_1Clip}{Clip}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structEngine_1_1Clip_ac0aef8ca712dee5ece00e69871c33ef5}{$\sim$\+Clip}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Clip_ab507828be3351bc35a47e04ce6f01448}{Init\+Audio}} ()
+\item 
+static \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Clip}{Clip}} $>$ \mbox{\hyperlink{structEngine_1_1Clip_a91beea1da52500be252f7409513e9654}{Load\+Clip}} (const std\+::string \&path)
+\item 
+static void \mbox{\hyperlink{structEngine_1_1Clip_a01e540f7e213245e1a35d33b7f6344a1}{callback}} (void $\ast$userdata, Uint8 $\ast$stream, int len)
+\begin{DoxyCompactList}\small\item\em Callback passed into the S\+DL Audio library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Uint32 \mbox{\hyperlink{structEngine_1_1Clip_ad21855eaf4eaa20c0b044d34a115e448}{clip\+Len}}
+\item 
+Uint32 \mbox{\hyperlink{structEngine_1_1Clip_a491a4f297597b8df0cd703b33716298a}{track\+Pos}} = 0
+\item 
+Uint8 $\ast$ \mbox{\hyperlink{structEngine_1_1Clip_a4fd65599792061121e100e66172be4a7}{data}}
+\item 
+S\+D\+L\+\_\+\+Audio\+Spec \mbox{\hyperlink{structEngine_1_1Clip_ac60a8ef5308e065d4265bf202352d1dd}{spec}}
+\item 
+bool \mbox{\hyperlink{structEngine_1_1Clip_a6574fc69d557910d73650b93daa6c3ac}{loop}} = false
+\item 
+bool \mbox{\hyperlink{structEngine_1_1Clip_a25a0b2e32ec23feeaae07dc643140add}{active}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Clip}{Clip}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1Clip_a9a0d07f0a9637abd5148c92e78183864}{sounds}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct to hold music data. 
+
+Includes looping and tracking of music position. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structEngine_1_1Clip_ac0aef8ca712dee5ece00e69871c33ef5}\label{structEngine_1_1Clip_ac0aef8ca712dee5ece00e69871c33ef5}} 
+\index{Engine::Clip@{Engine::Clip}!````~Clip@{$\sim$Clip}}
+\index{````~Clip@{$\sim$Clip}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{$\sim$Clip()}{~Clip()}}
+{\footnotesize\ttfamily Engine\+::\+Clip\+::$\sim$\+Clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deconstructor
+
+Deletes the all stored audio buffer data. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1Clip_a01e540f7e213245e1a35d33b7f6344a1}\label{structEngine_1_1Clip_a01e540f7e213245e1a35d33b7f6344a1}} 
+\index{Engine::Clip@{Engine::Clip}!callback@{callback}}
+\index{callback@{callback}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily static void Engine\+::\+Clip\+::callback (\begin{DoxyParamCaption}\item[{void $\ast$}]{userdata,  }\item[{Uint8 $\ast$}]{stream,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Callback passed into the S\+DL Audio library. 
+
+Loops through all loaded sounds and mixes them together if they are active.
+
+
+\begin{DoxyParams}{Parameters}
+{\em userdata} & not used \\
+\hline
+{\em stream} & audio buffer \\
+\hline
+{\em len} & length of the buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1Clip_ab507828be3351bc35a47e04ce6f01448}\label{structEngine_1_1Clip_ab507828be3351bc35a47e04ce6f01448}} 
+\index{Engine::Clip@{Engine::Clip}!InitAudio@{InitAudio}}
+\index{InitAudio@{InitAudio}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{InitAudio()}{InitAudio()}}
+{\footnotesize\ttfamily static void Engine\+::\+Clip\+::\+Init\+Audio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Initialize global audio data. \mbox{\Hypertarget{structEngine_1_1Clip_a91beea1da52500be252f7409513e9654}\label{structEngine_1_1Clip_a91beea1da52500be252f7409513e9654}} 
+\index{Engine::Clip@{Engine::Clip}!LoadClip@{LoadClip}}
+\index{LoadClip@{LoadClip}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{LoadClip()}{LoadClip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Clip}{Clip}} $>$ Engine\+::\+Clip\+::\+Load\+Clip (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate an audio clip from a system path. 
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the loaded \mbox{\hyperlink{structEngine_1_1Clip}{Clip}} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structEngine_1_1Clip_a25a0b2e32ec23feeaae07dc643140add}\label{structEngine_1_1Clip_a25a0b2e32ec23feeaae07dc643140add}} 
+\index{Engine::Clip@{Engine::Clip}!active@{active}}
+\index{active@{active}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool Engine\+::\+Clip\+::active = false}
+
+is the clip playing or not \mbox{\Hypertarget{structEngine_1_1Clip_ad21855eaf4eaa20c0b044d34a115e448}\label{structEngine_1_1Clip_ad21855eaf4eaa20c0b044d34a115e448}} 
+\index{Engine::Clip@{Engine::Clip}!clipLen@{clipLen}}
+\index{clipLen@{clipLen}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{clipLen}{clipLen}}
+{\footnotesize\ttfamily Uint32 Engine\+::\+Clip\+::clip\+Len}
+
+clip length \mbox{\Hypertarget{structEngine_1_1Clip_a4fd65599792061121e100e66172be4a7}\label{structEngine_1_1Clip_a4fd65599792061121e100e66172be4a7}} 
+\index{Engine::Clip@{Engine::Clip}!data@{data}}
+\index{data@{data}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily Uint8$\ast$ Engine\+::\+Clip\+::data}
+
+audio data \mbox{\Hypertarget{structEngine_1_1Clip_a6574fc69d557910d73650b93daa6c3ac}\label{structEngine_1_1Clip_a6574fc69d557910d73650b93daa6c3ac}} 
+\index{Engine::Clip@{Engine::Clip}!loop@{loop}}
+\index{loop@{loop}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily bool Engine\+::\+Clip\+::loop = false}
+
+flag to set the clip looping \mbox{\Hypertarget{structEngine_1_1Clip_a9a0d07f0a9637abd5148c92e78183864}\label{structEngine_1_1Clip_a9a0d07f0a9637abd5148c92e78183864}} 
+\index{Engine::Clip@{Engine::Clip}!sounds@{sounds}}
+\index{sounds@{sounds}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{sounds}{sounds}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1Clip}{Clip}} $>$ $>$ Engine\+::\+Clip\+::sounds\hspace{0.3cm}{\ttfamily [static]}}
+
+static list of all sounds \mbox{\Hypertarget{structEngine_1_1Clip_ac60a8ef5308e065d4265bf202352d1dd}\label{structEngine_1_1Clip_ac60a8ef5308e065d4265bf202352d1dd}} 
+\index{Engine::Clip@{Engine::Clip}!spec@{spec}}
+\index{spec@{spec}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{spec}{spec}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Audio\+Spec Engine\+::\+Clip\+::spec}
+
+audio specs \mbox{\Hypertarget{structEngine_1_1Clip_a491a4f297597b8df0cd703b33716298a}\label{structEngine_1_1Clip_a491a4f297597b8df0cd703b33716298a}} 
+\index{Engine::Clip@{Engine::Clip}!trackPos@{trackPos}}
+\index{trackPos@{trackPos}!Engine::Clip@{Engine::Clip}}
+\doxysubsubsection{\texorpdfstring{trackPos}{trackPos}}
+{\footnotesize\ttfamily Uint32 Engine\+::\+Clip\+::track\+Pos = 0}
+
+track position 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Clip.\+hpp\item 
+src/Clip.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,224 @@
+\hypertarget{classEngine_1_1ECS}{}\doxysection{Engine\+::E\+CS Class Reference}
+\label{classEngine_1_1ECS}\index{Engine::ECS@{Engine::ECS}}
+
+
+\mbox{\hyperlink{classEngine_1_1Entity}{Entity}} Component \mbox{\hyperlink{classEngine_1_1System}{System}}.  
+
+
+
+
+{\ttfamily \#include $<$E\+C\+S.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_1_1ECS_a2478638ecf053d75120dc49257581c1b}\label{classEngine_1_1ECS_a2478638ecf053d75120dc49257581c1b}} 
+\mbox{\hyperlink{classEngine_1_1ECS_a2478638ecf053d75120dc49257581c1b}{E\+CS}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{classEngine_1_1ECS}{E\+CS}}, entity counter is 1 to reserve for null. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1ECS_ac40fc7e77d0de7622206b5d1d4d78eb0}\label{classEngine_1_1ECS_ac40fc7e77d0de7622206b5d1d4d78eb0}} 
+\mbox{\hyperlink{classEngine_1_1ECS_ac40fc7e77d0de7622206b5d1d4d78eb0}{$\sim$\+E\+CS}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classEngine_1_1ECS}{E\+CS}} Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEngine_1_1ECS_a71aa4133eb4315af3ca4bc2a005c65c8}\label{classEngine_1_1ECS_a71aa4133eb4315af3ca4bc2a005c65c8}} 
+Entity\+ID \mbox{\hyperlink{classEngine_1_1ECS_a71aa4133eb4315af3ca4bc2a005c65c8}{Create\+Entity\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Creates an entity and returns it\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class C $>$ }\\void \mbox{\hyperlink{classEngine_1_1ECS_a9853350587a2638f474fd95b07d7bbcc}{Remove\+Component}} (const Entity\+ID \&id)
+\item 
+Archetype \mbox{\hyperlink{classEngine_1_1ECS_ac61a58b70923e87459d7e2da6dc38b3f}{Get\+Archetype}} (Entity\+ID id)
+\item 
+{\footnotesize template$<$class C $>$ }\\\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$ \mbox{\hyperlink{classEngine_1_1ECS_a8abb78adb96deabc3f4037e446a523c7}{Get\+Component}} (const Entity\+ID \&id)
+\item 
+void \mbox{\hyperlink{classEngine_1_1ECS_a75865a884863faf312d7039cc0b9b311}{Remove\+Entity}} (const Entity\+ID \&id)
+\item 
+{\footnotesize template$<$class C , typename... Args$>$ }\\\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$ \mbox{\hyperlink{classEngine_1_1ECS_a5be23d55fc4e110bda950df24800c45e}{Add\+Component}} (Entity\+ID id, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$ args)
+\item 
+{\footnotesize template$<$class C , typename... Args$>$ }\\\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$ \mbox{\hyperlink{classEngine_1_1ECS_a2dbe2acafe32c0bca26e1af19ffd3b5e}{Add\+Component}} (Entity\+ID id, Args \&\&... args)
+\item 
+System\+ID \mbox{\hyperlink{classEngine_1_1ECS_a4d03b46d4988b660df006291f032e686}{Register\+System}} (\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1SystemBase}{System\+Base}} $>$ \&s)
+\item 
+void \mbox{\hyperlink{classEngine_1_1ECS_a2f7f04f02e6da05f329a8e14bd899688}{Run\+System}} (System\+ID sid)
+\item 
+void \mbox{\hyperlink{classEngine_1_1ECS_a8dda9ff2062961f35e4d9924d92f93a1}{Run\+System\+Arch}} (Archetype a)
+\item 
+{\footnotesize template$<$class... Cs$>$ }\\Archetype \mbox{\hyperlink{classEngine_1_1ECS_a13463fe1526b599a26bb865de322c396}{Get\+Archetype}} ()
+\item 
+{\footnotesize template$<$class... Cs$>$ }\\std\+::vector$<$ Entity\+ID $>$ \mbox{\hyperlink{classEngine_1_1ECS_a4b4d91b68406c52ac4a4d74b45d9bdb0}{Get\+Entities\+With}} ()
+\item 
+std\+::vector$<$ Entity\+ID $>$ \mbox{\hyperlink{classEngine_1_1ECS_a83ab7e1a5d033101b3c979fcca6963b1}{Get\+Entities\+With}} (Archetype a)
+\item 
+{\footnotesize template$<$class C $>$ }\\void \mbox{\hyperlink{classEngine_1_1ECS_ac89e07f949dac4e91ea66c0f5b96718d}{Register\+Component}} ()
+\item 
+{\footnotesize template$<$class C $>$ }\\bool \mbox{\hyperlink{classEngine_1_1ECS_a1b121384346cff9ff6083e72e0d70260}{Is\+Component\+Registered}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEngine_1_1Entity}{Entity}} Component \mbox{\hyperlink{classEngine_1_1System}{System}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_1_1ECS_a2dbe2acafe32c0bca26e1af19ffd3b5e}\label{classEngine_1_1ECS_a2dbe2acafe32c0bca26e1af19ffd3b5e}} 
+\index{Engine::ECS@{Engine::ECS}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class C , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$C$>$ Engine\+::\+E\+C\+S\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a component of type C to the given entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the entity we want to operate on \\
+\hline
+{\em args} & the arguments to create the type of the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a5be23d55fc4e110bda950df24800c45e}\label{classEngine_1_1ECS_a5be23d55fc4e110bda950df24800c45e}} 
+\index{Engine::ECS@{Engine::ECS}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class C , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$C$>$ Engine\+::\+E\+C\+S\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id,  }\item[{\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ C $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a component of type C to the given entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the entity we want to operate on \\
+\hline
+{\em args} & the arguments to create the type of the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a13463fe1526b599a26bb865de322c396}\label{classEngine_1_1ECS_a13463fe1526b599a26bb865de322c396}} 
+\index{Engine::ECS@{Engine::ECS}!GetArchetype@{GetArchetype}}
+\index{GetArchetype@{GetArchetype}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{GetArchetype()}{GetArchetype()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class... Cs$>$ \\
+Archetype Engine\+::\+E\+C\+S\+::\+Get\+Archetype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get an archetype from a call on multiple components \begin{DoxyReturn}{Returns}
+the Archetype 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1ECS_ac61a58b70923e87459d7e2da6dc38b3f}\label{classEngine_1_1ECS_ac61a58b70923e87459d7e2da6dc38b3f}} 
+\index{Engine::ECS@{Engine::ECS}!GetArchetype@{GetArchetype}}
+\index{GetArchetype@{GetArchetype}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{GetArchetype()}{GetArchetype()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Archetype Engine\+::\+E\+C\+S\+::\+Get\+Archetype (\begin{DoxyParamCaption}\item[{Entity\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes a component from the given entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the entity we want to operate on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a8abb78adb96deabc3f4037e446a523c7}\label{classEngine_1_1ECS_a8abb78adb96deabc3f4037e446a523c7}} 
+\index{Engine::ECS@{Engine::ECS}!GetComponent@{GetComponent}}
+\index{GetComponent@{GetComponent}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{GetComponent()}{GetComponent()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$C$>$ Engine\+::\+E\+C\+S\+::\+Get\+Component (\begin{DoxyParamCaption}\item[{const Entity\+ID \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a reference to a component from the given entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the entity we want to operate on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a4b4d91b68406c52ac4a4d74b45d9bdb0}\label{classEngine_1_1ECS_a4b4d91b68406c52ac4a4d74b45d9bdb0}} 
+\index{Engine::ECS@{Engine::ECS}!GetEntitiesWith@{GetEntitiesWith}}
+\index{GetEntitiesWith@{GetEntitiesWith}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{GetEntitiesWith()}{GetEntitiesWith()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class... Cs$>$ \\
+std\+::vector$<$Entity\+ID$>$ Engine\+::\+E\+C\+S\+::\+Get\+Entities\+With (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper to gather entities of a certail archetype 
+\begin{DoxyParams}{Parameters}
+{\em a} & the archetype we want \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a83ab7e1a5d033101b3c979fcca6963b1}\label{classEngine_1_1ECS_a83ab7e1a5d033101b3c979fcca6963b1}} 
+\index{Engine::ECS@{Engine::ECS}!GetEntitiesWith@{GetEntitiesWith}}
+\index{GetEntitiesWith@{GetEntitiesWith}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{GetEntitiesWith()}{GetEntitiesWith()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$Entity\+ID$>$ Engine\+::\+E\+C\+S\+::\+Get\+Entities\+With (\begin{DoxyParamCaption}\item[{Archetype}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper to gather entities of a certail archetype 
+\begin{DoxyParams}{Parameters}
+{\em a} & the archetype we want \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a1b121384346cff9ff6083e72e0d70260}\label{classEngine_1_1ECS_a1b121384346cff9ff6083e72e0d70260}} 
+\index{Engine::ECS@{Engine::ECS}!IsComponentRegistered@{IsComponentRegistered}}
+\index{IsComponentRegistered@{IsComponentRegistered}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{IsComponentRegistered()}{IsComponentRegistered()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+bool Engine\+::\+E\+C\+S\+::\+Is\+Component\+Registered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if a component is registered 
+\begin{DoxyParams}{Parameters}
+{\em if} & it\textquotesingle{}s registered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_ac89e07f949dac4e91ea66c0f5b96718d}\label{classEngine_1_1ECS_ac89e07f949dac4e91ea66c0f5b96718d}} 
+\index{Engine::ECS@{Engine::ECS}!RegisterComponent@{RegisterComponent}}
+\index{RegisterComponent@{RegisterComponent}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{RegisterComponent()}{RegisterComponent()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void Engine\+::\+E\+C\+S\+::\+Register\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Registers a component type for our use later M\+U\+ST be done before using a component of type C \mbox{\Hypertarget{classEngine_1_1ECS_a4d03b46d4988b660df006291f032e686}\label{classEngine_1_1ECS_a4d03b46d4988b660df006291f032e686}} 
+\index{Engine::ECS@{Engine::ECS}!RegisterSystem@{RegisterSystem}}
+\index{RegisterSystem@{RegisterSystem}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{RegisterSystem()}{RegisterSystem()}}
+{\footnotesize\ttfamily System\+ID Engine\+::\+E\+C\+S\+::\+Register\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1SystemBase}{System\+Base}} $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Registers a system for us to use 
+\begin{DoxyParams}{Parameters}
+{\em s} & the system to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id of the system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_1_1ECS_a9853350587a2638f474fd95b07d7bbcc}\label{classEngine_1_1ECS_a9853350587a2638f474fd95b07d7bbcc}} 
+\index{Engine::ECS@{Engine::ECS}!RemoveComponent@{RemoveComponent}}
+\index{RemoveComponent@{RemoveComponent}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{RemoveComponent()}{RemoveComponent()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void Engine\+::\+E\+C\+S\+::\+Remove\+Component (\begin{DoxyParamCaption}\item[{const Entity\+ID \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes a component from the given entity 
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the entity we want to operate on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a75865a884863faf312d7039cc0b9b311}\label{classEngine_1_1ECS_a75865a884863faf312d7039cc0b9b311}} 
+\index{Engine::ECS@{Engine::ECS}!RemoveEntity@{RemoveEntity}}
+\index{RemoveEntity@{RemoveEntity}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{RemoveEntity()}{RemoveEntity()}}
+{\footnotesize\ttfamily void Engine\+::\+E\+C\+S\+::\+Remove\+Entity (\begin{DoxyParamCaption}\item[{const Entity\+ID \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes an entity from the system 
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the entity delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a2f7f04f02e6da05f329a8e14bd899688}\label{classEngine_1_1ECS_a2f7f04f02e6da05f329a8e14bd899688}} 
+\index{Engine::ECS@{Engine::ECS}!RunSystem@{RunSystem}}
+\index{RunSystem@{RunSystem}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{RunSystem()}{RunSystem()}}
+{\footnotesize\ttfamily void Engine\+::\+E\+C\+S\+::\+Run\+System (\begin{DoxyParamCaption}\item[{System\+ID}]{sid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Runs a system 
+\begin{DoxyParams}{Parameters}
+{\em sid} & the id of the target system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_1_1ECS_a8dda9ff2062961f35e4d9924d92f93a1}\label{classEngine_1_1ECS_a8dda9ff2062961f35e4d9924d92f93a1}} 
+\index{Engine::ECS@{Engine::ECS}!RunSystemArch@{RunSystemArch}}
+\index{RunSystemArch@{RunSystemArch}!Engine::ECS@{Engine::ECS}}
+\doxysubsubsection{\texorpdfstring{RunSystemArch()}{RunSystemArch()}}
+{\footnotesize\ttfamily void Engine\+::\+E\+C\+S\+::\+Run\+System\+Arch (\begin{DoxyParamCaption}\item[{Archetype}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Runs several systems 
+\begin{DoxyParams}{Parameters}
+{\em a} & the archetype of the target systems \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/E\+C\+S.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{structEngine_1_1TileMap}{}\doxysection{Engine\+::Tile\+Map Struct Reference}
+\label{structEngine_1_1TileMap}\index{Engine::TileMap@{Engine::TileMap}}
+
+
+{\ttfamily \#include $<$Tile\+Map.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEngine_1_1TileMap_a74ba62d2329c5c0238d5234ba4003f87}{Tile\+Map}} (const std\+::string \&path, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&data, int input\+Width, int input\+Height)
+\item 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ \mbox{\hyperlink{structEngine_1_1TileMap_a01e101125a85ca3194de234b3ac5bc86}{get\+Tile}} (int idx)
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{structEngine_1_1TileMap_ae550ed10bf6a1041f2318d2ee0739deb}{get\+Map\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1TileMap_a0ff4f4e97410f4060265b1b8e451e47a}\label{structEngine_1_1TileMap_a0ff4f4e97410f4060265b1b8e451e47a}} 
+int \mbox{\hyperlink{structEngine_1_1TileMap_a0ff4f4e97410f4060265b1b8e451e47a}{tile\+Width}}
+\begin{DoxyCompactList}\small\item\em width of a single tile in pixels \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1TileMap_a0f4c23fd7ef6d31e2bf403b140e17094}\label{structEngine_1_1TileMap_a0f4c23fd7ef6d31e2bf403b140e17094}} 
+int \mbox{\hyperlink{structEngine_1_1TileMap_a0f4c23fd7ef6d31e2bf403b140e17094}{tile\+Height}}
+\begin{DoxyCompactList}\small\item\em height of a single tile in pixels \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a minimal implementation of a \mbox{\hyperlink{structEngine_1_1TileMap}{Tile\+Map}} stored texture and board\+Data information 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structEngine_1_1TileMap_a74ba62d2329c5c0238d5234ba4003f87}\label{structEngine_1_1TileMap_a74ba62d2329c5c0238d5234ba4003f87}} 
+\index{Engine::TileMap@{Engine::TileMap}!TileMap@{TileMap}}
+\index{TileMap@{TileMap}!Engine::TileMap@{Engine::TileMap}}
+\doxysubsubsection{\texorpdfstring{TileMap()}{TileMap()}}
+{\footnotesize\ttfamily Engine\+::\+Tile\+Map\+::\+Tile\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{data,  }\item[{int}]{input\+Width,  }\item[{int}]{input\+Height }\end{DoxyParamCaption})}
+
+Constructor for a \mbox{\hyperlink{structEngine_1_1TileMap}{Tile\+Map}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & texture path \\
+\hline
+{\em data} & tile grid data \\
+\hline
+{\em input\+Width} & width of each tile in pixels \\
+\hline
+{\em input\+Height} & height of each tile in pixels \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1TileMap_ae550ed10bf6a1041f2318d2ee0739deb}\label{structEngine_1_1TileMap_ae550ed10bf6a1041f2318d2ee0739deb}} 
+\index{Engine::TileMap@{Engine::TileMap}!getMapData@{getMapData}}
+\index{getMapData@{getMapData}!Engine::TileMap@{Engine::TileMap}}
+\doxysubsubsection{\texorpdfstring{getMapData()}{getMapData()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ Engine\+::\+Tile\+Map\+::get\+Map\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the map data. \begin{DoxyReturn}{Returns}
+data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structEngine_1_1TileMap_a01e101125a85ca3194de234b3ac5bc86}\label{structEngine_1_1TileMap_a01e101125a85ca3194de234b3ac5bc86}} 
+\index{Engine::TileMap@{Engine::TileMap}!getTile@{getTile}}
+\index{getTile@{getTile}!Engine::TileMap@{Engine::TileMap}}
+\doxysubsubsection{\texorpdfstring{getTile()}{getTile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{classEngine_1_1Texture}{Texture}} $>$ Engine\+::\+Tile\+Map\+::get\+Tile (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+Get texture from tile index. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & tile index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEngine_1_1Texture}{Texture}} data 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Tile\+Map.\+hpp\item 
+src/Tile\+Map.\+cpp\end{DoxyCompactItemize}

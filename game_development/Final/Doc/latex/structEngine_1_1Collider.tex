@@ -1,0 +1,68 @@
+\hypertarget{structEngine_1_1Collider}{}\doxysection{Engine\+::Collider Struct Reference}
+\label{structEngine_1_1Collider}\index{Engine::Collider@{Engine::Collider}}
+
+
+Generic type storage for a G\+JK enabled collider.  
+
+
+
+
+{\ttfamily \#include $<$Components.\+hpp$>$}
+
+
+
+Inheritance diagram for Engine\+::Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structEngine_1_1Collider__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structEngine_1_1Collider_ae629887932acb2c53ae38e1559a59098}{process\+Collision}} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&other)
+\begin{DoxyCompactList}\small\item\em collision hook storage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1Collider_a777cdf4eab700ad19e34cd39d0b8507f}\label{structEngine_1_1Collider_a777cdf4eab700ad19e34cd39d0b8507f}} 
+virtual glm\+::vec3 {\bfseries furthest\+In\+Dir} (const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&pe, const glm\+::vec3 \&norm) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1Collider_a1c6b373382a9e0856a40b9f6ef57dadf}\label{structEngine_1_1Collider_a1c6b373382a9e0856a40b9f6ef57dadf}} 
+bool {\bfseries trigger} = false
+\item 
+\mbox{\Hypertarget{structEngine_1_1Collider_abf66d5c129f69cb2400de4d9076461f4}\label{structEngine_1_1Collider_abf66d5c129f69cb2400de4d9076461f4}} 
+\mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1CollisionHook}{Collision\+Hook}} $>$ \mbox{\hyperlink{structEngine_1_1Collider_abf66d5c129f69cb2400de4d9076461f4}{hook}}
+\begin{DoxyCompactList}\small\item\em does the collider physically interact with other objects (def not stolen from unity) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic type storage for a G\+JK enabled collider. 
+
+Provides an interface for producing support points from a global direction. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1Collider_ae629887932acb2c53ae38e1559a59098}\label{structEngine_1_1Collider_ae629887932acb2c53ae38e1559a59098}} 
+\index{Engine::Collider@{Engine::Collider}!processCollision@{processCollision}}
+\index{processCollision@{processCollision}!Engine::Collider@{Engine::Collider}}
+\doxysubsubsection{\texorpdfstring{processCollision()}{processCollision()}}
+{\footnotesize\ttfamily void Engine\+::\+Collider\+::process\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1PhysicsEntity}{Physics\+Entity}} $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+collision hook storage 
+
+Process a collision between two physics entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & colliding entity \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Components.\+hpp\end{DoxyCompactItemize}

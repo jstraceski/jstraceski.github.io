@@ -1,0 +1,132 @@
+\hypertarget{structEngine_1_1UIButton}{}\doxysection{Engine\+::U\+I\+Button Struct Reference}
+\label{structEngine_1_1UIButton}\index{Engine::UIButton@{Engine::UIButton}}
+
+
+Inheritance diagram for Engine\+::U\+I\+Button\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structEngine_1_1UIButton__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+::U\+I\+Button\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structEngine_1_1UIButton__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIButton_a8a13078127f633c7569f5bcbd0d5d4ca}{load\+Texture}} (const \mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}} key, const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$ \&\mbox{\hyperlink{structEngine_1_1MeshRenderer_a88f2d78cf83b0c519e675e3538f529cc}{texture}})
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIButton_ad8a5498b5d9221b6e53803c12ca525cc}{set\+Callback}} (\mbox{\hyperlink{namespaceEngine_afae31e7796f3d1c1b5135b0e3a1530a9}{func}} f)
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIButton_a55463f6d860cf6c5c4e93996a4e65e39}{preform\+Callback}} () const
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIButton_a5e464f6db5d7e24c48c5f4b3a7f2a659}{set\+State}} (\mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}} next)
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIButton_a8a291110e32f7467e468901d0d4043f0}{update\+Visual}} () override
+\item 
+void \mbox{\hyperlink{structEngine_1_1UIButton_a99d4a9a9de5e3103d9842cf562b6d536}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEngine_1_1UIButton_ab6058e4c9cf4c6e5dea63b78053ab9f5}\label{structEngine_1_1UIButton_ab6058e4c9cf4c6e5dea63b78053ab9f5}} 
+\mbox{\hyperlink{namespaceEngine_afae31e7796f3d1c1b5135b0e3a1530a9}{func}} {\bfseries click\+Func}
+\item 
+\mbox{\Hypertarget{structEngine_1_1UIButton_a6d2dcac5bdb8f4eb81ca1906b422850f}\label{structEngine_1_1UIButton_a6d2dcac5bdb8f4eb81ca1906b422850f}} 
+\mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}} \mbox{\hyperlink{structEngine_1_1UIButton_a6d2dcac5bdb8f4eb81ca1906b422850f}{state}} = D\+E\+F\+A\+U\+LT
+\begin{DoxyCompactList}\small\item\em generic function for processing clicks \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEngine_1_1UIButton_aaba51df679573a7af90fb02a7c3fca66}\label{structEngine_1_1UIButton_aaba51df679573a7af90fb02a7c3fca66}} 
+\mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}} \mbox{\hyperlink{structEngine_1_1UIButton_aaba51df679573a7af90fb02a7c3fca66}{next\+State}} = D\+E\+F\+A\+U\+LT
+\begin{DoxyCompactList}\small\item\em hover state \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}}, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$ $>$ \mbox{\hyperlink{structEngine_1_1UIButton_a217f0089675d22643a8a9920edfae5b8}{state\+Lookup}} = std\+::unordered\+\_\+map$<$\mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}}, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}}$>$$>$()
+\begin{DoxyCompactList}\small\item\em next hover state to reduce redraw calls \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEngine_1_1UIButton_a8a13078127f633c7569f5bcbd0d5d4ca}\label{structEngine_1_1UIButton_a8a13078127f633c7569f5bcbd0d5d4ca}} 
+\index{Engine::UIButton@{Engine::UIButton}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Engine::UIButton@{Engine::UIButton}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Button\+::load\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}}}]{key,  }\item[{const \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$ \mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}} $>$ \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load a texture and mapping into a hover state. 
+\begin{DoxyParams}{Parameters}
+{\em key} & hover state \\
+\hline
+{\em texture} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1UIButton_a55463f6d860cf6c5c4e93996a4e65e39}\label{structEngine_1_1UIButton_a55463f6d860cf6c5c4e93996a4e65e39}} 
+\index{Engine::UIButton@{Engine::UIButton}!preformCallback@{preformCallback}}
+\index{preformCallback@{preformCallback}!Engine::UIButton@{Engine::UIButton}}
+\doxysubsubsection{\texorpdfstring{preformCallback()}{preformCallback()}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Button\+::preform\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Preform the click action of the button. \mbox{\Hypertarget{structEngine_1_1UIButton_ad8a5498b5d9221b6e53803c12ca525cc}\label{structEngine_1_1UIButton_ad8a5498b5d9221b6e53803c12ca525cc}} 
+\index{Engine::UIButton@{Engine::UIButton}!setCallback@{setCallback}}
+\index{setCallback@{setCallback}!Engine::UIButton@{Engine::UIButton}}
+\doxysubsubsection{\texorpdfstring{setCallback()}{setCallback()}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Button\+::set\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceEngine_afae31e7796f3d1c1b5135b0e3a1530a9}{func}}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the function that is called when the button is pressed. 
+\begin{DoxyParams}{Parameters}
+{\em f} & function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1UIButton_a5e464f6db5d7e24c48c5f4b3a7f2a659}\label{structEngine_1_1UIButton_a5e464f6db5d7e24c48c5f4b3a7f2a659}} 
+\index{Engine::UIButton@{Engine::UIButton}!setState@{setState}}
+\index{setState@{setState}!Engine::UIButton@{Engine::UIButton}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Button\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}}}]{next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the hover state of the button. 
+\begin{DoxyParams}{Parameters}
+{\em next} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structEngine_1_1UIButton_a99d4a9a9de5e3103d9842cf562b6d536}\label{structEngine_1_1UIButton_a99d4a9a9de5e3103d9842cf562b6d536}} 
+\index{Engine::UIButton@{Engine::UIButton}!update@{update}}
+\index{update@{update}!Engine::UIButton@{Engine::UIButton}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Button\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Syncing function called every game tick 
+
+Reimplemented from \mbox{\hyperlink{structEngine_1_1UIElement_adca3079e223a5b0570b8a39c29264dd9}{Engine\+::\+U\+I\+Element}}.
+
+\mbox{\Hypertarget{structEngine_1_1UIButton_a8a291110e32f7467e468901d0d4043f0}\label{structEngine_1_1UIButton_a8a291110e32f7467e468901d0d4043f0}} 
+\index{Engine::UIButton@{Engine::UIButton}!updateVisual@{updateVisual}}
+\index{updateVisual@{updateVisual}!Engine::UIButton@{Engine::UIButton}}
+\doxysubsubsection{\texorpdfstring{updateVisual()}{updateVisual()}}
+{\footnotesize\ttfamily void Engine\+::\+U\+I\+Button\+::update\+Visual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update the UI element with new visual data 
+
+Reimplemented from \mbox{\hyperlink{structEngine_1_1UIElement_aef195e110c14e77705bdf3b4615f4191}{Engine\+::\+U\+I\+Element}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structEngine_1_1UIButton_a217f0089675d22643a8a9920edfae5b8}\label{structEngine_1_1UIButton_a217f0089675d22643a8a9920edfae5b8}} 
+\index{Engine::UIButton@{Engine::UIButton}!stateLookup@{stateLookup}}
+\index{stateLookup@{stateLookup}!Engine::UIButton@{Engine::UIButton}}
+\doxysubsubsection{\texorpdfstring{stateLookup}{stateLookup}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$\mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}}, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}}$>$ $>$ Engine\+::\+U\+I\+Button\+::state\+Lookup = std\+::unordered\+\_\+map$<$\mbox{\hyperlink{namespaceEngine_af26969061a89756b03ece38cc12c3d1f}{Button\+State}}, \mbox{\hyperlink{namespaceEngine_ad5b8efbd3ff3c1fe2d0a31cf5eecc08d}{Ref}}$<$\mbox{\hyperlink{structEngine_1_1TextureLookup}{Texture\+Lookup}}$>$$>$()}
+
+
+
+next hover state to reduce redraw calls 
+
+state texture lookup 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/U\+I.\+hpp\end{DoxyCompactItemize}
