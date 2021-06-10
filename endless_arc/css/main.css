@@ -57,7 +57,7 @@ body {
 
 h1 {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 4em;
+    font-size: 5em;
 	line-height: 0.5em;
 	color: #f2f2f2;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -67,7 +67,7 @@ h1 {
 
 h2 {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 2em;
+    font-size: 3em;
 	line-height: 0em;
 	color: #f0f0f0;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -77,7 +77,7 @@ h2 {
 
 h3 {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 2em;
+    font-size: 1.5em;
 	line-height: 0.5em;
 	color: #f0f0f0;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -86,16 +86,13 @@ h3 {
 }
 
 
-hr { 
-	display: block; 
+hr {
+	display: block;
 	height: 1px;
 	width: 80%;
-    border: 10px; 
-	border-top: 10px solid #ccc; 
-	padding: 10px; 
+    border: 10px;
+	border-top: 10px solid #ccc;
+	padding: 10px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
-
